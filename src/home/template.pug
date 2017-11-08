@@ -1,5 +1,5 @@
 span
-  .hero.site-section
+  .hero
     .frow-container.height-100
       .frow.column-start.justify-center.height-100
         h2
@@ -9,7 +9,7 @@ span
   .were-good.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
-        .were-good-title
+        .title
           h2
             | The new standard in
             br
@@ -20,12 +20,49 @@ span
         .frow.gutters
           .col-md-1-2
             .service-box
-              svg-loader(:src="cube")
-              h6
-                | We're pretty good.
+              .frow.column-center
+                svg-loader.width-auto(:src="cube")
+                h6
+                  | We're pretty good.
+                p
+                  | Original Program. (3) The Recipient may not distribute the Larger Work by agreement with any existing Current Maintainer of the Agreement Steward reserves the right to modify or delete any preexisting copyright notices and associated disclaimers.
           .col-md-1-2
             .service-box
-              svg-loader(:src="stats")
-              h6
-                | Like really good.
-
+              .frow.column-center
+                svg-loader.width-auto(:src="stats")
+                h6
+                  | Like really good.
+                p
+                  | Original Program. (3) The Recipient may not distribute the Larger Work by agreement with any existing Current Maintainer of the Agreement Steward reserves the right to modify or delete any preexisting copyright notices and associated disclaimers.
+          .frow
+            a(class="begin-button" type="button" href="#") Learn More
+  .team.site-section
+    .frow-container.height-100
+      .frow.row-start
+        .col-md-1-4
+          .frow.centered-column.height-100
+            .title
+              h2
+                | Meet Us
+        .col-md-3-4
+          .service-box-parent
+            .frow.gutters
+              .col-md-1-2
+                .service-box
+                  .frow.column-center
+                    svg-loader.width-auto(:src="cube")
+                    h6
+                      | We're pretty good.
+                    p
+                      | Original Program. (3) The Recipient may not distribute the Larger Work by agreement with any existing Current Maintainer of the Agreement Steward reserves the right to modify or delete any preexisting copyright notices and associated disclaimers.
+              .col-md-1-2
+                .service-box
+                  .frow.column-center
+                    svg-loader.width-auto(:src="stats")
+                    h6
+                      | Like really good.
+                    p
+                      | Original Program. (3) The Recipient may not distribute the Larger Work by agreement with any existing Current Maintainer of the Agreement Steward reserves the right to modify or delete any preexisting copyright notices and associated disclaimers.
+              .frow
+                a(class="begin-button" type="button" href="#") Learn More
+  
