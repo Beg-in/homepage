@@ -1,0 +1,23 @@
+#main.height-100
+  .header
+    .frow.height-100
+      .col-xs-1-4.height-100
+        .frow.justify-start.items-center.height-100
+          .logo
+            a(href="#")
+              svg-loader(:src="logo")
+      .col-xs-3-4.height-100
+        .nav.height-100
+          .frow.justify-end.items-center.height-100
+            a(href="#") Past Work
+            span |
+            a(href="#") Slate
+            span |
+            a(href="#") Our Team
+            span |
+            a(href="#") FAQ
+            span |
+            a(href="#") Contact
+  transition
+    router-view.template
+

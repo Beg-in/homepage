@@ -1,0 +1,40 @@
+{
+  "name": "Beg.in",
+  "main": "index.js",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=8.9"
+  },
+  "description": "Beg.in Homepage",
+  "homepage": "http://beg.in",
+  "repository": "Beg-in/homepage",
+  "bugs": {
+    "url": "https://github.com/Beg-in/homepage/issues"
+  },
+  "author": {
+    "name": "Beg.in",
+    "email": "info@beg.in",
+    "url": "http://beg.in"
+  },
+  "contributors": [
+    "Brian Jesse <brian.jesse@gmail.com> (brianjesse.com)",
+    "Cody Sherman <meatwaddancin@gmail.com> (codysherman.com)",
+    "Johnmark Beaty <johnmarkbeaty@gmail.com> (johnmarkbeaty.com)",
+    "Richard Kim <richardkim1011@gmail.com> (richard-kim.com)",
+    "Brandon Frisch <bfrisch1@gmail.com> (brandonfrisch.com)"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "npm run b -- local:client",
+    "b": "CONTEXT=$(pwd) npm explore begin-build -- npm run"
+  },
+  "dependencies": {
+    "begin-util": "^1.0.0"
+  },
+  "devDependencies": {
+    "begin-build": "^0.1.3"
+  },
+  "// HACK: postcss-loader must have config": "",
+  "postcss": {}
+}
