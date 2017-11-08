@@ -1,0 +1,10 @@
+span
+  h2
+    | FAQ
+  .faq-section(v-for="section, title in questions")
+    h4 {{title}}
+    span(v-for="answer, question in section")
+      .faq-question
+        | {{question}}
+      .faq-answer
+        | {{answer}}

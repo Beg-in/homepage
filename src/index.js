@@ -10,6 +10,11 @@ module.exports = build({
         path: '/',
         component: require('./home/component.vue').default,
       },
+      {
+        name: 'faq',
+        path: '/faq',
+        component: require('./faq/component.vue').default,
+      },
       // {
       //   name: '404',
       //   path: '/404',
