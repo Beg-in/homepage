@@ -1,7 +1,7 @@
 module.exports = {
   data: () => ({
-    cube: require('./cube.svg'),
-    stats: require('./stats.svg'),
+    cube: require('./images/cube.svg'),
+    stats: require('./images/stats.svg'),
   }),
 };
 
