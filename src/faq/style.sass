@@ -1,2 +1,16 @@
 @import ../variables
 
+label.faq-question
+  color: $near-black
+  
+  input
+    display: none
+  
+.faq-answer
+  overflow: hidden
+  max-height: 0
+  transition: max-height $animate-speed
+
+  input:checked ~ &
+    max-height: 100px
+    display: block

@@ -4,7 +4,8 @@ span
   .faq-section(v-for="section, title in questions")
     h4 {{title}}
     span(v-for="answer, question in section")
-      .faq-question
+      label.faq-question
         | {{question}}
-      .faq-answer
-        | {{answer}}
+        input(type="checkbox")
+        .faq-answer
+          | {{answer}}
