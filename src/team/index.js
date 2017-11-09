@@ -1,6 +1,6 @@
 module.exports = {
   data: () => ({
-    picture: require('../home/cube.svg'),
+    picture: require('../home/images/cube.svg'),
   }),
 };
 
