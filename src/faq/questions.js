@@ -4,9 +4,9 @@ module.exports = {
     'How long will my project take?': 'Depending on complexity, most projects fall within the four to ten month range.',
     'Question 3': 'Answer answer answer',
   },
-  'Project Quotes': {
+  'Pricing': {
     'How much will my project cost?': 'Sometimes developer marketplaces can beat our pricing with less experienced talent. We’ve seen from personal experience & heard from many of our customers that these projects often go poorly. As is the case with most major buying decisions, you get what you pay for.',
-    'Are you guys open to partnering for equity':'At this stage, we not taking on equity projects',
+    'Are you guys open to partnering for equity?':'At this stage, we not taking on equity projects',
     'Question 3': 'Answer answer answer',
   },
   'Example section 3': {

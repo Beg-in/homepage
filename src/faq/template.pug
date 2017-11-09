@@ -1,11 +1,18 @@
 span
-  h2
-    | FAQ
-  .faq-section(v-for="section, title in questions")
-    h4 {{title}}
-    span(v-for="answer, question in section")
-      label.faq-question
-        | {{question}}
-        input(type="checkbox")
-        .faq-answer
-          | {{answer}}
+  .frow-container
+    h2
+      | FAQ
+    .frow.row-start
+      .col-md-1-4
+        .faq-section(v-for="section, title in questions")
+          h4.faq-title.faq-quick-title-menu {{title}}
+      .col-md-3-4
+        .faq-section(v-for="section, title in questions")
+          h4.faq-title {{title}}
+          span(v-for="answer, question in section")
+            label.faq-question
+              p
+                | {{question}}
+              input(type="checkbox")
+              .faq-answer
+                | {{answer}}
