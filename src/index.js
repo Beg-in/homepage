@@ -11,6 +11,11 @@ module.exports = build({
         component: require('./home/component.vue').default,
       },
       {
+        name: 'team',
+        path: '/team',
+        component: require('./team/component.vue').default,
+      },
+      {
         name: 'faq',
         path: '/faq',
         component: require('./faq/component.vue').default,

@@ -4,7 +4,7 @@
       .col-xs-1-4.height-100
         .frow.justify-start.items-center.height-100
           .logo
-            a(href="#")
+            router-link(to="#")
               svg-loader(:src="logo")
       .col-xs-3-4.height-100
         .nav.height-100
@@ -13,7 +13,7 @@
             span |
             a(href="#") Slate
             span |
-            a(href="#") Our Team
+            router-link(to="/team") Our Team
             span |
             a(href="#") FAQ
             span |
