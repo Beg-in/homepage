@@ -1,18 +1,23 @@
 span
   .frow-container
-    h2
-      | FAQ
-    .frow.row-start
-      .col-md-1-4
-        .faq-section(v-for="section, title in questions")
-          h4.faq-title.faq-quick-title-menu {{title}}
+    .site-section
+      .frow.column-start
+        h2
+          | FAQs
+        p
+          | Find some answers to common questions about Beg.in
+    .frow.row-start.items-start
+      .col-md-1-4.faq-quick-title-menu
+          .faq-section(v-for="section, title in questions")
+            h4.faq-title {{title}}
       .col-md-3-4
         .faq-section(v-for="section, title in questions")
           h4.faq-title {{title}}
           span(v-for="answer, question in section")
             label.faq-question
-              p
+              h5
                 | {{question}}
               input(type="checkbox")
               .faq-answer
-                | {{answer}}
+                p
+                  | {{answer}}
