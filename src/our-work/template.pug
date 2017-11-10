@@ -1,0 +1,16 @@
+span
+  .hero
+    .frow-container.height-100
+      .frow
+        h2
+          | Our Work
+  .frow.column-center.projects
+    .project(v-for="(project, index) in projects" :class="{'odd': !(index % 2 == 0)}")
+      .frow.column-center
+        .card-title
+          h2
+            | {{ project.title }}
+        .frow.row-start.width-100
+          img(:src="project.picture")
+          .card-description
+            | {{ project.description }}

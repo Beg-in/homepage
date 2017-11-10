@@ -2,7 +2,6 @@
 
 .hero
   height: 100px
-  // background: url("./green-vine.jpg")
   background-color: $green
   color: #fff
   text-shadow: 1px 1px 1px #777
@@ -15,11 +14,23 @@
   position: relative
 
 .projects
-  margin: 20px 20px
+  // margin: 20px 20px
   
 .project
   margin: 30px 60px
   width: 100%
+  
+  img
+    align-self: flex-start
+    width: auto
+    border-radius: 10%
+    margin: 30px 50px
+  
+  &.odd
+    background: $light-background
+  
+    .card-title ~ .frow
+      flex-direction: row-reverse 
 
   .card-title  
     color: #000
@@ -31,11 +42,6 @@
     font-weight: 300
     font-size: 14px
     padding-bottom: 20px
-
-  img
-    width: 200px
-    border-radius: 10%
-    margin-bottom: 11px
 
 .site-section .title
   margin: 0 0 62px 0
