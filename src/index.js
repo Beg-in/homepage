@@ -19,6 +19,11 @@ module.exports = build({
         name: 'faq',
         path: '/faq',
         component: require('./faq/component.vue').default,
+      }, 
+      {
+        name: 'slate',
+        path: '/slate',
+        component: require('./slate/component.vue').default,
       },
       // {
       //   name: '404',
