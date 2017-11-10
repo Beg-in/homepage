@@ -4,12 +4,12 @@ module.exports = {
     projects: [
       { 
         title: 'WDS',
-        picture: require('../home/images/brandon.png'),
+        picture: require('./images/wds.png'),
         description: 'Health client',
       },
       { 
         title: 'QikPix',
-        picture: require('../home/images/brandon.png'),
+        picture: require('./images/qikpix.png'),
         description: 'Photography agency',
       },
       { 
