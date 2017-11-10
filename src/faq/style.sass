@@ -1,18 +1,35 @@
 @import ../variables
 
+.faq-section
+  margin-bottom: 72px
+
 label.faq-question
   color: $near-black
+  
+.faq-question
+  padding: 7px 13px  
+    
+  &:hover
+    background-color: rgba(18, 216, 183, 0.11)
+    border-radius: 2px
   
   input
     display: none
   
 .faq-title
-    border-bottom: solid 2px rgba(38, 38, 38, 0.09)
-    margin-bottom: 32px
-    padding-bottom: 8px
+  border-bottom: solid 2px rgba(38, 38, 38, 0.09)
+  margin-bottom: 32px
+  padding-bottom: 8px
 
 .faq-quick-title-menu
-  border-bottom: none
+  position: sticky
+  top: 8px
+  
+  h4
+    border-bottom: none
+  
+  .faq-section
+    margin-bottom: 0px
 
 .faq-answer
   overflow: hidden
@@ -20,5 +37,5 @@ label.faq-question
   transition: max-height $animate-speed
 
   input:checked ~ &
-    max-height: 100px
+    max-height: 200px
     display: block
