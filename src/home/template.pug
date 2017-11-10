@@ -1,4 +1,4 @@
-span
+#home
   .hero
     .frow-container.height-100
       .frow.column-start.justify-center.height-100
@@ -103,26 +103,51 @@ span
     .frow-container.height-100
       .frow.centered-column.height-100
         .title
-          h2
-            | Meet Slate&trade;
+          .frow.row-center
+            svg-loader.width-auto.slate-logo(:src="slate")
+            h2
+              | Meet Slate&trade;
           h5
             | A modern web toolkit, 3 years in the making.
-        .frow.gutters
-          .col-md-1-2
-            .service-box
-              .frow.column-center
-                svg-loader.width-auto(:src="cube")
-                h6
-                  | We're pretty good.
-                p
-                  | Original Program. (3) The Recipient may not distribute the Larger Work by agreement with any existing Current Maintainer of the Agreement Steward reserves the right to modify or delete any preexisting copyright notices and associated disclaimers.
-          .col-md-1-2
-            .service-box
-              .frow.column-center
-                svg-loader.width-auto(:src="stats")
-                h6
-                  | Like really good.
-                p
-                  | Original Program. (3) The Recipient may not distribute the Larger Work by agreement with any existing Current Maintainer of the Agreement Steward reserves the right to modify or delete any preexisting copyright notices and associated disclaimers.
           .frow
-            a(class="begin-button" type="button" href="#") Learn More
+            .col-md-3-4
+              p
+                | Original Program. (3) The Recipient may not distribute the Larger Work by agreement with any existing Current Maintainer of the Agreement Steward reserves the right to modify or delete any preexisting copyright notices and associated disclaimers.
+        .frow.gutters
+          .col-md-1-1
+            .service-box
+              .frow.column-center
+          .col-md-1-4
+            .service-box
+              .frow.column-center
+                svg-loader.width-auto(:src="crane")
+                h6
+                  | Scalable
+                p
+                  | Lorem Ipsum this is fake text.
+          .col-md-1-4
+            .service-box
+              .frow.column-center
+                svg-loader.width-auto(:src="vault")
+                h6
+                  | Secure
+                p
+                  | Really really lorem Ipsum this is fake text.
+          .col-md-1-4
+            .service-box
+              .frow.column-center
+                svg-loader.width-auto(:src="multi")
+                h6
+                  | Versatile
+                p
+                  | Really really lorem Ipsum this is fake text.
+          .col-md-1-4
+            .service-box
+              .frow.column-center
+                svg-loader.width-auto(:src="gears")
+                h6
+                  | Efficient
+                p
+                  | Really really lorem Ipsum this is fake text.
+        .frow
+          a(class="begin-button" type="button" href="#") Learn More
