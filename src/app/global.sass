@@ -1,4 +1,5 @@
 @import ~frow
+@import ../variables
 
 // TODO: Delete when Frow updated past 2.0.1
 .svg-loader-container.width-auto
@@ -7,6 +8,68 @@
 html, body
   height: 100%
   font-family: 'Fira Sans', sans-serif
+
+// logo header and nav styles that frisch moved
+
+.logo
+    // width: 50px
+    height: auto
+
+    svg
+      fill: #fff
+      height: 30px
+      
+.header
+  background-color: $green
+  height: $header-height
+  padding: 0 20px
+  position: fixed
+  width: 100%
+  z-index: 4
+
+  .nav
+    font-size: 20px
+
+    a
+      color: #fff
+      text-decoration: none
+
+      &:hover, &:active, &:focus
+        font-weight: bold
+        // transition: transform $fast-animate-speed
+        animation-name: super-nav
+        animation-duration: 4000ms
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+
+    span
+      color: #fff
+      margin: 0 10px      
+
+// /logo header and nav styles that frisch moved
+
+
+// footer styles
+.footer 
+  
+  .logo
+    svg
+      fill: #12D8B7
+      margin-bottom: 10px
+    
+  span
+      margin: 0 10px
+      
+  .github
+    margin-top: 32px   
+    
+    svg
+      width: 58px
+      
+  .copyright
+    margin-top: 32px
+
+// /footer styles
 
 .site-section
   padding: 48px 0
@@ -35,9 +98,10 @@ h6
   margin: 10px 0
   font-weight: 500
 p
-  font-size: 16px
+  font-size: 17px
   line-height: 25px
   font-weight: 100
+  color: #777
 
 .begin-button[type="button"] 
   width: 200px
