@@ -6,8 +6,11 @@ span
           | FAQs
         p
           | Find some answers to common questions about Beg.in
-    .frow.row-start.items-start
+    .frow.row-start.items-start.gutters
       .col-md-1-4.faq-quick-title-menu
+          .faq-quick-title-menu-title
+            h4
+              | Categories
           .faq-section(v-for="section, title in questions")
             h4.faq-title {{title}}
       .col-md-3-4

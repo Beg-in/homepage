@@ -12,16 +12,20 @@
   background-color: $light-background
   
   .plus
-    font-size: 85px
-    font-weight: 100
+    font-size: 82px
+    font-weight: 500
     color: $green
-    text-shadow: 2px 2px 2px #a1a1a1
   
 #home
+  p
+    font-size: 19px
+    line-height: 28px
+  
   .service-box
     svg
       width: 88px
       margin-bottom: 32px
+  
 
 .site-section .title
   margin: 0 0 62px 0
@@ -38,6 +42,10 @@
   
   p
     margin: 10px 0 28px 0
+    text-align: center
+  
+  h5
+    font-weight: 500
 
 .team-box
   img
@@ -53,7 +61,11 @@
     margin-right: 8px
     margin-bottom: 0
     width: 38px
-    
-  // footer styles please move where necessary - Frisch
+
+@media screen and (max-width: 767px)
+  .team-box
+    img
+      width: 100px
+    h6
+      margin-bottom: 8px
   
-  // footer styles please move where necessary - Frisch

@@ -15,16 +15,26 @@ label.faq-question
   
   input
     display: none
+
+.faq-quick-title-menu-title
+  h4
+    padding-bottom: 8px
+    border-bottom: solid 2px rgba(38, 38, 38, 0.09)
+    margin-bottom: 32px
+  
+.faq-quick-title-menu 
+  .faq-title 
+    border-bottom: none
+    font-size: 22px
+    
+  .faq-section
+    margin-bottom: 0
   
 .faq-title
   border-bottom: solid 2px rgba(38, 38, 38, 0.09)
   margin-bottom: 32px
   padding-bottom: 8px
 
-.faq-quick-title-menu
-  position: sticky
-  top: 8px
-  
   h4
     border-bottom: none
   
@@ -39,3 +49,9 @@ label.faq-question
   input:checked ~ &
     max-height: 200px
     display: block
+    
+
+@media screen and (min-width: 1048px)
+  .faq-quick-title-menu
+    position: sticky
+    top: $header-height
