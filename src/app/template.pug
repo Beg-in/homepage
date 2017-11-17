@@ -4,50 +4,48 @@
       .col-xs-1-4.height-100
         .frow.justify-start.items-center.height-100
           .logo
-            router-link(to="#")
+            router-link(to="/")
               svg-loader(:src="logo")
       .col-xs-3-4.height-100
         .nav.height-100
           .frow.justify-end.items-center.height-100
-            router-link(to="/our-work") Our Work
+            router-link(to="our-work") Our Work
             span |
-            router-link(to="/sate") Slate
+            router-link(to="slate") Slate
             span |
-            router-link(to="/team") Our Team
+            router-link(to="team") Our Team
             span |
-            router-link(to="/faq") FAQ
+            router-link(to="faq") FAQ
             span |
-            router-link(to="/contact") Contact
+            router-link(to="contact") Contact
   .header-shadow-cover
   .header-shadow
-  .template
-    transition
-      router-view
+  transition
+    router-view.template
   .footer.site-section
     .frow.column-center
       .col-md-1-3
         .frow.column-center
           .logo
-            router-link(to="#")
+            router-link(to="/")
               svg-loader.width-auto(:src="logo")
           .nav
             .frow.items-center.height-100
-              a(href="#") Past Work
+              router-link(to="/our-work") Our Work
               span |
-              a(href="#") Slate
+              router-link(to="/slate") Slate
               span |
               router-link(to="/team") Our Team
               span |
-              a(href="#") FAQ
+              router-link(to="/faq") FAQ
               span |
-              a(href="#") Contact
+              router-link(to="/contact") Contact
           .github
             .frow.column-center
               p
                 | Don't forget to check out our work on:
-              a(href="https://github.com/beg-in" target="_blank")
+              a(href="https://github.com/beg-in" target="_blank" rel="noopener")
                 svg-loader.width-auto(:src="github")
-              
           .copyright
             p
-              | © 2017, Begin, LLC
+              | © 2018 Begin, LLC
