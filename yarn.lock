@@ -1004,9 +1004,9 @@ beeper@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/beeper/-/beeper-1.1.1.tgz#e6d5ea8c5dad001304a70b22638447f69cb2f809"
 
-begin-build@0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/begin-build/-/begin-build-0.3.2.tgz#00f25590fd0f236ed7d127db4448c982c25ece82"
+begin-build@0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/begin-build/-/begin-build-0.3.3.tgz#0496c99f5674f8d248e5cbb2cac5455bab4dd894"
   dependencies:
     autoprefixer "^7.1.6"
     autoprefixer-loader "3.2.0"
