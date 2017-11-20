@@ -11,7 +11,6 @@ module.exports = {
     lockSvg: require('./images/lock.svg'),
     craneSvg: require('./images/crane.svg'),
     robotSvg: require('./images/robot.svg'),
-    logoSvg: require('./images/logo.svg'),
   },
 };
 
