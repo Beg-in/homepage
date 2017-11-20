@@ -1,17 +1,17 @@
 module.exports = {
-  data: () => ({
-    cube: require('./images/cube.svg'),
-    stats: require('./images/stats.svg'),
-    slate: require('./images/slate.svg'),
-    gears: require('./images/gears.svg'),
-    orangegear: require('./images/gear-orange.svg'),
-    scale: require('./images/scale.svg'),
-    vault: require('./images/vault.svg'),
-    multi: require('./images/multi.svg'),
-    lock: require('./images/lock.svg'),
-    crane: require('./images/crane.svg'),
-    robot: require('./images/robot.svg'),
-    logo: require('./images/logo.svg'),
-  }),
+  components: {
+    cubeSvg: require('./images/cube.svg'),
+    statsSvg: require('./images/stats.svg'),
+    slateSvg: require('./images/slate.svg'),
+    gearsSvg: require('./images/gears.svg'),
+    orangegearSvg: require('./images/gear-orange.svg'),
+    scaleSvg: require('./images/scale.svg'),
+    vaultSvg: require('./images/vault.svg'),
+    multiSvg: require('./images/multi.svg'),
+    lockSvg: require('./images/lock.svg'),
+    craneSvg: require('./images/crane.svg'),
+    robotSvg: require('./images/robot.svg'),
+    logoSvg: require('./images/logo.svg'),
+  },
 };
 
