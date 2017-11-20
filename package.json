@@ -33,7 +33,7 @@
     "begin-util": "^1.0.0"
   },
   "devDependencies": {
-    "begin-build": "0.3.0"
+    "begin-build": "0.3.2"
   },
   "// HACK: postcss-loader must have config": "",
   "postcss": {}
