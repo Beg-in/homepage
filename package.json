@@ -30,7 +30,8 @@
     "start": "npm run b start:client"
   },
   "dependencies": {
-    "begin-util": "^1.0.0"
+    "begin-util": "^1.0.0",
+    "frow": "git://github.com/Beg-in/frow.git#npm"
   },
   "devDependencies": {
     "begin-build": "0.3.4"
