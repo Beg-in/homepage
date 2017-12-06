@@ -14,7 +14,6 @@ module.exports = {
       },
       { 
         title: 'Bit MALLL',
-        picture: require('../home/images/brandon.png'),
         description: '$$$ ;)',
       },
     ],
