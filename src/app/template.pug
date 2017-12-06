@@ -5,7 +5,7 @@
         .frow.justify-start.items-center.height-100
           .logo
             router-link(to="/")
-              svg-loader(:src="logo")
+              logo-svg
       .col-xs-3-4.height-100
         .nav.height-100
           .frow.justify-end.items-center.height-100
@@ -28,7 +28,8 @@
         .frow.column-center
           .logo
             router-link(to="/")
-              svg-loader.width-auto(:src="logo")
+              .width-auto
+                logo-svg
           .nav
             .frow.items-center.height-100
               router-link(to="our-work", title="Our Work") Our Work
@@ -44,8 +45,8 @@
             .frow.column-center
               p
                 | Don't forget to check out our work on:
-              a(href="https://github.com/beg-in" target="_blank" rel="noopener")
-                svg-loader.width-auto(:src="github")
+              external(href="https://github.com/beg-in")
+                github-svg.width-auto
           .copyright
             p
-              | © {{new Date().getFullYear()}}, Begin, LLC
+              | &copy; {{new Date().getFullYear()}}, Begin, LLC

@@ -1,7 +1,7 @@
 module.exports = {
-  data: () => ({
-    logo: require('./logo.svg'),
-    github: require('./github-logo.svg'),
-  }),
+  components: {
+    logoSvg: require('./logo.svg'),
+    githubSvg: require('./github-logo.svg'),
+  },
 };
 

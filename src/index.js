@@ -1,39 +1,38 @@
 let build = require('begin-build');
 
-// HACK: vue-loader exports an ES6 module and doesn't support CommonJS
 module.exports = build({
-  components: { app: require('./app/component.vue').default },
+  components: { app: require('./app/vue.pug') },
   router: {
     routes: [
       {
         name: 'home',
         path: '/',
-        component: require('./home/component.vue').default,
+        component: require('./home/vue.pug'),
       },
       {
         name: 'team',
         path: '/team',
-        component: require('./team/component.vue').default,
+        component: require('./team/vue.pug'),
       },
       {
         name: 'faq',
         path: '/faq',
-        component: require('./faq/component.vue').default,
+        component: require('./faq/vue.pug'),
       }, 
       {
         name: 'slate',
         path: '/slate',
-        component: require('./slate/component.vue').default,
+        component: require('./slate/vue.pug'),
       },
       {
         name: 'our-work',
         path: '/our-work',
-        component: require('./our-work/component.vue').default,
+        component: require('./our-work/vue.pug'),
       },
       // {
       //   name: '404',
       //   path: '/404',
-      //   component: require('./404/component.vue').default,
+      //   component: require('./404/vue.pug'),
       // },
       {
         path: '*',

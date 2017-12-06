@@ -1,17 +1,13 @@
 module.exports = {
-  data: () => ({
-    cube: require('./images/cube.svg'),
-    stats: require('./images/stats.svg'),
-    slate: require('./images/slate.svg'),
-    gears: require('./images/gears.svg'),
-    orangegear: require('./images/gear-orange.svg'),
-    scale: require('./images/scale.svg'),
-    vault: require('./images/vault.svg'),
-    multi: require('./images/multi.svg'),
-    lock: require('./images/lock.svg'),
-    crane: require('./images/crane.svg'),
-    robot: require('./images/robot.svg'),
-  }),
+  components: {
+    cubeSvg: require('./images/cube.svg'),
+    statsSvg: require('./images/stats.svg'),
+    slateSvg: require('./images/slate.svg'),
+    vaultSvg: require('./images/vault.svg'),
+    multiSvg: require('./images/multi.svg'),
+    craneSvg: require('./images/crane.svg'),
+    robotSvg: require('./images/robot.svg'),
+  },
 };
 
 
