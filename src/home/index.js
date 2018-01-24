@@ -1,3 +1,4 @@
+let { team } = require('../data/team');
 module.exports = {
   components: {
     cubeSvg: require('./images/cube.svg'),
@@ -8,7 +9,7 @@ module.exports = {
     craneSvg: require('./images/crane.svg'),
     robotSvg: require('./images/robot.svg'),
   },
+  data: () => ({
+    team,
+  }),
 };
-
-
- // team: require('./../data/team'),
