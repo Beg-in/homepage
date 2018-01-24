@@ -4,50 +4,49 @@
       .col-xs-1-4.height-100
         .frow.justify-start.items-center.height-100
           .logo
-            router-link(to="#")
-              svg-loader(:src="logo")
+            router-link(to="/")
+              logo-svg
       .col-xs-3-4.height-100
         .nav.height-100
           .frow.justify-end.items-center.height-100
-            router-link(to="/our-work") Our Work
+            router-link(to="our-work", title="Our Work") Our Work
             span |
-            router-link(to="/sate") Slate
+            router-link(to="slate", title="Slate") Slate
             span |
-            router-link(to="/team") Our Team
+            router-link(to="team", title="Our Team") Our Team
             span |
-            router-link(to="/faq") FAQ
+            router-link(to="faq", title="FAQ") FAQ
             span |
-            router-link(to="/contact") Contact
+            router-link(to="contact", title="Contact") Contact
   .header-shadow-cover
   .header-shadow
-  .template
-    transition
-      router-view
+  transition
+    router-view
   .footer.site-section
     .frow.column-center
       .col-md-1-3
         .frow.column-center
           .logo
-            router-link(to="#")
-              svg-loader.width-auto(:src="logo")
+            router-link(to="/")
+              .width-auto
+                logo-svg
           .nav
             .frow.items-center.height-100
-              a(href="#") Past Work
+              router-link(to="our-work", title="Our Work") Our Work
               span |
-              a(href="#") Slate
+              router-link(to="slate", title="Slate") Slate
               span |
-              router-link(to="/team") Our Team
+              router-link(to="team", title="Our Team") Our Team
               span |
-              a(href="#") FAQ
+              router-link(to="faq", title="FAQ") FAQ
               span |
-              a(href="#") Contact
+              router-link(to="contact", title="Contact") Contact
           .github
             .frow.column-center
               p
                 | Don't forget to check out our work on:
-              a(href="https://github.com/beg-in" target="_blank")
-                svg-loader.width-auto(:src="github")
-              
+              external(href="https://github.com/beg-in")
+                github-svg.width-auto
           .copyright
             p
-              | © 2017, Begin, LLC
+              | &copy; {{new Date().getFullYear()}}, Begin, LLC
