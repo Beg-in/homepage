@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "begin-util": "^1.0.0",
-    "frow": "git://github.com/Beg-in/frow.git#npm"
+    "frow": "^3.0.1"
   },
   "devDependencies": {
     "begin-build": "0.3.4"
