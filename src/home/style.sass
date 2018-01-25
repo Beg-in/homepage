@@ -1,5 +1,13 @@
 @import ../variables
 
+.header-shadow-cover
+  top: $header-height - 2px
+  position: absolute
+  width: 100%
+  background-color: $green
+  height: 24px
+  z-index: 3
+
 .hero
   height: 500px
   background-color: $green
@@ -9,19 +17,19 @@
 .were-good
   text-align: center
   background-color: $light-background
-  
+
   .plus
     font-size: 82px
     font-weight: 500
     color: $green
     margin: 34px 0 44px
     display: none
-  
+
 #home
   p
     font-size: 19px
     line-height: 28px
-  
+
   .service-box
     svg
       width: 138px
@@ -32,11 +40,11 @@
 
 .service-box
   padding: 0 32px
-  
+
   p
     margin: 10px 0 28px 0
     text-align: center
-  
+
   h5
     font-weight: 500
 
@@ -45,7 +53,7 @@
     width: 140px
     border-radius: 20%
     margin-bottom: 11px
-    
+
 .slate
   background-color: $light-background
 
@@ -57,14 +65,13 @@
 .footer-cta
   background-color: $green
   color: #fff
-    
+
   p
     color: #fff
-      
+
 @media screen and (max-width: 767px)
   .team-box
     img
       width: 100px
     h6
       margin-bottom: 8px
-  
