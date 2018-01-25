@@ -8,14 +8,14 @@ main
           | Find some answers to common questions about Beg.in
     .frow.row-start.items-start.gutters
       .col-md-1-4.faq-quick-title-menu
-          .faq-quick-title-menu-title
-            h4
-              | Categories
-          .faq-section(v-for="section, title in questions")
-            h4.faq-title {{title}}
+        .faq-quick-title-menu-title
+          h4
+            | Categories
+        .faq-section(v-for="section, title in questions")
+          h4.faq-title.clickable(@click="$refs[title][0].scrollIntoView({ behavior: 'smooth' })") {{title}}
       .col-md-3-4
         .faq-section(v-for="section, title in questions")
-          h4.faq-title {{title}}
+          h4.faq-title(:ref="title") {{title}}
           span(v-for="answer, question in section")
             label.faq-question
               h5
