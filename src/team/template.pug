@@ -9,10 +9,11 @@ cmain
       .col-sm-1-2.col-md-1-3(v-for="member in team")
         .person
           .frow.column-center
+            img(:src="member.img")
             .card-title
               | {{`${member.firstName} ${member.lastName}`}}
-            img(:src="member.img")
             .card-description
-              | {{member.title}}
-              <br>
-              | {{member.description}}
+              .frow
+                h6
+                  | {{member.title}}
+                | {{member.description}}
