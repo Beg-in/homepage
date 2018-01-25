@@ -12,7 +12,7 @@ main
           h4
             | Categories
         .faq-section(v-for="section, title in questions")
-          h4.faq-title.clickable(@click="$refs[title][0].scrollIntoView({ behavior: 'smooth' })") {{title}}
+          h4.faq-title.clickable(@click="doScroll(title)") {{title}}
       .col-md-3-4
         .faq-section(v-for="section, title in questions")
           h4.faq-title(:ref="title") {{title}}

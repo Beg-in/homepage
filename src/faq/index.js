@@ -1,9 +1,5 @@
 let questions = require('./questions');
 
-const MAIN = window;
-
-let delay = (duration = 100) => new Promise(resolve => setTimeout(() => resolve(), duration));
-
 module.exports = {
   data: () => ({
     questions,
