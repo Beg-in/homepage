@@ -1,32 +1,38 @@
 module.exports = {
     team: [
-        { 
-            name: 'Johnmark',
+        {
+            firstName: 'Johnmark',
+            lastName: 'Beaty',
             img: require('./images/johnmark.png'),
             description: 'Vue Master',
         },
-        { 
-            name: 'Brandon',
+        {
+            firstName: 'Brandon',
+            lastName: 'Frisch',
             img: require('./images/brandon.png'),
             description: 'Executive CEO of Wordpress',
         },
-        { 
-            name: 'Cody',
+        {
+            firstName: 'Cody',
+            lastName: 'Sherman',
             img: require('./images/cody.png'),
             description: 'Float En Fuego',
         },
-        { 
-            name: 'Rick',
+        {
+            firstName: 'Rich',
+            lastName: 'Kim',
             img: require('./images/rich.png'),
             description: 'President',
         },
-        { 
-            name: 'Brian',
+        {
+            firstName: 'Brian',
+            lastName: 'Jesse',
             img: require('./images/brian.png'),
             description: 'Senior Chewbacca',
         },
-        { 
-            name: 'Tony',
+        {
+            firstName: 'Tony',
+            lastName: 'Dykstra',
             img: require('./images/tony.png'),
             description: 'VP of VP of Physical Marketing',
         },

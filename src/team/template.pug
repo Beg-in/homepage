@@ -10,7 +10,7 @@ main
         .person
           .frow.column-center
             .card-title
-              | {{member.name}}
+              | {{`${member.firstName} ${member.lastName}`}}
             img(:src="member.img")
             .card-description
               | {{member.description}}
