@@ -26,8 +26,8 @@ module.exports = {
             description: 'Senior Chewbacca',
         },
         { 
-            name: 'Dyvon',
-            img: require('./images/dyvon.png'),
+            name: 'Tony',
+            img: require('./images/tony.png'),
             description: 'VP of VP of Physical Marketing',
         },
     ]

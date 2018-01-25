@@ -8,6 +8,9 @@ module.exports = {
     multiSvg: require('./images/multi.svg'),
     craneSvg: require('./images/crane.svg'),
     robotSvg: require('./images/robot.svg'),
+    cbox1Svg: require('./images/creative-box.svg'),
+    cbox2Svg: require('./images/creative-box-2.svg'),
+    brainSvg: require('./images/brainstorm.svg'),
   },
   data: () => ({
     team,

@@ -6,12 +6,14 @@ module.exports = {
   },
   'Pricing': {
     'How much will my project cost?': 'Sometimes developer marketplaces can beat our pricing with less experienced talent. We’ve seen from personal experience & heard from many of our customers that these projects often go poorly. As is the case with most major buying decisions, you get what you pay for.',
-    'Are you guys open to partnering for equity?':'At this stage, we are not taking on equity projects',
+    'Are you open to partnering for equity?':'At this stage, we are not taking on equity projects',
     'Question 3': 'Answer answer answer',
   },
   'Development': {
+    'What is the development process like?': 'Your project will be organized into checkpoints (usually every two to three weeks). After every checkpoint, we will meet with you to verify direction and gather input from you. You will also recieve emails at least once a week with minor updates from us!',
     'How would you divide your team up and prioritize the work for our project?': 'Depending on the time constraint for the project, we would split up the developers accordingly.',
-    'How does the scaling work for your servers/databases?': 'We have a robust AWS system running that would automatically adjust to traffic by scaling horizontally; this would essentially mean to add or remove servers based on what is needed.',
+    'How does the scaling work for your servers/databases?': 'We have a robust AWS system running that automatically adjusts to traffic by scaling horizontally; in other words, it adds or removes servers based on what is needed.',
     'Do you guys focus on mobile applications?': 'We create hybrid mobile applications which is a very economical way of making iOS and Android apps. Any changes reflected on the web application would also be applied to the mobile applications, thus allowing updating and maintaining the application to be a breeze. ',
+  
   },
 };
