@@ -18,7 +18,7 @@ module.exports = build({
         name: 'faq',
         path: '/faq',
         component: require('./faq/vue.pug'),
-      }, 
+      },
       {
         name: 'slate',
         path: '/slate',
@@ -28,6 +28,11 @@ module.exports = build({
         name: 'our-work',
         path: '/our-work',
         component: require('./our-work/vue.pug'),
+      },
+      {
+        name: 'contact',
+        path: '/contact',
+        component: require('./contact/vue.pug'),
       },
       // {
       //   name: '404',
