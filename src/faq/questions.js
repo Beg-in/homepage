@@ -1,13 +1,7 @@
 module.exports = {
   'General': {
-    "What do I say to my investors if they don't want me to outsource my company's software development?": "There are a number of good reasons to outsource software development when you're a small startup. Here are a few: Your core competency, which you're amazing at, is not software development. You're planning on hiring developers but want to get a head start on the prototype first. You're using the prototype to convince developers to join your startup. You want to cheaply validate a concept before you make a larger investment. The company you're using to outsource has a fantastic track record and is going to do a great job with your product. It's cheaper to outsource than to have your in-house developers build your product.",
     'How long will my project take?': 'Depending on complexity, most projects fall within the four to ten month range.',
     'Is the development team internal?': 'Yes, we have developers located in both Chicago and Bloomington, IL.',
-  },
-  'Pricing': {
-    'How much will my project cost?': 'Sometimes developer marketplaces can beat our pricing with less experienced talent. We’ve seen from personal experience & heard from many of our customers that these projects often go poorly. As is the case with most major buying decisions, you get what you pay for.',
-    'Are you open to partnering for equity?':'At this stage, we are not taking on equity projects',
-    'Question 3': 'Answer answer answer',
   },
   'Development': {
     'What is the development process like?': 'Your project will be organized into checkpoints (usually every two to three weeks). After every checkpoint, we will meet with you to verify direction and gather input from you. You will also recieve emails at least once a week with minor updates from us!',
@@ -15,5 +9,8 @@ module.exports = {
     'How does the scaling work for your servers/databases?': 'We have a robust AWS system running that automatically adjusts to traffic by scaling horizontally; in other words, it adds or removes servers based on what is needed.',
     'How do you approach mobile applications?': 'We create hybrid mobile applications which is a very economical way of making iOS and Android apps. Any changes reflected on the web application would also be applied to the mobile applications, thus allowing updating and maintaining the application to be a breeze. ',
   
+  },
+  'Pricing': {
+    'Are you open to partnering for equity?':'At this stage, we are not taking on equity projects',
   },
 };

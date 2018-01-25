@@ -1,4 +1,4 @@
-main
+cmain
   .hero
     .frow-container.height-100
       .frow
@@ -13,4 +13,6 @@ main
               | {{`${member.firstName} ${member.lastName}`}}
             img(:src="member.img")
             .card-description
+              | {{member.title}}
+              <br>
               | {{member.description}}
