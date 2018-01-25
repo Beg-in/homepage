@@ -38,7 +38,7 @@ main#home
                 p
                   | Tap into Beg.in's extensive tech experience to plan your next product launch.
           .frow
-            a(class="begin-button" type="button" href="#") Start a project
+            router-link.begin-button(to="contact", title="Contact", type="button") Start a project
   .team.site-section
     .frow-container.height-100
       .frow.row-start
@@ -56,8 +56,8 @@ main#home
                     img(:src="member.img")
                     h6
                       | {{ member.name }}
-      .frow.centered
-        a(class="begin-button" type="button" href="#") Learn More
+      .frow
+        router-link.begin-button(to="team", title="Our Team", type="button") Learn More
   .slate.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
@@ -112,8 +112,6 @@ main#home
                   | Efficient
                 p
                   | It's fast. Really fast.
-        .frow
-          a(class="begin-button" type="button" href="#") Learn More
   .footer-cta.site-section
       .frow-container.height-100
         .frow.centered-column.height-100
@@ -126,5 +124,5 @@ main#home
               p
                 | Let's chat about your project, product, or venture.
           .frow
-            a(class="begin-button" type="button" href="#") Say Hello!
+            router-link.begin-button(to="contact", title="Contact", type="button") Say Hello!
 
