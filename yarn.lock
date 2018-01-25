@@ -3752,7 +3752,7 @@ frow@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/frow/-/frow-2.1.0.tgz#8b020113597f5f2c8665509f2739d4d05a209d99"
 
-frow@3.0.1:
+frow@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/frow/-/frow-3.0.1.tgz#c8ae5d6e2e3b3a5be961147fa364b02b5371409f"
   dependencies:

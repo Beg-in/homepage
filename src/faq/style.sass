@@ -22,7 +22,9 @@ label.faq-question
     border-bottom: solid 2px rgba(38, 38, 38, 0.09)
     margin-bottom: 32px
   
-.faq-quick-title-menu 
+.faq-quick-title-menu
+  margin-bottom: 45px
+  
   .faq-title 
     border-bottom: none
     font-size: 22px
@@ -55,3 +57,8 @@ label.faq-question
   .faq-quick-title-menu
     position: sticky
     top: $header-height
+    
+@media screen and (max-width: 767px)
+  .faq-answer
+    input:checked ~ &
+      max-height: 450px
