@@ -1,4 +1,4 @@
 'use strict';
 
-module.exports = require('begin-project/node');
+module.exports = require('begin-project/lint');
 
