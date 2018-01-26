@@ -34,7 +34,7 @@
     "frow": "^3.0.1"
   },
   "devDependencies": {
-    "begin-build": "0.3.4"
+    "begin-build": "0.8.0"
   },
   "// HACK: postcss-loader must have config": "",
   "postcss": {}
