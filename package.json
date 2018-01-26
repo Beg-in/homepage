@@ -1,7 +1,7 @@
 {
   "name": "Beg.in",
   "main": "index.js",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "engines": {
     "node": ">=8.9"
   },
@@ -34,7 +34,7 @@
     "frow": "^3.0.1"
   },
   "devDependencies": {
-    "begin-build": "0.3.4"
+    "begin-build": "0.8.0"
   },
   "// HACK: postcss-loader must have config": "",
   "postcss": {}
