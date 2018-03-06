@@ -2,6 +2,7 @@ let { team } = require('../data/team');
 
 module.exports = {
   components: {
+    contactFooter: require('../contact-footer/vue.pug'),
     cubeSvg: require('./images/cube.svg'),
     statsSvg: require('./images/stats.svg'),
     slateSvg: require('./images/slate.svg'),

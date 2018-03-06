@@ -1,6 +1,10 @@
 let questions = require('./questions');
 
 module.exports = {
+  components: {
+    contactFooter: require('../contact-footer/vue.pug'),
+  },
+
   data: () => ({
     questions,
   }),
