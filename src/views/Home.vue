@@ -6,7 +6,7 @@ main#home
       .frow.column-start.justify-center.height-100
         .hero-content
           h2
-            | We solve software challenges the first time.
+            | We solve your software challenges.
           h5
             | Part talent agency, part product agency. Begin delivers reliable technology solutions for your business.
   .were-good.site-section
@@ -44,12 +44,12 @@ main#home
   .team.site-section
     .frow-container.height-100
       .frow.row-start
-        .col-md-1-5
+        .col-md-2-5
           .frow.centered-column.height-100
             .title
               h2
-                | Meet your new product team
-        .col-md-4-5
+                | Meet our team
+        .col-md-3-5
           .team-box-parent
             .frow.gutters
               .col-md-1-6.col-xs-1-3(v-for="member in team")
@@ -60,59 +60,57 @@ main#home
                       | {{member.firstName}}
       .frow
         router-link.begin-button(to="team", title="Our Team", type="button") Learn More
-  // .slate.site-section
-  //   .frow-container.height-100
-  //     .frow.centered-column.height-100
-  //       .title
-  //         .frow.row-center
-  //           h2
-  //             | Meet Slate&trade;
-  //         h5
-  //           | A modern web toolkit, powering your idea.
-  //         .frow
-  //           .col-md-1-1
-  //             p
-  //               | Our battle-tested product development tools ensure you're not paying for us to reinvent the wheel.
-  //               br
-  //               | Your plumber should show up to the job with her tools ready-to-go.
-  //       .frow.gutters
-  //         .col-md-1-1
-  //           .service-box
-  //             .frow.column-center
-  //         .col-md-1-4.col-sm-1-2
-  //           .service-box
-  //             .frow.column-center
-  //               crane-svg
-  //               h5
-  //                 | Scalable
-  //               p
-  //                 | Never worry about your big day on Oprah.
-  //         .col-md-1-4.col-sm-1-2
-  //           .service-box
-  //             .frow.column-center
-  //               vault-svg
-  //               h5
-  //                 | Secure
-  //               p
-  //                 | Get access to HIPAA compliant security.
-  //         .col-md-1-4.col-sm-1-2
-  //           .service-box
-  //             .frow.column-center
-  //               multi-svg
-  //               h5
-  //                 | Versatile
-  //               p
-  //                 | Push notifications, user profiles, it's all there.
-  //                 // br
-  //                 // |It's all there.
-  //         .col-md-1-4.col-sm-1-2
-  //           .service-box
-  //             .frow.column-center
-  //               robot-svg
-  //               h5
-  //                 | Efficient
-  //               p
-  //                 | It's fast. Really fast.
+  .slate.site-section
+    .frow-container.height-100
+      .frow.centered-column.height-100
+        .title
+          .frow.row-center
+            h5
+              | Modern web toolkits, powering your idea.
+            .frow
+              .col-md-1-1
+                p
+                  | Our battle-tested product development tools ensure you're not paying for us to reinvent the wheel.
+                  br
+                  | Your plumber should show up to the job with her tools ready-to-go.
+        .frow.gutters
+          .col-md-1-1
+            .service-box
+              .frow.column-center
+          .col-md-1-4.col-sm-1-2
+            .service-box
+              .frow.column-center
+                craneSvg
+                h5
+                  | Scalable
+                p
+                  | Never worry about your big day on Oprah.
+          .col-md-1-4.col-sm-1-2
+            .service-box
+              .frow.column-center
+                vaultSvg
+                h5
+                  | Secure
+                p
+                  | Get access to HIPAA compliant security.
+          .col-md-1-4.col-sm-1-2
+            .service-box
+              .frow.column-center
+                multiSvg
+                h5
+                  | Versatile
+                p
+                  | Push notifications, user profiles, it's all there.
+                  // br
+                  // |It's all there.
+          .col-md-1-4.col-sm-1-2
+            .service-box
+              .frow.column-center
+                robotSvg
+                h5
+                  | Efficient
+                p
+                  | It's fast. Really fast.
 
   ContactFooter
 </template>
