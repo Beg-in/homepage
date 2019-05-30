@@ -5,9 +5,6 @@
       .col-xs-1-4.height-100
         .frow.justify-start.items-center.height-100
           router-link.logo(to="/")
-            //- img(:src="logoSvg")
-            //- include !{logoSvg}
-            //- svg(:src='logoSvg')
             logoSvg
       .col-xs-3-4.height-100
         .nav.height-100
@@ -44,7 +41,6 @@
           .copyright
             p
               | &copy; {{new Date().getFullYear()}}, Begin, LLC
-
 </template>
 <script>
 import logoSvg from '@/assets/svgs/logo.svg';
