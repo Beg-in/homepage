@@ -1,0 +1,65 @@
+@import ./variables
+@import ~frow
+
+html, body
+  height: 100%
+  font-family: 'Fira Sans', sans-serif
+
+.site-section
+  padding: 48px 0
+
+  h1, h2, h3, h4, h5, h6, p
+    margin: 0
+
+h2
+  font-size: 57px
+  margin: 10px 0
+h3
+  font-size: 36px
+  margin: 10px 0
+h4
+  font-size: 28px
+  margin: 10px 0
+  font-weight: 400
+  line-height: 33px
+h5
+  font-size: 23px
+  margin: 10px 0
+  font-weight: 300
+  line-height: 33px
+
+h5.subtitle
+  font-size: 25px
+
+h6
+  font-size: 18px
+  margin: 10px 0
+  font-weight: 500
+p
+  font-size: 17px
+  line-height: 25px
+  font-weight: 100
+  color: #777
+
+.begin-button[type="button"]
+  width: 200px
+  padding: 15px
+  margin-top: 32px
+
+.site-section .title
+  margin: 0 0 62px 0
+  text-align: center
+
+  h5
+    margin: 24px 0
+    font-size: 25px
+
+@media screen and (max-width: 767px)
+  h2
+    font-size: 50px
+  h6
+    font-size: 14px
+
+@media screen and (max-width: 540px)
+  h2
+    font-size: 45px
