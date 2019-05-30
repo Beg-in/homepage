@@ -2,13 +2,13 @@
 main
   .contact.site-section
     .frow.column-center
-      svg(:src="talkSvg")
+      talkSvg
       h2.title
         | Contact Us
       .col-md-1-2
         p
           | Feel free to get in touch with us using the contact information below! We'd love to hear from you.
-    .contact-infoi
+    .contact-info
       .frow.height-100
         .frow.centered-column
           a(href="mailto:info@beg.in") info@beg.in
@@ -17,10 +17,8 @@ main
 <script>
 import talkSvg from '@/assets/svgs/talk.svg';
 export default {
-  data() {
-    return {
-      talkSvg,
-    };
+  components: {
+    talkSvg,
   },
 };
 </script>
@@ -28,6 +26,10 @@ export default {
 @import @/assets/styles/variables.sass
 .contact.site-section
   background-color: $light-background
+
+  svg
+    height: auto
+    width: 150px
 
   .title
     margin: 0 0 22px 0
@@ -43,8 +45,4 @@ export default {
     display: block
     font-size: 30px
     font-weight: 700
-
-svg
-  height: 100%
-  width: 150px
 </style>

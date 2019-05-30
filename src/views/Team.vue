@@ -7,7 +7,7 @@ main
           | Meet Our Core Team
     .people
       .frow
-        .col-sm-1-2.col-md-1-3(v-for="member in team")
+        .col-sm-1-2.col-md-1-4(v-for="member in team")
           .person
             .frow.column-center
               img(:src="member.img")

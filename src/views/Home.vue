@@ -22,7 +22,7 @@ main#home
           .col-md-4-10
             .service-box
               .frow.column-center
-                img(:src="cbox1Svg")
+                cbox1Svg
                 h5
                   | Product Development
                 p
@@ -34,7 +34,7 @@ main#home
           .col-md-4-10
             .service-box
               .frow.column-center
-                img(:src="brainSvg")
+                brainSvg
                 h5
                   | Technology Consulting
                 p
@@ -133,20 +133,20 @@ import ContactFooter from '@/components/ContactFooter';
 export default {
   components: {
     ContactFooter,
+    cubeSvg,
+    statsSvg,
+    slateSvg,
+    vaultSvg,
+    multiSvg,
+    craneSvg,
+    robotSvg,
+    cbox1Svg,
+    cbox2Svg,
+    brainSvg,
   },
   data() {
     return {
       team,
-      cubeSvg,
-      statsSvg,
-      slateSvg,
-      vaultSvg,
-      multiSvg,
-      craneSvg,
-      robotSvg,
-      cbox1Svg,
-      cbox2Svg,
-      brainSvg,
     };
   },
 };
@@ -194,6 +194,7 @@ export default {
   .service-box
     svg
       width: 138px
+      height: auto
       margin-bottom: 15px
 
 .team.site-section .title

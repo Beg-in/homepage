@@ -4,9 +4,11 @@
     .frow.height-100
       .col-xs-1-4.height-100
         .frow.justify-start.items-center.height-100
-          .logo
-            router-link(to="/")
-              img(:src="logoSvg")
+          router-link.logo(to="/")
+            //- img(:src="logoSvg")
+            //- include !{logoSvg}
+            //- svg(:src='logoSvg')
+            logoSvg
       .col-xs-3-4.height-100
         .nav.height-100
           .frow.justify-end.items-center.height-100
@@ -25,7 +27,7 @@
           .logo
             router-link(to="/")
               .width-auto
-                img(:src="logoSvg")
+                logoSvg
           .nav
             .frow.items-center.height-100
               // router-link(to="our-work", title="Our Work") Our Work
@@ -38,7 +40,7 @@
               p
                 | Don't forget to check out our work on:
               a(href="https://github.com/beg-in" target="_blank")
-                img(:src="githubSvg")
+                githubSvg
           .copyright
             p
               | &copy; {{new Date().getFullYear()}}, Begin, LLC
@@ -48,11 +50,9 @@
 import logoSvg from '@/assets/svgs/logo.svg';
 import githubSvg from '@/assets/svgs/github-logo.svg';
 export default {
-  data() {
-    return {
-      logoSvg,
-      githubSvg,
-    };
+  components: {
+    logoSvg,
+    githubSvg,
   },
 };
 </script>
