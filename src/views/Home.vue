@@ -43,21 +43,18 @@ main#home
             router-link.begin-button(to="contact", title="Contact", type="button") Start a project
   .team.site-section
     .frow-container.height-100
-      .frow.row-start
-        .col-md-2-5
-          .frow.centered-column.height-100
-            .title
-              h2
-                | Meet our team
-        .col-md-3-5
-          .team-box-parent
-            .frow.gutters
-              .col-md-1-6.col-xs-1-3(v-for="member in team")
-                .team-box
-                  .frow.column-center
-                    img(:src="member.img")
-                    h6
-                      | {{member.firstName}}
+      .frow.column-center
+        .frow.centered-column.height-100
+          .title
+            h2
+              | Meet our Team
+        .team-box-parent
+          .frow.row-center.gutters
+            .team-box(v-for="member in team")
+              .frow.column-center
+                img(:src="member.img")
+                h6
+                  | {{member.firstName}}
       .frow
         router-link.begin-button(to="team", title="Our Team", type="button") Learn More
   .slate.site-section
@@ -209,6 +206,7 @@ export default {
     font-weight: 500
 
 .team-box
+  margin: 15px
   img
     width: 140px
     border-radius: 20%
