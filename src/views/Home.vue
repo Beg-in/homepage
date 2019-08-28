@@ -3,115 +3,135 @@ main#home
   .header-shadow-cover
   .hero
     .frow-container.height-100
-      .frow.column-start.justify-center.height-100
+      .frow.column-center.justify-center.height-100
         .hero-content
           h2
-            | We solve your software challenges.
-          h5
-            | Part talent agency, part product agency. Begin delivers reliable technology solutions for your business.
+            | No-headache software development.
+          h4
+            | Reliable & transparent technology consulting.
+  .statement.site-section
+    .frow-container.height-100
+      .frow.centered-column.height-100
+          | Begin is a web application and hybrid development agency for technology companies who need scalable, resource conscious software.        
   .were-good.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
         .title
-          h2
-            | Start Here
           h5
-            | Work with a team that allows you to do what you do best: run your business.
+            | there's a lot of dev agencies out there but
+          h2
+            | We believe we're different because:
       .service-box-parent
         .frow.gutters
           .col-md-4-10
-            .service-box
+            .service-box.card-shadow
               .frow.column-center
                 cbox1Svg
                 h5
-                  | Product Development
+                  | Diagnosis first approach
                 p
-                  | Your idea, brought to life. We like to build entire technology platforms from scratch. They’re fast, secure, and highly scalable.
+                  | When presented with a problem to solve, we work tirelessly to diagnose the root causes before proposing a solution. We don't simply say "yes", resulting in the right solution for you and your business.
           .col-md-1-10
             .frow.centered
                span.plus
                 | &
           .col-md-4-10
-            .service-box
+            .service-box.card-shadow
               .frow.column-center
                 brainSvg
                 h5
-                  | Technology Consulting
+                  | Freelance Network
                 p
-                  | Tap into Beg.in's extensive tech experience to plan your next product launch.
+                  | We have spent years developing a network of talented, trustworthy developers so that we are uniquely positioned to address a need for more horesepower or alternative skillsets. 
           .frow
             router-link.begin-button(to="contact", title="Contact", type="button") Start a project
   .team.site-section
     .frow-container.height-100
       .frow.row-start
-        .col-md-2-5
+        .col-md-1-1
           .frow.centered-column.height-100
             .title
               h2
                 | Meet our team
-        .col-md-3-5
-          .team-box-parent
-            .frow.gutters
-              .col-md-1-6.col-xs-1-3(v-for="member in team")
-                .team-box
-                  .frow.column-center
-                    img(:src="member.img")
-                    h6
-                      | {{member.firstName}}
-      .frow
-        router-link.begin-button(to="team", title="Our Team", type="button") Learn More
-  .slate.site-section
+            .team-pic
+              img(src="@/assets/images/temp-bg-photo.jpg")
+            .statement
+              | We believe in a transparent, long-term relationships with everyone we have the opportunity to work with. We are all entrepreneurs and understand what it takes to stand up and scale software at all stages.
+  .fav-tech.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
         .title
           .frow.row-center
-            h5
-              | Modern web toolkits, powering your idea.
-            .frow
-              .col-md-1-1
-                p
-                  | Our battle-tested product development tools ensure you're not paying for us to reinvent the wheel.
-                  br
-                  | Your plumber should show up to the job with her tools ready-to-go.
-        .frow.gutters
-          .col-md-1-1
-            .service-box
-              .frow.column-center
-          .col-md-1-4.col-sm-1-2
-            .service-box
-              .frow.column-center
-                craneSvg
-                h5
-                  | Scalable
-                p
-                  | Never worry about your big day on Oprah.
-          .col-md-1-4.col-sm-1-2
-            .service-box
-              .frow.column-center
-                vaultSvg
-                h5
-                  | Secure
-                p
-                  | Get access to HIPAA compliant security.
-          .col-md-1-4.col-sm-1-2
-            .service-box
-              .frow.column-center
-                multiSvg
-                h5
-                  | Versatile
-                p
-                  | Push notifications, user profiles, it's all there.
-                  // br
-                  // |It's all there.
-          .col-md-1-4.col-sm-1-2
-            .service-box
-              .frow.column-center
-                robotSvg
-                h5
-                  | Efficient
-                p
-                  | It's fast. Really fast.
-
+            h2
+              | Our favorite tech
+        .tech-parent-box.width-100
+          .frow.gutters
+            .col-md-1-3.col-sm-1-2
+              .tech-box
+                .frow.column-center
+                  vueLogo
+                  h5
+                    | Vue.js
+            .col-md-1-3.col-sm-1-2
+              .tech-box
+                .frow.column-center
+                  nodeLogo
+                  h5
+                    | Node.js
+            .col-md-1-3.col-sm-1-2
+              .tech-box
+                .frow.column-center
+                  .frow-logo
+                    frowLogo
+                  h5
+                    | Frow.css
+            .col-md-1-3.col-sm-1-2
+              .tech-box
+                .frow.column-center
+                  cordovaLogo
+                  h5
+                    | Cordova
+            .col-md-1-3.col-sm-1-2
+              .tech-box
+                .frow.column-center
+                  awsLogo
+                  h5
+                    | Amazon Web Services
+            .col-md-1-3.col-sm-1-2
+              .tech-box
+                .frow.column-center
+                  djangoLogo
+                  h5
+                    | Django
+  .testimonials.site-section
+    .frow-container.height-100
+      .frow.centered-column.height-100
+        .title
+          .frow.row-center
+            h2
+              | Our favorite people
+        .testimonial-parent-box.width-100
+          .frow.gutters
+            .col-md-1-2.col-sm-1-1
+              .testimonial-box
+                .frow.row-center
+                  .client-logo.chaser-box
+                    .frow.centered
+                      .chaser-logo
+                        .frow.centered
+                          chaserLogo
+                .frow.row-start
+                  | This is an example testimonial. Begin is such a breath of fresh-air from the standard dev agency experience. They we'ren't just focused on the money or time. They would suggest things that gave them less work or we're cheaper because they believed it was better for us. I highly recommend working with them if you want an honest, transparent relationship with your developer team. We <3 Begin
+            .col-md-1-2.col-sm-1-1
+              .testimonial-box
+                .frow.row-center
+                  .client-logo
+                    .frow.centered
+                      .govflex-logo
+                        .frow.centered
+                          img(src="@/assets/images/GovFlex_Logo.png")
+                .frow.row-start
+                  | This is an example testimonial. Begin is such a breath of fresh-air from the standard dev agency experience. They we'ren't just focused on the money or time. They would suggest things that gave them less work or we're cheaper because they believed it was better for us. I highly recommend working with them if you want an honest, transparent relationship with your developer team. We <3 Begin
   ContactFooter
 </template>
 <script>
@@ -126,6 +146,13 @@ import robotSvg from '@/assets/svgs/robot.svg';
 import cbox1Svg from '@/assets/svgs/creative-box.svg';
 import cbox2Svg from '@/assets/svgs/creative-box-2.svg';
 import brainSvg from '@/assets/svgs/brainstorm.svg';
+import vueLogo from '@/assets/svgs/vue.svg';
+import nodeLogo from '@/assets/svgs/nodejs.svg';
+import awsLogo from '@/assets/svgs/aws.svg';
+import djangoLogo from '@/assets/svgs/django.svg';
+import cordovaLogo from '@/assets/svgs/cordova.svg';
+import frowLogo from '@/assets/svgs/frow.svg';
+import chaserLogo from '@/assets/svgs/chaser-logo.svg';
 
 import ContactFooter from '@/components/ContactFooter';
 export default {
@@ -141,6 +168,13 @@ export default {
     cbox1Svg,
     cbox2Svg,
     brainSvg,
+    vueLogo,
+    nodeLogo,
+    awsLogo,
+    djangoLogo,
+    cordovaLogo,
+    frowLogo,
+    chaserLogo,
   },
   data() {
     return {
@@ -171,7 +205,17 @@ export default {
   text-shadow: 1px 1px 1px #777
 
 .hero-content
-  max-width: 830px
+  max-width: 1240px
+  text-align: center
+  width: 100%
+
+  h2
+    margin-bottom: 30px
+
+.statement
+  text-align: center
+  font-size: 34px
+  line-height: 60px
 
 .were-good
   text-align: center
@@ -198,8 +242,28 @@ export default {
 .team.site-section .title
   text-align: left
 
+.team-pic
+  img
+    max-width: 1000px
+    height: 500px
+    width: 100%
+    margin-bottom: 40px
+
+.tech-box
+  margin-bottom: 55px
+  svg
+    width: auto
+    height: 108px
+    margin-bottom: 19px
+  h5
+    font-weight: 500
+  .frow-logo
+    fill: #339BE8
+
 .service-box
-  padding: 0 32px
+  padding: 32px 32px
+  box-shadow: 0 5px 20px 0 rgba(32,32,32,.12)
+  background-color: #fff
 
   p
     margin: 10px 0 28px 0
@@ -213,6 +277,40 @@ export default {
     width: 140px
     border-radius: 20%
     margin-bottom: 11px
+
+.testimonial-box
+  padding: 46px 28px 36px 28px
+  background-color: #fff
+  border-radius: 5px
+  box-shadow: 0 5px 20px 0 rgba(32, 32, 32, 0.12)
+  font-size: 20px
+  line-height: 31px
+  position: relative
+  margin: 10px 20px
+  .client-logo
+    width: 165px
+    height: 65px
+    border-radius: 10px
+    box-shadow: 0 5px 20px 0 rgba(32,32,32,.12)
+    position: absolute
+    top: -29px
+    background-color: #fff
+
+    svg
+      width: 130px
+      height: auto
+      padding: 10px
+    img
+      width: 130px
+      height: auto
+      padding: 2px
+    .chaser-logo
+      svg
+        fill: #fff
+  .client-logo.chaser-box
+    background-color: #ff4067
+
+
 
 .slate
   background-color: $light-background
