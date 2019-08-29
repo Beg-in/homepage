@@ -13,7 +13,7 @@ main#home
   .statement.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
-          | Begin is a web application and hybrid development agency for technology companies who need scalable, resource conscious software.        
+          h3 Begin is a web application and hybrid development agency for technology companies who need scalable, resource conscious software.        
   .were-good.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
@@ -57,7 +57,7 @@ main#home
             .team-pic
               img(src="@/assets/images/team-pic-ivy.jpg")
             .statement
-              | We believe in a transparent, long-term relationships with everyone we have the opportunity to work with. We are all entrepreneurs and understand what it takes to stand up and scale software at all stages.
+              h3 We believe in a transparent, long-term relationships with everyone we have the opportunity to work with. We are all entrepreneurs and understand what it takes to stand up and scale software at all stages.
   .fav-tech.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
@@ -104,14 +104,13 @@ main#home
                   awsLogo
                   h5
                     | Amazon Web Services
-  .slanty-before-div
   .testimonials.green-site-section
     .frow-container.height-100
       .frow.centered-column.height-100
         .title
           .frow.row-center
             h2
-              | Our favorite people
+              | Kind words
         .testimonial-parent-box.width-100
           .frow.gutters
             .col-md-1-2.col-sm-1-1
@@ -204,6 +203,11 @@ export default {
   text-align: center
   font-size: 34px
   line-height: 60px
+  h3
+    background-color: $beige
+    border-radius: 5px
+    box-shadow: 0 5px 20px 0 rgba(32, 32, 32, 0.12)
+    padding: 32px
 
 .were-good
   text-align: center
@@ -234,11 +238,16 @@ export default {
   background-color: $green
   background-attachment: fixed
 
+  .statement h3
+    background-color: inherit
+    border-radius: 0
+    box-shadow: none
+
 .team-pic
   img
-    max-width: 1000px
+    max-width: 800px
     width: 100%
-    margin-bottom: 40px
+    margin-bottom: 0px
     box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.38)
     border-radius: 5px
 
@@ -257,6 +266,7 @@ export default {
   padding: 32px 32px
   box-shadow: 0 5px 20px 0 rgba(32,32,32,.12)
   background-color: $beige
+  border-radius: 5px
 
   p
     margin: 10px 0 28px 0
@@ -272,13 +282,11 @@ export default {
     margin-bottom: 11px
 
 .testimonials
+  background: $texture-bg
   background-color: $green
+  background-attachment: fixed
   clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% 100%, 0 100%)
   padding: 90px 0
-
-
-.testimonial-parent-box
-  margin: 60px 0
 
 .testimonial-box
   padding: 46px 28px 36px 28px
