@@ -9,6 +9,7 @@ main#home
             | No-headache software development.
           h4
             | Reliable & transparent technology consulting.
+  .slanty-before-div-white
   .statement.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
@@ -18,7 +19,7 @@ main#home
       .frow.centered-column.height-100
         .title
           h5
-            | there's a lot of dev agencies out there but
+            | there are a lot of dev agencies out there but
           h2
             | We believe we're different because:
       .service-box-parent
@@ -26,7 +27,7 @@ main#home
           .col-md-4-10
             .service-box.card-shadow
               .frow.column-center
-                cbox1Svg
+                diagnoseSvg
                 h5
                   | Diagnosis first approach
                 p
@@ -38,23 +39,23 @@ main#home
           .col-md-4-10
             .service-box.card-shadow
               .frow.column-center
-                brainSvg
+                batterySvg
                 h5
                   | Freelance Network
                 p
                   | We have spent years developing a network of talented, trustworthy developers so that we are uniquely positioned to address a need for more horesepower or alternative skillsets. 
           .frow
             router-link.begin-button(to="contact", title="Contact", type="button") Start a project
-  .team.site-section
+  .team.green-site-section
     .frow-container.height-100
       .frow.row-start
         .col-md-1-1
           .frow.centered-column.height-100
             .title
               h2
-                | Meet our team
+                | Meet our core team
             .team-pic
-              img(src="@/assets/images/temp-bg-photo.jpg")
+              img(src="@/assets/images/team-pic-ivy.jpg")
             .statement
               | We believe in a transparent, long-term relationships with everyone we have the opportunity to work with. We are all entrepreneurs and understand what it takes to stand up and scale software at all stages.
   .fav-tech.site-section
@@ -94,16 +95,17 @@ main#home
             .col-md-1-3.col-sm-1-2
               .tech-box
                 .frow.column-center
-                  awsLogo
+                  djangoLogo
                   h5
-                    | Amazon Web Services
+                    | Django            
             .col-md-1-3.col-sm-1-2
               .tech-box
                 .frow.column-center
-                  djangoLogo
+                  awsLogo
                   h5
-                    | Django
-  .testimonials.site-section
+                    | Amazon Web Services
+  .slanty-before-div
+  .testimonials.green-site-section
     .frow-container.height-100
       .frow.centered-column.height-100
         .title
@@ -125,7 +127,7 @@ main#home
             .col-md-1-2.col-sm-1-1
               .testimonial-box
                 .frow.row-center
-                  .client-logo
+                  .client-logo.govflex-box
                     .frow.centered
                       .govflex-logo
                         .frow.centered
@@ -136,16 +138,6 @@ main#home
 </template>
 <script>
 import { team } from '../data/team';
-import cubeSvg from '@/assets/svgs/cube.svg';
-import statsSvg from '@/assets/svgs/stats.svg';
-import slateSvg from '@/assets/svgs/slate.svg';
-import vaultSvg from '@/assets/svgs/vault.svg';
-import multiSvg from '@/assets/svgs/multi.svg';
-import craneSvg from '@/assets/svgs/crane.svg';
-import robotSvg from '@/assets/svgs/robot.svg';
-import cbox1Svg from '@/assets/svgs/creative-box.svg';
-import cbox2Svg from '@/assets/svgs/creative-box-2.svg';
-import brainSvg from '@/assets/svgs/brainstorm.svg';
 import vueLogo from '@/assets/svgs/vue.svg';
 import nodeLogo from '@/assets/svgs/nodejs.svg';
 import awsLogo from '@/assets/svgs/aws.svg';
@@ -153,21 +145,13 @@ import djangoLogo from '@/assets/svgs/django.svg';
 import cordovaLogo from '@/assets/svgs/cordova.svg';
 import frowLogo from '@/assets/svgs/frow.svg';
 import chaserLogo from '@/assets/svgs/chaser-logo.svg';
+import diagnoseSvg from '@/assets/svgs/diagnose.svg';
+import batterySvg from '@/assets/svgs/battery.svg';
 
 import ContactFooter from '@/components/ContactFooter';
 export default {
   components: {
     ContactFooter,
-    cubeSvg,
-    statsSvg,
-    slateSvg,
-    vaultSvg,
-    multiSvg,
-    craneSvg,
-    robotSvg,
-    cbox1Svg,
-    cbox2Svg,
-    brainSvg,
     vueLogo,
     nodeLogo,
     awsLogo,
@@ -175,6 +159,8 @@ export default {
     cordovaLogo,
     frowLogo,
     chaserLogo,
+    diagnoseSvg,
+    batterySvg,
   },
   data() {
     return {
@@ -197,12 +183,14 @@ export default {
 .hero
   height: 700px
   background-color: $primary-color
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%2312d8b7' width='11' height='11'/%3E%3Crect fill='%2314d7b6' x='10' width='11' height='11'/%3E%3Crect fill='%2316d6b6' y='10' width='11' height='11'/%3E%3Crect fill='%2318d5b5' x='20' width='11' height='11'/%3E%3Crect fill='%2319d4b5' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%231bd3b4' y='20' width='11' height='11'/%3E%3Crect fill='%231cd2b3' x='30' width='11' height='11'/%3E%3Crect fill='%231ed1b3' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%231fd0b2' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%2320cfb2' y='30' width='11' height='11'/%3E%3Crect fill='%2321ceb1' x='40' width='11' height='11'/%3E%3Crect fill='%2323cdb0' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%2324ccb0' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%2325cbaf' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%2326caaf' y='40' width='11' height='11'/%3E%3Crect fill='%2327c9ae' x='50' width='11' height='11'/%3E%3Crect fill='%2328c7ad' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%2329c6ad' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%232ac5ac' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%232bc4ab' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%232cc3ab' y='50' width='11' height='11'/%3E%3Crect fill='%232dc2aa' x='60' width='11' height='11'/%3E%3Crect fill='%232dc1aa' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%232ec0a9' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%232fbfa8' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%2330bea8' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%2331bda7' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%2331bca6' x='70' width='11' height='11'/%3E%3Crect fill='%2332bba6' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%2333baa5' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%2334b9a4' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%2334b8a4' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%2335b7a3' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%2336b6a2' x='80' width='11' height='11'/%3E%3Crect fill='%2336b5a2' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%2337b4a1' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%2337b3a0' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%2338b2a0' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%2339b19f' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%2339b09e' x='90' width='11' height='11'/%3E%3Crect fill='%233aaf9e' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%233aae9d' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%233bad9c' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%233cac9b' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%233cab9b' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%233daa9a' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%233da999' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%233ea899' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%233ea798' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%233fa697' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%233fa597' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%2340a496' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%2340a395' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%2340a294' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%2341a194' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%2341a093' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23429f92' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23429e91' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23439d91' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23439c90' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E")
+  background: $hero-bg
   background-attachment: fixed
   background-size: cover
   /* background by SVGBackgrounds.com */
   color: #fff
   text-shadow: 1px 1px 1px #777
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw))
+
 
 .hero-content
   max-width: 1240px
@@ -219,7 +207,7 @@ export default {
 
 .were-good
   text-align: center
-  background-color: $light-background
+  // background-color: $light-background
 
   .plus
     font-size: 82px
@@ -235,25 +223,30 @@ export default {
 
   .service-box
     svg
-      width: 138px
-      height: auto
+      width: auto
+      height: 100px
       margin-bottom: 15px
 
-.team.site-section .title
-  text-align: left
+.team
+  padding: 160px 0
+  clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% calc(100% - 5vw), 0 100%)
+  background: $cogs-bg
+  background-color: $green
+  background-attachment: fixed
 
 .team-pic
   img
     max-width: 1000px
-    height: 500px
     width: 100%
     margin-bottom: 40px
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.38)
+    border-radius: 5px
 
 .tech-box
   margin-bottom: 55px
   svg
     width: auto
-    height: 108px
+    height: 100px
     margin-bottom: 19px
   h5
     font-weight: 500
@@ -263,7 +256,7 @@ export default {
 .service-box
   padding: 32px 32px
   box-shadow: 0 5px 20px 0 rgba(32,32,32,.12)
-  background-color: #fff
+  background-color: $beige
 
   p
     margin: 10px 0 28px 0
@@ -278,15 +271,26 @@ export default {
     border-radius: 20%
     margin-bottom: 11px
 
+.testimonials
+  background-color: $green
+  clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% 100%, 0 100%)
+  padding: 90px 0
+
+
+.testimonial-parent-box
+  margin: 60px 0
+
 .testimonial-box
   padding: 46px 28px 36px 28px
-  background-color: #fff
+  background-color: $beige
   border-radius: 5px
   box-shadow: 0 5px 20px 0 rgba(32, 32, 32, 0.12)
   font-size: 20px
   line-height: 31px
   position: relative
   margin: 10px 20px
+  color: #333
+  text-align: left
   .client-logo
     width: 165px
     height: 65px
@@ -304,11 +308,13 @@ export default {
       width: 130px
       height: auto
       padding: 2px
+    &.chaser-box
+      background-color: #ff4067
     .chaser-logo
       svg
         fill: #fff
-  .client-logo.chaser-box
-    background-color: #ff4067
+    &.govflex-box
+      background-color: #fff
 
 
 

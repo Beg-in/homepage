@@ -7,10 +7,17 @@ html, body
   font-family: 'Fira Sans', sans-serif
 
 .site-section
-  padding: 48px 0
+  padding: 60px 0
+  margin: 60px 0
 
   h1, h2, h3, h4, h5, h6, p
     margin: 0
+
+.green-site-section
+  padding: 0 0 62px 0
+  text-align: center
+  color: #ffffff
+  background-color: $green
 
 h2
   font-size: 57px
@@ -49,11 +56,73 @@ p
 
 .site-section .title
   margin: 0 0 62px 0
+  padding: 5px 0
   text-align: center
 
   h5
     margin: 24px 0
     font-size: 25px
+
+// .slanty-before-div-white
+//   height: 10px
+//   position: relative
+//   z-index: 1
+//   background: #fff
+
+//   &:before
+//     background: inherit
+//     content: ''
+//     display: block
+//     height: 500%
+//     left: 0
+//     position: absolute
+//     right: 0
+//     z-index: -1
+//     -webkit-backface-visibility: hidden // for Chrome Windows
+//     top: 0
+//     transform: skewY(1.3deg)
+//     transform-origin: 100% 0
+  
+// .slanty-before-div
+//   height: 10px
+//   position: relative
+//   z-index: 1
+//   background: $green
+
+//   &:before
+//     background: inherit
+//     content: ''
+//     display: block
+//     height: 500%
+//     left: 0
+//     position: absolute
+//     right: 0
+//     z-index: -1
+//     -webkit-backface-visibility: hidden // for Chrome Windows
+//     top: 0
+//     transform: skewY(1.3deg)
+//     transform-origin: 100% 0
+
+// .slanty-after-div
+//   height: 10px
+//   position: relative
+//   z-index: 1
+//   background: $green
+
+//   &:after
+//     background: inherit
+//     content: ''
+//     display: block
+//     height: 500%
+//     left: 0
+//     position: absolute
+//     right: 0
+//     z-index: -1
+//     -webkit-backface-visibility: hidden // for Chrome Windows
+//     bottom: 0
+//     transform: skewY(-1.3deg)
+//     transform-origin: 100%
+
 
 @media screen and (max-width: 767px)
   h2

@@ -1,12 +1,12 @@
 <template lang="pug">
 main
-  .contact.site-section
+  .contact.green-site-section
     .frow.column-center
       talkSvg
       h2.title
         | Contact Us
-      .col-md-1-2
-        p
+      .col-md-1-1
+        h5
           | Feel free to get in touch with us using the contact information below! We'd love to hear from you.
     .contact-info
       .frow.height-100
@@ -24,8 +24,9 @@ export default {
 </script>
 <style lang="sass" scoped>
 @import @/assets/styles/variables.sass
-.contact.site-section
-  background-color: $light-background
+.contact
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 4vw))
+  padding-bottom: 90px
 
   svg
     height: auto
@@ -45,4 +46,5 @@ export default {
     display: block
     font-size: 30px
     font-weight: 700
+    color: #fff
 </style>

@@ -1,5 +1,5 @@
 <template lang="pug">
-.footer-cta.site-section
+.footer-cta.green-site-section
   .frow-container.height-100
     .frow.centered-column.height-100
       .title
