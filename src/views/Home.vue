@@ -13,7 +13,7 @@ main#home
   .statement.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
-          h3 Begin is a web application and hybrid development agency for technology companies who need scalable, resource conscious software.        
+          h3 Begin is a web application and hybrid development agency for technology companies who need scalable, resource conscious software.
   .were-good.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
@@ -43,7 +43,7 @@ main#home
                 h5
                   | Freelance Network
                 p
-                  | We have spent years developing a network of talented, trustworthy developers so that we are uniquely positioned to address a need for more horesepower or alternative skillsets. 
+                  | We have spent years developing a network of talented, trustworthy developers so that we are uniquely positioned to address a need for more horesepower or alternative skillsets.
           .frow
             router-link.begin-button(to="contact", title="Contact", type="button") Start a project
   .team.green-site-section
@@ -106,14 +106,14 @@ main#home
                 .frow.column-center
                   djangoLogo
                   h5
-                    | Django            
+                    | Django
             .col-md-1-3.col-sm-1-2.col-xs-1-3
               .tech-box
                 .frow.column-center
                   awsLogo
                   h5
                     | Amazon Web Services
-  .testimonials.green-site-section
+  .testimonials.green-site-section(v-if="$route.query.testimonials")
     .frow-container.height-100
       .frow.centered-column.height-100
         .title
@@ -271,7 +271,7 @@ export default {
 
     &#Cody
       top: 9%
-      left: 16% 
+      left: 16%
       svg
         position: absolute
         left: 20px
@@ -287,7 +287,7 @@ export default {
         transform: rotateZ(19deg)
     &#Brandon
       top: 8%
-      left: 77%     
+      left: 77%
       svg
         position: absolute
         left: 10px
@@ -296,7 +296,7 @@ export default {
         transform: rotateZ(19deg)
         transform: rotateY(-180deg)
 
-      
+
 
 .tech-box
   margin-bottom: 55px
@@ -387,7 +387,7 @@ export default {
       font-size: 21px
       &#Cody
         top: 6%
-        left: 9% 
+        left: 9%
         svg
           position: absolute
           left: 22px
@@ -404,7 +404,7 @@ export default {
           transform: rotateZ(19deg)
       &#Brandon
         top: 5%
-        left: 77%     
+        left: 77%
         svg
           position: absolute
           left: 11px
