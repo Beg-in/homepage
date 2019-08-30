@@ -56,6 +56,15 @@ main#home
                 | Meet our core team
             .team-pic
               img(src="@/assets/images/team-pic-ivy.jpg")
+              .names#Cody.wow.animated.bounceIn(data-wow-delay="2s")
+                | Cody
+                arrowSvg
+              .names#Johnmark.wow.animated.bounceIn(data-wow-delay="2.2s")
+                | Johnmark
+                arrowSvg
+              .names#Brandon.wow.animated.bounceIn(data-wow-delay="2.4s")
+                | Brandon
+                arrowSvg
             .statement
               h3 We believe in a transparent, long-term relationships with everyone we have the opportunity to work with. We are all entrepreneurs and understand what it takes to stand up and scale software at all stages.
   .fav-tech.site-section
@@ -67,38 +76,38 @@ main#home
               | Our favorite tech
         .tech-parent-box.width-100
           .frow.gutters
-            .col-md-1-3.col-sm-1-2
+            .col-md-1-3.col-sm-1-2.col-xs-1-3
               .tech-box
                 .frow.column-center
                   vueLogo
                   h5
                     | Vue.js
-            .col-md-1-3.col-sm-1-2
+            .col-md-1-3.col-sm-1-2.col-xs-1-3
               .tech-box
                 .frow.column-center
                   nodeLogo
                   h5
                     | Node.js
-            .col-md-1-3.col-sm-1-2
+            .col-md-1-3.col-sm-1-2.col-xs-1-3
               .tech-box
                 .frow.column-center
                   .frow-logo
                     frowLogo
                   h5
                     | Frow.css
-            .col-md-1-3.col-sm-1-2
+            .col-md-1-3.col-sm-1-2.col-xs-1-3
               .tech-box
                 .frow.column-center
                   cordovaLogo
                   h5
                     | Cordova
-            .col-md-1-3.col-sm-1-2
+            .col-md-1-3.col-sm-1-2.col-xs-1-3
               .tech-box
                 .frow.column-center
                   djangoLogo
                   h5
                     | Django            
-            .col-md-1-3.col-sm-1-2
+            .col-md-1-3.col-sm-1-2.col-xs-1-3
               .tech-box
                 .frow.column-center
                   awsLogo
@@ -122,7 +131,7 @@ main#home
                         .frow.centered
                           chaserLogo
                 .frow.row-start
-                  | This is an example testimonial. Begin is such a breath of fresh-air from the standard dev agency experience. They we'ren't just focused on the money or time. They would suggest things that gave them less work or we're cheaper because they believed it was better for us. I highly recommend working with them if you want an honest, transparent relationship with your developer team. We <3 Begin
+                  p This is an example testimonial. Begin is such a breath of fresh-air from the standard dev agency experience. They we'ren't just focused on the money or time. They would suggest things that gave them less work or we're cheaper because they believed it was better for us. I highly recommend working with them if you want an honest, transparent relationship with your developer team. We <3 Begin
             .col-md-1-2.col-sm-1-1
               .testimonial-box
                 .frow.row-center
@@ -132,7 +141,7 @@ main#home
                         .frow.centered
                           img(src="@/assets/images/GovFlex_Logo.png")
                 .frow.row-start
-                  | This is an example testimonial. Begin is such a breath of fresh-air from the standard dev agency experience. They we'ren't just focused on the money or time. They would suggest things that gave them less work or we're cheaper because they believed it was better for us. I highly recommend working with them if you want an honest, transparent relationship with your developer team. We <3 Begin
+                  p This is an example testimonial. Begin is such a breath of fresh-air from the standard dev agency experience. They we'ren't just focused on the money or time. They would suggest things that gave them less work or we're cheaper because they believed it was better for us. I highly recommend working with them if you want an honest, transparent relationship with your developer team. We <3 Begin
   ContactFooter
 </template>
 <script>
@@ -146,6 +155,7 @@ import frowLogo from '@/assets/svgs/frow.svg';
 import chaserLogo from '@/assets/svgs/chaser-logo.svg';
 import diagnoseSvg from '@/assets/svgs/diagnose.svg';
 import batterySvg from '@/assets/svgs/battery.svg';
+import arrowSvg from '@/assets/svgs/arrow.svg';
 
 import ContactFooter from '@/components/ContactFooter';
 export default {
@@ -160,6 +170,7 @@ export default {
     chaserLogo,
     diagnoseSvg,
     batterySvg,
+    arrowSvg,
   },
   data() {
     return {
@@ -244,15 +255,52 @@ export default {
     box-shadow: none
 
 .team-pic
+  position: relative
   img
     max-width: 800px
     width: 100%
     margin-bottom: 0px
     box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.38)
     border-radius: 5px
+  .names
+    position: absolute
+    color: #fff
+    z-index: 10
+    font-size: 24px
+    font-family: 'Indie Flower', cursive
+
+    &#Cody
+      top: 9%
+      left: 16% 
+      svg
+        position: absolute
+        left: 20px
+        width: 40px
+    &#Johnmark
+      top: 12%
+      left: 40%
+      svg
+        position: absolute
+        left: 10px
+        width: 45px
+        top: 30px
+        transform: rotateZ(19deg)
+    &#Brandon
+      top: 8%
+      left: 77%     
+      svg
+        position: absolute
+        left: 10px
+        width: 40px
+        top: 30px
+        transform: rotateZ(19deg)
+        transform: rotateY(-180deg)
+
+      
 
 .tech-box
   margin-bottom: 55px
+  text-align: center
   svg
     width: auto
     height: 100px
@@ -267,6 +315,7 @@ export default {
   box-shadow: 0 5px 20px 0 rgba(32,32,32,.12)
   background-color: $beige
   border-radius: 5px
+  margin-bottom: 45px
 
   p
     margin: 10px 0 28px 0
@@ -324,21 +373,51 @@ export default {
     &.govflex-box
       background-color: #fff
 
-
-
-.slate
-  background-color: $light-background
-
-  .slate-logo
-    svg
-      margin-right: 8px
-      margin-bottom: 0
-      width: 38px
-
 @media screen and (max-width: 767px)
-  .team-box
-    img
-      width: 100px
-    h6
-      margin-bottom: 8px
+  .statement h3
+    font-size: 23px
+    line-height: 36px
+    padding: 20px
+
+  .team
+    padding: 80px 0
+
+  .team-pic
+    .names
+      font-size: 21px
+      &#Cody
+        top: 6%
+        left: 9% 
+        svg
+          position: absolute
+          left: 22px
+          top: 22px
+          width: 28px
+      &#Johnmark
+        top: 5%
+        left: 35%
+        svg
+          position: absolute
+          left: 16px
+          width: 27px
+          top: 26px
+          transform: rotateZ(19deg)
+      &#Brandon
+        top: 5%
+        left: 77%     
+        svg
+          position: absolute
+          left: 11px
+          width: 36px
+          top: 22px
+          transform: rotateZ(19deg)
+          transform: rotateY(-180deg)
+  .tech-box
+    svg
+      height: 44px
+
+  .testimonials
+    padding: 50px 0
+  .testimonial-box
+    margin: 10px 20px 46px
 </style>
