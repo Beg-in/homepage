@@ -92,6 +92,13 @@ main#home
               .tech-box
                 .frow.column-center
                   .frow-logo
+                    pwaSvg
+                  h5
+                    | Progressive Web Apps
+            .col-md-1-3.col-sm-1-2.col-xs-1-3
+              .tech-box
+                .frow.column-center
+                  .frow-logo
                     frowLogo
                   h5
                     | Frow.css
@@ -156,6 +163,7 @@ import chaserLogo from '@/assets/svgs/chaser-logo.svg';
 import diagnoseSvg from '@/assets/svgs/diagnose.svg';
 import batterySvg from '@/assets/svgs/battery.svg';
 import arrowSvg from '@/assets/svgs/arrow.svg';
+import pwaSvg from '@/assets/svgs/pwa.svg';
 
 import ContactFooter from '@/components/ContactFooter';
 export default {
@@ -171,6 +179,7 @@ export default {
     diagnoseSvg,
     batterySvg,
     arrowSvg,
+    pwaSvg,
   },
   data() {
     return {
@@ -304,6 +313,7 @@ export default {
   svg
     width: auto
     height: 100px
+    max-width: 170px;
     margin-bottom: 19px
   h5
     font-weight: 500

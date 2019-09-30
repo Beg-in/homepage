@@ -69,8 +69,8 @@ export default {
     line-height: 22px
 
   img
-    max-width: 170px
-    border-radius: 20%
+    max-width: 220px
+    border-radius: 4px
     margin-bottom: 11px
 
 .site-section .title
