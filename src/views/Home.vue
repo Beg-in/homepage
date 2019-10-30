@@ -66,7 +66,7 @@ main#home
                 | Brandon
                 arrowSvg
             .statement
-              h3 We believe in a transparent, long-term relationships with everyone we have the opportunity to work with. We are all entrepreneurs and understand what it takes to stand up and scale software at all stages.
+              h3 We believe in transparent, long-term relationships with everyone we have the opportunity to work with. We are all entrepreneurs and understand what it takes to stand up and scale software at all stages.
   .fav-tech.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
