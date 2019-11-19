@@ -9,7 +9,6 @@ main#home
             | No-headache software development.
           h4
             | Reliable & transparent technology consulting.
-  .slanty-before-div-white
   .statement.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
