@@ -9,7 +9,7 @@
       .col-xs-3-4.height-100
         .nav.height-100
           .frow.justify-end.items-center.height-100
-            // router-link(to="our-work", title="Our Work") Our Work
+            router-link(to="case-studies", title="Case Studies") Case Studies
             // router-link(to="slate", title="Slate") Slate
             router-link(to="team", title="Our Team") Our Team
             // router-link(to="faq", title="FAQ") FAQ

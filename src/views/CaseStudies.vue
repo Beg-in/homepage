@@ -1,41 +1,34 @@
 <template lang="pug">
 main
   .hero
-    .frow-container.height-100
       .frow
         h2
           | Our Work
   .frow.column-center.projects
-    .project(v-for="(project, index) in projects" :class="{'odd': !(index % 2 == 0)}")
-      .frow.column-center
-        .card-title
-          h2
-            | {{ project.title }}
-        .frow.row-start.width-100
-          img.shadow-light(:src="project.picture")
-          .card-description
-            | {{ project.description }}
+    .project(v-for="(client, index) in clients" :class="{'odd': !(index % 2 == 0)}")
+        .frow-container.height-100
+          .frow.column-center
+            .card-title
+              h2
+                router-link( :to="client.link" :title="client.title") {{ client.clientName }}
+            .frow.row-start.justify-around.nowrap.width-100
+              router-link( :to="client.link" :title="client.title")
+                img.shadow-light(:src="client.picture")
+              .card-description
+                h5 {{ client.header }}
+                p {{ client.description }}
+                router-link( :to="client.link" :title="client.title") 
+                  p 
+                    strong
+                      | Read More
 </template>
 <script>
+import { clients } from '../data/clients';
+
 export default {
   data() {
     return {
-      projects: [
-        {
-          title: 'WDS',
-          picture: require('@/assets/images/wds.png'),
-          description: 'Health client',
-        },
-        {
-          title: 'QikPix',
-          picture: require('@/assets/images/qikpix.png'),
-          description: 'Photography agency',
-        },
-        {
-          title: 'Bit MALLL',
-          description: '$$$ ;)',
-        },
-      ],
+      clients,
     };
   },
 };

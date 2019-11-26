@@ -148,7 +148,7 @@ main#home
                         .frow.centered
                           img(src="@/assets/images/GovFlex_Logo.png")
                 .frow.row-start
-                  p This is an example testimonial. Begin is such a breath of fresh-air from the standard dev agency experience. They we'ren't just focused on the money or time. They would suggest things that gave them less work or we're cheaper because they believed it was better for us. I highly recommend working with them if you want an honest, transparent relationship with your developer team. We <3 Begin
+                  p From the very beginning, they had a legitimate understanding of what we wanted to create and the product’s implications. They wanted to know how the product was designed to work before jumping right into the code, details, and technology.
   ContactFooter
 </template>
 <script>
