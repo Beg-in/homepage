@@ -1,9 +1,13 @@
 <template lang="pug">
 main
+  .header-shadow-cover
   .hero
-      .frow
-        h2
-          | Our Work
+    .frow-container
+      .frow.column-start
+          h2 Featured Work
+          .col-md-2-3
+            h5 Begin is a web app and cross-platform development agency for companies that need scalable, resource-conscious technology.
+            h5 The Begin team has developed a unique customer-centered process. This process leads our clients to outperform their expectations and put their new tech-based solutions to work faster than what they ever thought was possible.
   .frow.column-center.projects
     .project(v-for="(client, index) in clients" :class="{'odd': !(index % 2 == 0)}")
         .frow-container.height-100
@@ -36,10 +40,15 @@ export default {
 <style lang="sass" scoped>
 @import @/assets/styles/variables.sass
 .hero
-  height: 100px
   background-color: $primary-color
   color: #fff
   text-shadow: 1px 1px 1px #777
+  text-align: left
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+  padding: 50px 0 110px;
+  p
+    color: #fff
+    font-size: 20px
 
 .green-shade
   height: 10px
@@ -52,7 +61,7 @@ export default {
   // margin: 20px 20px
 
 .project
-  margin: 30px 60px
+  margin: 0px 60px 30px
   width: 100%
 
   img
@@ -60,7 +69,7 @@ export default {
     margin: 30px 50px
 
   &.odd
-    background: $light-background
+    // background: $light-background
 
     .card-title ~ .frow
       flex-direction: row-reverse

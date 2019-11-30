@@ -191,14 +191,6 @@ export default {
 <style lang="sass" scoped>
 @import @/assets/styles/variables.sass
 
-.header-shadow-cover
-  top: $header-height - 2px
-  position: absolute
-  width: 100%
-  background-color: $primary-color
-  height: 13px
-  z-index: 3
-
 .hero
   height: 700px
   background-color: $primary-color
