@@ -32,6 +32,10 @@ const router = new Router({
       path: '/case-studies/chaser',
       name: 'chaser',
       component: () => import(/* webpackChunkName: "chaser" */ './views/CaseStudies/chaser.vue'),
+    }, {
+      path: '/case-studies/govflex',
+      name: 'govflex',
+      component: () => import(/* webpackChunkName: "govflex" */ './views/CaseStudies/govflex.vue'),
     },
     {
       path: '/faq',

@@ -12,20 +12,19 @@ main
     .project(v-for="(client, index) in clients" :class="{'odd': !(index % 2 == 0)}")
         .frow-container.height-100
           .frow.column-center
-            .card-title
-              h2
-                router-link( :to="client.link" :title="client.title") {{ client.clientName }}
             .frow.row-start.justify-around.nowrap.width-100
               router-link( :to="client.link" :title="client.title")
                 img.shadow-light(:src="client.picture")
               .card-description
+                .card-title
+                  h3
+                    router-link( :to="client.link" :title="client.title") {{ client.clientName }}
                 h5 {{ client.header }}
                 p {{ client.description }}
                 router-link( :to="client.link" :title="client.title") 
                   p 
                     strong
-                      | Read More
-</template>
+                      | Read More</template>
 <script>
 import { clients } from '../data/clients';
 
@@ -84,7 +83,6 @@ export default {
     color: #000
     max-width: 400px
     padding-top: 15px
-    padding-bottom: 20px
 
   .card-description
     font-weight: 300

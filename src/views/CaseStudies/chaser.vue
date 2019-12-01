@@ -34,7 +34,10 @@ main
                 pwaSvg
             .sidebar-block
               h3 Website:
-              router-link( :to="clients.chaser.website" :title="clients.chaser.website") 
+              router-link(:to="clients.chaser.website" :title="clients.chaser.website" target="_blank") gochaser.com
+            //- .sidebar-block
+            //-   h3 Verified Clutch Review:
+            //-   a(:href="clients.chaser.clutchReview" :title="clients.chaser.clutchReview" target="_blank") View on Clutch.co
   ContactFooter
 </template>
 <script>

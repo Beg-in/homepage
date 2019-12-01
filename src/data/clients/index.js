@@ -10,7 +10,21 @@ module.exports = {
       link: '/case-studies/chaser',
       website: 'https://gochaser.com',
       testimonial: 'Brandon is the co-founder and managing director of Beg.in. With experience running multiple technology businesses, the next natural step was to bring his skills to others. He works to intersect great designers, technologists, and strategists on the most interesting problems - then somehow manages to get out of their way.',
-      videoEmbed: 'iframe(width=\'560\', height=\'315\', src=\'https://www.youtube.com/embed/YhzJED1C27s\', frameborder=\'0\', allow=\'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\', allowfullscreen=\'\')',
+      videoEmbed: 'iframe(width=\'560\', height=\'315\', src=\'https://www.youtube.com/embed/YhzJED1C27s\', frameborder=\'0\', allow=\'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\', allowfullscreen=\'\') ',
     },
+    Govflex: {
+      clientName: 'GovFlex',
+      logo: require('@/assets/svgs/chaser-logo.svg'),
+      picture: require('@/assets/images/chaser-login.png'),
+      blogTitle: 'How we helped Govflex do cool things.',
+      description:
+        'Using a provided logic algorithm, Begin, LLC aided a government-centric e-commerce company in its efforts to elevate an existing analytics tool. They made UI/UX and development upgrades in the process.',
+      link: '/case-studies/govflex',
+      website: 'https://govflex.com',
+      testimonial: 'Brandon is the co-founder and managing director of Beg.in. With experience running multiple technology businesses, the next natural step was to bring his skills to others. He works to intersect great designers, technologists, and strategists on the most interesting problems - then somehow manages to get out of their way.',
+      videoEmbed: 'iframe(width=\'560\', height=\'315\', src=\'https://www.youtube.com/embed/YhzJED1C27s\', frameborder=\'0\', allow=\'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\', allowfullscreen=\'\')',
+      clutchReview: 'https://clutch.co/profile/begin#review-1148177',
+    },
+
   },
 };
