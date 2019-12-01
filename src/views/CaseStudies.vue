@@ -6,8 +6,8 @@ main
       .frow.column-start
           h2 Featured Work
           .col-md-2-3
-            h5 Begin is a web app and cross-platform development agency for companies that need scalable, resource-conscious technology.
             h5 The Begin team has developed a unique customer-centered process. This process leads our clients to outperform their expectations and put their new tech-based solutions to work faster than what they ever thought was possible.
+            h5 We'd love your for you check out some of our recent projects below!
   .frow.column-center.projects
     .project(v-for="(client, index) in clients" :class="{'odd': !(index % 2 == 0)}")
         .frow-container.height-100
@@ -41,6 +41,10 @@ export default {
 @import @/assets/styles/variables.sass
 .hero
   background-color: $primary-color
+  // background: $case-study-bg
+  background-attachment: fixed
+  // background-size: cover
+  // /* background by SVGBackgrounds.com */
   color: #fff
   text-shadow: 1px 1px 1px #777
   text-align: left
@@ -49,6 +53,8 @@ export default {
   p
     color: #fff
     font-size: 20px
+  h5
+    font-weight: 400
 
 .green-shade
   height: 10px
@@ -84,6 +90,10 @@ export default {
     font-weight: 300
     font-size: 14px
     padding-bottom: 20px
+
+    p
+      font-size: 19px;
+      line-height: 28px;
 
 .site-section .title
   margin: 0 0 62px 0
