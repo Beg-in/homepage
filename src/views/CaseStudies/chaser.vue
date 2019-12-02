@@ -22,7 +22,7 @@ main
         .col-md-1-3
           .blog-sidebar
             .sidebar-block
-              h3 Project Details
+              h3 Project Details:
               p Industry: Events & Entertainment
               p Services: Application Development
               p Duration: 3 months
