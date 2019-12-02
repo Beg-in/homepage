@@ -7,7 +7,8 @@ main
           | {{ clients.chaser.blogTitle }}
       .frow.justify-center
         img.shadow-light(:src="clients.chaser.picture")
-        //- {{ clients.chaser.videoEmbed }}
+      .youtube-wrapper
+        iframe(v-if="clients.chaser.videoEmbed" width='100%', height='100%', :src='`https://www.youtube.com/embed/${clients.chaser.videoEmbed}`', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
       .frow.row-start.items-start.gutters
         .col-md-2-3
           .blog-body
