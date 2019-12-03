@@ -1,14 +1,14 @@
 <template lang="pug">
 main
   .frow-container.height-100
-    .frow.column-center.case-study
+    .case-study
       .frow
         h1
-          | {{ clients.chaser.blogTitle }}
+          | {{ client.blogTitle }}
       .frow.justify-center
-        img.shadow-light(:src="clients.chaser.picture")
-      .youtube-wrapper
-        iframe(v-if="clients.chaser.videoEmbed" width='100%', height='100%', :src='`https://www.youtube.com/embed/${clients.chaser.videoEmbed}`', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+        img.shadow-light(v-if="!client.videoEmbed" :src="client.blogThumb")
+      .youtube-wrapper(v-if="client.videoEmbed")
+        iframe(width='100%', height='100%', :src='`https://www.youtube.com/embed/${client.videoEmbed}?rel=0&color=white`', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
       .frow.row-start.items-start.gutters
         .col-md-2-3
           .blog-body
@@ -35,10 +35,10 @@ main
                 pwaSvg
             .sidebar-block
               h3 Website:
-              router-link(:to="clients.chaser.website" :title="clients.chaser.website" target="_blank") gochaser.com
+              router-link(:to="client.website" :title="client.website" target="_blank") gochaser.com
             //- .sidebar-block
             //-   h3 Verified Clutch Review:
-            //-   a(:href="clients.chaser.clutchReview" :title="clients.chaser.clutchReview" target="_blank") View on Clutch.co
+            //-   a(:href="client.clutchReview" :title="client.clutchReview" target="_blank") View on Clutch.co
   ContactFooter
 </template>
 <script>
@@ -55,7 +55,7 @@ export default {
   },
   data() {
     return {
-      clients,
+      client: clients.chaser,
     };
   },
 };

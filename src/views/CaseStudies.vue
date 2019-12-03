@@ -14,7 +14,7 @@ main
           .frow.column-center
             .frow.row-start.justify-around.nowrap.width-100
               router-link( :to="client.link" :title="client.title")
-                img.shadow-light(:src="client.picture")
+                img.shadow-light(:src="client.blogThumb")
               .card-description
                 .card-title
                   h3
@@ -72,6 +72,7 @@ export default {
   img
     width: 500px
     margin: 30px 50px
+    border-radius: 5px
 
   &.odd
     // background: $light-background
