@@ -9,23 +9,29 @@ main
             h5 The Begin team has developed a unique customer-centered process. This process leads our clients to outperform their expectations and put their new tech-based solutions to work faster than what they ever thought was possible.
             h5 We'd love your for you check out some of our recent projects below!
   .frow.column-center.projects
-    .project(v-for="(client, index) in clients" :class="{'odd': !(index % 2 == 0)}")
+    .case-study(v-for="(client, index) in clients" :class="{'odd': !(index % 2 == 0)}")
         .frow-container.height-100
           .frow.column-center
-            .frow.row-start.justify-around.nowrap.width-100
-              router-link( :to="client.link" :title="client.title")
-                img.shadow-light(:src="client.blogThumb")
-              .card-description
-                .card-title
-                  h3
-                    router-link( :to="client.link" :title="client.title") {{ client.clientName }}
-                h5 {{ client.header }}
-                p {{ client.description }}
-                router-link( :to="client.link" :title="client.title") 
-                  p 
-                    strong
-                      | Read More</template>
+            .frow.row-start.justify-around.nowrap.width-100.gutters
+              .col-md-1-2
+                router-link( :to="client.link" :title="client.title")
+                  //- .blog-thumb-parent
+                  //-   h2 Beg.in Case Study & walkthrough of:
+                  //-   img.shadow-dark(:src="client.logo")
+                  img.shadow-light(:src="client.blogThumb")
+              .col-md-1-2
+                .card-description
+                  .card-title
+                    h3
+                      router-link( :to="client.link" :title="client.title") {{ client.clientName }}
+                  h5 {{ client.header }}
+                  p {{ client.description }}
+                  router-link( :to="client.link" :title="client.title") 
+                    p 
+                      strong
+                        | Read More</template>
 <script>
+import chaserLogo from '@/assets/svgs/chaser-logo.svg'
 import { clients } from '../data/clients';
 
 export default {
@@ -62,16 +68,16 @@ export default {
   justify-content: center
   position: relative
 
-.projects
-  // margin: 20px 20px
+/* .projects
+  // margin: 20px 20px */
 
-.project
+.case-study
   margin: 0px 60px 30px
   width: 100%
 
   img
     width: 500px
-    margin: 30px 50px
+    margin: 10px 50px 20px
     border-radius: 5px
 
   &.odd
@@ -93,6 +99,17 @@ export default {
     p
       font-size: 19px;
       line-height: 28px;
+
+.blog-thumb-parent
+  /* background-image: radial-gradient($primary-color, #14CEAF); */
+  background-color: $beige
+  text-align: center
+  padding-top: 20px
+  color: #333
+  border-radius: 4px
+
+  img
+    width: 64%
 
 .site-section .title
   margin: 0 0 62px 0

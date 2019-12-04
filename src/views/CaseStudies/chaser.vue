@@ -12,6 +12,7 @@ main
       .frow.row-start.items-start.gutters
         .col-md-2-3
           .blog-body
+            h2 Back Story
             p Chaser is a startup innovating the event creation, management, ticketing, and attendance industry. To date, the event management industry is fragmented and prone  to cheating and fraud. As a customer, you have to manage your tickets: Did you have them sent to your email, ask for will-call, print them on paper? As an organizer, where do you post the event online, how do you ensure people are not using duplicate tickets, how do you manage re-entry, etc? Chaser has an answer to the fragmentation.
             p  On Chaser, as a customer, your profile contains a unique Chaser ID which acts as your ticket to all events. When scanned by event security, Chaser’s unique system can tell if your ID should be admitted, if it’s been copied, screenshotted, if the attendee is re-entering the event, their gender, etc. This information leads to incredibly safe, and secure events for everyone. As an organizer, all event management and ticketing is handled in one place.
             p Begin engaged with Chaser to develop a web application focused on their event-organizing user and an android app focused on event-attending users. The goal of the web-app was an easy-to-use dashboard for event creation, invitations, ticket processing, etc. The goal for the android app was to accompany their existing native iOS app. Completing these two projects would enable Chaser to address both sides of their market.
@@ -35,7 +36,7 @@ main
                 pwaSvg
             .sidebar-block
               h3 Website:
-              router-link(:to="client.website" :title="client.website" target="_blank") gochaser.com
+              router-link(:to="client.website" :title="client.website" target="_blank") {{ client.website }}
             //- .sidebar-block
             //-   h3 Verified Clutch Review:
             //-   a(:href="client.clutchReview" :title="client.clutchReview" target="_blank") View on Clutch.co
@@ -76,6 +77,10 @@ export default {
   position: relative
 
 .blog-sidebar
+  background-color: $beige
+  padding: 15px
+  box-shadow: $beige-box-shadow
+  margin-top: 50px
   .sidebar-block
     margin: 0 0 45px
   svg
@@ -99,6 +104,7 @@ export default {
   img
     width: 100%
     margin: 0px 0px 30px
+    border-radius: 5px
 
   &.odd
     background: $light-background
