@@ -85,13 +85,6 @@ export default {
   justify-content: center
   position: relative
 
-.quote
-  background-color: $beige
-  padding: 15px 20px 5px
-  svg
-    height: 40px
-    color: $primary-color
-    fill: $primary-color
 .blog-sidebar
   // background-color:
   // box-shadow: $beige-box-shadow
