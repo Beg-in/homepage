@@ -67,59 +67,59 @@ main#home
                 arrowSvg
             .statement
               h3 We believe in transparent, long-term relationships with everyone we have the opportunity to work with. We are all entrepreneurs and understand what it takes to stand up and scale software at all stages.
-  .fav-tech.site-section
-    .frow-container.height-100
-      .frow.centered-column.height-100
-        .title
-          .frow.row-center
-            h2
-              | Our favorite tech
-        .tech-parent-box.width-100
-          .frow.gutters
-            .col-md-1-3.col-sm-1-2.col-xs-1-3
-              .tech-box
-                .frow.column-center
-                  vueLogo
-                  h5
-                    | Vue.js
-            .col-md-1-3.col-sm-1-2.col-xs-1-3
-              .tech-box
-                .frow.column-center
-                  nodeLogo
-                  h5
-                    | Node.js
-            .col-md-1-3.col-sm-1-2.col-xs-1-3
-              .tech-box
-                .frow.column-center
-                  .frow-logo
-                    pwaSvg
-                  h5
-                    | Progressive Web Apps
-            .col-md-1-3.col-sm-1-2.col-xs-1-3
-              .tech-box
-                .frow.column-center
-                  .frow-logo
-                    frowLogo
-                  h5
-                    | Frow.css
-            .col-md-1-3.col-sm-1-2.col-xs-1-3
-              .tech-box
-                .frow.column-center
-                  cordovaLogo
-                  h5
-                    | Cordova
-            .col-md-1-3.col-sm-1-2.col-xs-1-3
-              .tech-box
-                .frow.column-center
-                  djangoLogo
-                  h5
-                    | Django
-            .col-md-1-3.col-sm-1-2.col-xs-1-3
-              .tech-box
-                .frow.column-center
-                  awsLogo
-                  h5
-                    | Amazon Web Services
+  //- .fav-tech.site-section
+  //-   .frow-container.height-100
+  //-     .frow.centered-column.height-100
+  //-       .title
+  //-         .frow.row-center
+  //-           h2
+  //-             | Our favorite tech
+  //-       .tech-parent-box.width-100
+  //-         .frow.gutters
+  //-           .col-md-1-3.col-sm-1-2.col-xs-1-3
+  //-             .tech-box
+  //-               .frow.column-center
+  //-                 vueLogo
+  //-                 h5
+  //-                   | Vue.js
+  //-           .col-md-1-3.col-sm-1-2.col-xs-1-3
+  //-             .tech-box
+  //-               .frow.column-center
+  //-                 nodeLogo
+  //-                 h5
+  //-                   | Node.js
+  //-           .col-md-1-3.col-sm-1-2.col-xs-1-3
+  //-             .tech-box
+  //-               .frow.column-center
+  //-                 .frow-logo
+  //-                   pwaSvg
+  //-                 h5
+  //-                   | Progressive Web Apps
+  //-           .col-md-1-3.col-sm-1-2.col-xs-1-3
+  //-             .tech-box
+  //-               .frow.column-center
+  //-                 .frow-logo
+  //-                   frowLogo
+  //-                 h5
+  //-                   | Frow.css
+  //-           .col-md-1-3.col-sm-1-2.col-xs-1-3
+  //-             .tech-box
+  //-               .frow.column-center
+  //-                 cordovaLogo
+  //-                 h5
+  //-                   | Cordova
+  //-           .col-md-1-3.col-sm-1-2.col-xs-1-3
+  //-             .tech-box
+  //-               .frow.column-center
+  //-                 djangoLogo
+  //-                 h5
+  //-                   | Django
+  //-           .col-md-1-3.col-sm-1-2.col-xs-1-3
+  //-             .tech-box
+  //-               .frow.column-center
+  //-                 awsLogo
+  //-                 h5
+  //-                   | Amazon Web Services
   .testimonials.green-site-section(v-if="$route.query.testimonials")
     .frow-container.height-100
       .frow.centered-column.height-100
@@ -138,7 +138,16 @@ main#home
                         .frow.centered
                           chaserLogo
                 .frow.row-start
-                  p This is an example testimonial. Begin is such a breath of fresh-air from the standard dev agency experience. They we'ren't just focused on the money or time. They would suggest things that gave them less work or we're cheaper because they believed it was better for us. I highly recommend working with them if you want an honest, transparent relationship with your developer team. We <3 Begin
+                  quoteSvg
+                  p We were about to have to push back our launch when we realized that we had to build two huge platforms in three months before summer was over. We were lost. However, because of Beg.in's efforts and desire to help us out, we made it happen. We're forever thankful to Brandon, Cody, and Johnmark.
+                .five-stars
+                  .frow
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+                  
             .col-md-1-2.col-sm-1-1
               .testimonial-box
                 .frow.row-center
@@ -148,7 +157,20 @@ main#home
                         .frow.centered
                           img(src="@/assets/images/GovFlex_Logo.png")
                 .frow.row-start
+                  quoteSvg
                   p From the very beginning, they had a legitimate understanding of what we wanted to create and the product’s implications. They wanted to know how the product was designed to work before jumping right into the code, details, and technology.
+                .five-stars
+                  .frow
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+
+      .frow
+        a.clutch-button(href="https://clutch.co/profile/begin" target="_blank")
+          | Read our verified reviews on
+          img(src="@/assets/images/clutch2.png")
   ContactFooter
 </template>
 <script>
@@ -159,11 +181,13 @@ import awsLogo from '@/assets/svgs/aws.svg';
 import djangoLogo from '@/assets/svgs/django.svg';
 import cordovaLogo from '@/assets/svgs/cordova.svg';
 import frowLogo from '@/assets/svgs/frow.svg';
+import pwaSvg from '@/assets/svgs/pwa.svg';
 import chaserLogo from '@/assets/svgs/chaser-logo.svg';
 import diagnoseSvg from '@/assets/svgs/diagnose.svg';
 import batterySvg from '@/assets/svgs/battery.svg';
 import arrowSvg from '@/assets/svgs/arrow.svg';
-import pwaSvg from '@/assets/svgs/pwa.svg';
+import starSvg from '@/assets/svgs/star.svg';
+import quoteSvg from '@/assets/svgs/quotes.svg';
 
 import ContactFooter from '@/components/ContactFooter';
 export default {
@@ -175,11 +199,13 @@ export default {
     djangoLogo,
     cordovaLogo,
     frowLogo,
+    pwaSvg,
     chaserLogo,
     diagnoseSvg,
     batterySvg,
     arrowSvg,
-    pwaSvg,
+    starSvg,
+    quoteSvg,
   },
   data() {
     return {
@@ -210,6 +236,22 @@ export default {
 
   h2
     margin-bottom: 30px
+
+.clutch-button
+  width: 350px
+  padding: 10px 30px
+  background-color: #fff
+  color: #000
+  transition: all .15s ease
+  border-radius: 5px
+  margin-top: 50px
+  &:hover
+    box-shadow: $beige-box-shadow
+    transform: translateY(-1px)
+    text-decoration: none
+  img
+    width: 90px
+    margin-top: 8px
 
 .statement
   text-align: center
@@ -299,18 +341,18 @@ export default {
 
 
 
-.tech-box
-  margin-bottom: 55px
-  text-align: center
-  svg
-    width: auto
-    height: 100px
-    max-width: 170px;
-    margin-bottom: 19px
-  h5
-    font-weight: 500
-  .frow-logo
-    fill: #339BE8
+// .tech-box
+//   margin-bottom: 55px
+//   text-align: center
+//   svg
+//     width: auto
+//     height: 100px
+//     max-width: 170px;
+//     margin-bottom: 19px
+//   h5
+//     font-weight: 500
+//   .frow-logo
+//     fill: #339BE8
 
 .service-box
   padding: 32px 32px
@@ -350,6 +392,17 @@ export default {
   margin: 10px 20px
   color: #333
   text-align: left
+  svg
+    height: 27px
+    color: $primary-color
+    fill: $primary-color 
+  
+  .five-stars
+    svg
+      height: 21px
+      padding: 0 3px
+      path
+        fill: $primary-color
   .client-logo
     width: 165px
     height: 65px

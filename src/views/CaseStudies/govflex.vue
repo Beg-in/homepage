@@ -13,12 +13,16 @@ main
         .col-md-2-3
           .blog-body
             h2 Back Story
-            p Chaser is a startup innovating the event creation, management, ticketing, and attendance industry. To date, the event management industry is fragmented and prone  to cheating and fraud. As a customer, you have to manage your tickets: Did you have them sent to your email, ask for will-call, print them on paper? As an organizer, where do you post the event online, how do you ensure people are not using duplicate tickets, how do you manage re-entry, etc? Chaser has an answer to the fragmentation.
-            p  On Chaser, as a customer, your profile contains a unique Chaser ID which acts as your ticket to all events. When scanned by event security, Chaser’s unique system can tell if your ID should be admitted, if it’s been copied, screenshotted, if the attendee is re-entering the event, their gender, etc. This information leads to incredibly safe, and secure events for everyone. As an organizer, all event management and ticketing is handled in one place.
-            p Begin engaged with Chaser to develop a web application focused on their event-organizing user and an android app focused on event-attending users. The goal of the web-app was an easy-to-use dashboard for event creation, invitations, ticket processing, etc. The goal for the android app was to accompany their existing native iOS app. Completing these two projects would enable Chaser to address both sides of their market.
+            p GovFlex is a marketplace that connects service providers or freelance consultants with government contractors and agencies. It is the “Upwork” for the Government sector. The US government uses several different web databases to post grant and RFP information. Service providers and freelancers use GovFlex to find and manage Government contracts.
+            p  One of the key things we learned through this process was how resource intensive pursuing a federal opportunity can be. GovFlex engaged with Begin to develop an analytics and suggestion tool for service providers and freelancers to gain insight on their probability of winning a given federal opportunity. GovFlex calls this tool “Opportunity Analytics.” The GovFlex team provided a business logic algorithm developed and tasked us with the programmatic implementation of it.
             h2 Our solution
-            p With early-stage products, our goal at Begin is to determine the most resource-effective yet scalable strategy. Using a cross-platform development approach addresses this goal harmoniously by enabling us more-or-less  write one code-base for both projects. As with all/most? hybrid approaches, the web application comes first. We chose to develop the web application using Vue.js and worked closely with Chaser’s CTO, Marshall, to integrate with their firebase backend.. When it became appropriate to start on android 
-            p The entire project took about 3 months ?and cost $X dollars?. Cross-platform is the key reason achieving that timeline and budget was possible. We believe taking an alternative, native development strategy, would have taken twice as long and been twice as expensive.
+            p The GovFlex algorithm provided needed data from seven different data sources to produce it’s analytics scores to users. For all seven data sources, we proceeded to both connect  with APIs or scrape data where an API was lacking. Then worked with our UI designer to build a beautiful interface for the report.
+            .quote
+              .frow.row-start
+                .quote-icon
+                  quoteSvg
+                .quote-body
+                  p Internally, it’s reliable. Some of the underlying data we use comes from systems we don’t control. They deserve credit for looking into calculations that weren’t working properly and writing specialized code that will alert us if these external systems suddenly stop working. Their code is protecting us from the repercussions of that. We feel very confident in the work they did. - Dwayne Robinson, COO, GovFlex
             br
             p November 30, 2019
         .col-md-1-3
@@ -32,11 +36,12 @@ main
             .sidebar-block
               h3 Technology Used:
               .frow.row-start
+                djangoSvg
                 vueLogo
-                pwaSvg
+                awsSvg
             .sidebar-block
               h3 Website:
-              router-link(:to="client.website" :title="client.website" target="_blank") {{ client.website }}
+              a(:href="client.website" target="_blank") {{ client.website }}
             //- .sidebar-block
             //-   h3 Verified Clutch Review:
             //-   a(:href="client.clutchReview" :title="client.clutchReview" target="_blank") View on Clutch.co
@@ -46,13 +51,17 @@ main
 import { clients } from '../../data/clients';
 import ContactFooter from '@/components/ContactFooter';
 import vueLogo from '@/assets/svgs/vue.svg';
-import pwaSvg from '@/assets/svgs/pwa.svg';
+import awsSvg from '@/assets/svgs/aws.svg';
+import djangoSvg from '@/assets/svgs/django.svg';
+import quoteSvg from '@/assets/svgs/quotes.svg';
 
 export default {
   components: {
     ContactFooter,
     vueLogo,
-    pwaSvg,
+    awsSvg,
+    quoteSvg,
+    djangoSvg,
   },
   data() {
     return {
@@ -76,10 +85,17 @@ export default {
   justify-content: center
   position: relative
 
-.blog-sidebar
+.quote
   background-color: $beige
+  padding: 15px 20px 5px
+  svg
+    height: 40px
+    color: $primary-color
+    fill: $primary-color
+.blog-sidebar
+  // background-color:
+  // box-shadow: $beige-box-shadow
   padding: 15px
-  box-shadow: $beige-box-shadow
   margin-top: 50px
   .sidebar-block
     margin: 0 0 45px

@@ -34,6 +34,7 @@ main
               .frow.row-start
                 vueLogo
                 pwaSvg
+                awsSvg
             .sidebar-block
               h3 Website:
               router-link(:to="client.website" :title="client.website" target="_blank") {{ client.website }}
@@ -47,12 +48,14 @@ import { clients } from '../../data/clients';
 import ContactFooter from '@/components/ContactFooter';
 import vueLogo from '@/assets/svgs/vue.svg';
 import pwaSvg from '@/assets/svgs/pwa.svg';
+import awsSvg from '@/assets/svgs/aws.svg';
 
 export default {
   components: {
     ContactFooter,
     vueLogo,
     pwaSvg,
+    awsSvg,
   },
   data() {
     return {
