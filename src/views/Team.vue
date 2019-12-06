@@ -6,7 +6,7 @@ main
       .frow.column-start
           h2 Meet the team
           .col-md-2-3
-            h5 The Begin team has developed a unique customer-centered process. This process leads our clients to outperform their expectations and put their new tech-based solutions to work faster than what they ever thought was possible.
+            h5 With the experience and understanding of what is needed to deliver effective and responsive tech solutions for modern businesses, we look forward to helping you create and scale tech that works for your business.
   .people
     .frow
       .col-sm-1-2.col-md-1-4(v-for="member in team")
@@ -20,6 +20,9 @@ main
                 h6
                   | {{member.title}}
                 | {{member.description}}
+    .frow
+      router-link.begin-button2.white-background(to="/case-studies", title="Case Studies", type="button") Read our Case Studies
+
   .fav-tech.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
@@ -139,6 +142,9 @@ export default {
   background-color: $beige
   box-shadow: $beige-box-shadow
   padding: 20px
+  min-height: 540px
+  border-radius: 5px
+
 
   .card-title
     color: #000

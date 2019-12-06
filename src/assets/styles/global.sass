@@ -93,20 +93,20 @@ p
   svg
     height: 40px
     color: $primary-color
-    fill: $primary-color  
+    fill: $primary-color
 
 .begin-button2[type="button"]
-  background-color:#fff
+  background-color: #fff
   color: #333
   transition: all .15s ease
   border-radius: 5px
-  margin-top: 50px
+  margin-top: 20px
   border: none
   background-color: #fff
   width: 220px
   padding: 15px 20px
   &:hover
-    background-color:fff
+    background-color: fff
     box-shadow: $beige-box-shadow
     transform: translateY(-1px)
     text-decoration: none
@@ -115,7 +115,61 @@ p
     background-color: $primary-color
     color: #fff
 
-  
+// CASE STUDIES STYLES
+.case-study
+  width: 100%
+
+  img
+    width: 500px
+    margin: 10px 50px 20px
+    border-radius: 5px
+
+  &.odd
+    // background: $light-background
+
+    .card-title ~ .frow
+      flex-direction: row-reverse
+
+  .card-title
+    color: #000
+    max-width: 400px
+    padding-top: 15px
+
+  .card-description
+    font-weight: 300
+    font-size: 14px
+    padding-bottom: 20px
+
+    p
+      font-size: 19px
+      line-height: 28px
+
+.blog-thumb-parent
+  background-color: $beige
+  text-align: center
+  padding-top: 20px
+  color: #333
+  border-radius: 4px
+
+  img
+    width: 64%
+
+.site-section .title
+  margin: 0 0 62px 0
+
+  h5
+    margin: 24px 0
+
+.service-box
+  padding: 0 32px
+
+  svg
+    width: 88px
+    margin-bottom: 32px
+  p
+    margin: 36px 0
+// END CASE STUDIES STYLES
+
 @media screen and (max-width: 767px)
   h2
     font-size: 50px

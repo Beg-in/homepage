@@ -6,7 +6,7 @@ main
       .frow.column-start
           h2 Featured Work
           .col-md-2-3
-            h5 The Begin team has developed a unique customer-centered process. This process leads our clients to outperform their expectations and put their new tech-based solutions to work faster than what they ever thought was possible.
+            h5 The Begin team has developed a unique customer-centered process. This process leads our clients to outperform their expectations and put our solutions to work faster than what they ever thought was possible.
             h5 We'd love your for you check out some of our recent projects below!
   .frow.column-center.projects
     .case-study(v-for="(client, index) in clients" :class="{'odd': !(index % 2 == 0)}")
@@ -29,12 +29,18 @@ main
                   router-link( :to="client.link" :title="client.title") 
                     p 
                       strong
-                        | Read More</template>
+                        | Read More
+  ContactFooter
+</template>
 <script>
-import chaserLogo from '@/assets/svgs/chaser-logo.svg'
+import chaserLogo from '@/assets/svgs/chaser-logo.svg';
 import { clients } from '../data/clients';
+import ContactFooter from '@/components/ContactFooter';
 
 export default {
+  components: {
+    ContactFooter,
+  },
   data() {
     return {
       clients,
@@ -68,61 +74,6 @@ export default {
   justify-content: center
   position: relative
 
-/* .projects
-  // margin: 20px 20px */
+/* Check global.sass for more styles */
 
-.case-study
-  margin: 0px 60px 30px
-  width: 100%
-
-  img
-    width: 500px
-    margin: 10px 50px 20px
-    border-radius: 5px
-
-  &.odd
-    // background: $light-background
-
-    .card-title ~ .frow
-      flex-direction: row-reverse
-
-  .card-title
-    color: #000
-    max-width: 400px
-    padding-top: 15px
-
-  .card-description
-    font-weight: 300
-    font-size: 14px
-    padding-bottom: 20px
-
-    p
-      font-size: 19px;
-      line-height: 28px;
-
-.blog-thumb-parent
-  /* background-image: radial-gradient($primary-color, #14CEAF); */
-  background-color: $beige
-  text-align: center
-  padding-top: 20px
-  color: #333
-  border-radius: 4px
-
-  img
-    width: 64%
-
-.site-section .title
-  margin: 0 0 62px 0
-
-  h5
-    margin: 24px 0
-
-.service-box
-  padding: 0 32px
-
-  svg
-    width: 88px
-    margin-bottom: 32px
-  p
-    margin: 36px 0
 </style>

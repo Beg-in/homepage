@@ -46,6 +46,104 @@ main#home
                   | We have spent years developing a network of talented, trustworthy developers so that we are uniquely positioned to address a need for more horesepower or alternative skillsets.
           .frow
             router-link.begin-button2.white-background(to="contact", title="Contact", type="button") Start a project
+  .testimonials.green-site-section
+    .frow-container.height-100
+      .frow.centered-column.height-100
+        .title
+          .frow.row-center
+            h2
+              | Kind words
+        .testimonial-parent-box.width-100
+          .frow.gutters
+            .col-md-1-3
+              .testimonial-box
+                .frow.row-center
+                  .client-logo.govflex-box
+                    .frow.centered
+                      .govflex-logo
+                        .frow.centered
+                          img(:src='clients.Govflex.logo')
+                .frow.row-start
+                  quoteSvg
+                  p {{ clients.Govflex.testimonial }}
+                  p Dwayne Robinson, COO, GovFlex
+                .five-stars
+                  .frow
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+            .col-md-1-3
+              .testimonial-box
+                .frow.row-center
+                  .client-logo.chaser-box
+                    .frow.centered
+                      .chaser-logo
+                        .frow.centered
+                          chaserLogo
+                .frow.row-start
+                  quoteSvg
+                  p {{ clients.chaser.testimonial }}
+                  p Ashton Asherian, CEO, Chaser
+                .five-stars
+                  .frow
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+            .col-md-1-3
+              .testimonial-box
+                .frow.row-center
+                  .client-logo.qikpix-box
+                    .frow.centered
+                      .qikpix-logo
+                        .frow.centered
+                          qikpixLogo
+                .frow.row-start
+                  quoteSvg
+                  p {{ clients.qikpix.testimonial }}
+                  p Jarek Hamilton, CEO, QikPix
+                .five-stars
+                  .frow
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+
+      .frow
+        a.begin-button2.clutch-button(href="https://clutch.co/profile/begin" target="_blank" type="button")
+          | Read our verified reviews on
+          img(src="@/assets/images/clutch2.png")
+  .featured-case-study
+    .frow-container.height-100
+        .frow.centered-column.height-100
+          .title
+            .frow.row-center
+              h2
+                | Featured Case Study
+    .case-study
+      .frow-container.height-100
+        .frow.column-center
+          .frow.row-start.justify-around.nowrap.width-100.gutters
+            .col-md-1-2
+              router-link( :to="clients.chaser.link" :title="clients.chaser.title")
+                img.shadow-light(:src="clients.chaser.blogThumb")
+            .col-md-1-2
+              .card-description
+                .card-title
+                  h3
+                    router-link( :to="clients.chaser.link" :title="clients.chaser.title") {{ clients.chaser.clientName }}
+                h5 {{ clients.chaser.header }}
+                p {{ clients.chaser.description }}
+                router-link( :to="clients.chaser.link" :title="clients.chaser.title") 
+                  p 
+                    strong
+                      | Read More
+    .frow
+      router-link.begin-button2.white-background(to="case-studies", title="Case Studies", type="button") Read our Case Studies
   .team.green-site-section
     .frow-container.height-100
       .frow.row-start
@@ -66,129 +164,9 @@ main#home
                 | Brandon
                 arrowSvg
             .statement
-              h3 We believe in transparent, long-term relationships with everyone we have the opportunity to work with. We are all entrepreneurs and understand what it takes to stand up and scale software at all stages.
-  //- .fav-tech.site-section
-  //-   .frow-container.height-100
-  //-     .frow.centered-column.height-100
-  //-       .title
-  //-         .frow.row-center
-  //-           h2
-  //-             | Our favorite tech
-  //-       .tech-parent-box.width-100
-  //-         .frow.gutters
-  //-           .col-md-1-3.col-sm-1-2.col-xs-1-3
-  //-             .tech-box
-  //-               .frow.column-center
-  //-                 vueLogo
-  //-                 h5
-  //-                   | Vue.js
-  //-           .col-md-1-3.col-sm-1-2.col-xs-1-3
-  //-             .tech-box
-  //-               .frow.column-center
-  //-                 nodeLogo
-  //-                 h5
-  //-                   | Node.js
-  //-           .col-md-1-3.col-sm-1-2.col-xs-1-3
-  //-             .tech-box
-  //-               .frow.column-center
-  //-                 .frow-logo
-  //-                   pwaSvg
-  //-                 h5
-  //-                   | Progressive Web Apps
-  //-           .col-md-1-3.col-sm-1-2.col-xs-1-3
-  //-             .tech-box
-  //-               .frow.column-center
-  //-                 .frow-logo
-  //-                   frowLogo
-  //-                 h5
-  //-                   | Frow.css
-  //-           .col-md-1-3.col-sm-1-2.col-xs-1-3
-  //-             .tech-box
-  //-               .frow.column-center
-  //-                 cordovaLogo
-  //-                 h5
-  //-                   | Cordova
-  //-           .col-md-1-3.col-sm-1-2.col-xs-1-3
-  //-             .tech-box
-  //-               .frow.column-center
-  //-                 djangoLogo
-  //-                 h5
-  //-                   | Django
-  //-           .col-md-1-3.col-sm-1-2.col-xs-1-3
-  //-             .tech-box
-  //-               .frow.column-center
-  //-                 awsLogo
-  //-                 h5
-  //-                   | Amazon Web Services
-  .testimonials.green-site-section(v-if="$route.query.testimonials")
-    .frow-container.height-100
-      .frow.centered-column.height-100
-        .title
-          .frow.row-center
-            h2
-              | Kind words
-        .testimonial-parent-box.width-100
-          .frow.gutters
-            .col-md-1-3.col-sm-1-1
-              .testimonial-box
-                .frow.row-center
-                  .client-logo.chaser-box
-                    .frow.centered
-                      .chaser-logo
-                        .frow.centered
-                          chaserLogo
-                .frow.row-start
-                  quoteSvg
-                  p {{ clients.chaser.testimonial }}
-                .five-stars
-                  .frow
-                    starSvg
-                    starSvg
-                    starSvg
-                    starSvg
-                    starSvg
-                  
-            .col-md-1-3.col-sm-1-1
-              .testimonial-box
-                .frow.row-center
-                  .client-logo.govflex-box
-                    .frow.centered
-                      .govflex-logo
-                        .frow.centered
-                          img(:src='clients.Govflex.logo')
-                .frow.row-start
-                  quoteSvg
-                  p {{ clients.Govflex.testimonial }}
-                .five-stars
-                  .frow
-                    starSvg
-                    starSvg
-                    starSvg
-                    starSvg
-                    starSvg
-            .col-md-1-3.col-sm-1-1
-              .testimonial-box
-                .frow.row-center
-                  .client-logo.qikpix-box
-                    .frow.centered
-                      .qikpix-logo
-                        .frow.centered
-                          qikpixLogo
-                .frow.row-start
-                  quoteSvg
-                  p {{ clients.qikpix.testimonial }}
-                .five-stars
-                  .frow
-                    starSvg
-                    starSvg
-                    starSvg
-                    starSvg
-                    starSvg
-
-      .frow
-        a.begin-button2.clutch-button(href="https://clutch.co/profile/begin" target="_blank" type="button")
-          | Read our verified reviews on
-          img(src="@/assets/images/clutch2.png")
+              h3 The Begin team is comprised of talented tech entrepreneurs and experienced freelancers who set out to provide better solutions than what was currently on the market. The Begin team believes in building transparent, long-term relationships with every client and partner.
+            .frow
+              router-link.begin-button2(to="/team", title="Team", type="button") About the team
   ContactFooter
 </template>
 <script>
@@ -289,9 +267,12 @@ export default {
       height: 100px
       margin-bottom: 15px
 
+.featured-case-study
+  padding: 50px 0
+ 
 .team
-  padding: 160px 0
-  clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% calc(100% - 5vw), 0 100%)
+  padding: 90px 0
+  clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% 100%, 0 100%)
   background: $cogs-bg
   background-color: $green
   background-attachment: fixed
@@ -382,8 +363,8 @@ export default {
   background: $texture-bg
   background-color: $green
   background-attachment: fixed
-  clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% 100%, 0 100%)
-  padding: 90px 0
+  clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% calc(100% - 5vw), 0 100%)
+  padding: 120px 0
 
 
 #home .testimonial-box p
