@@ -29,9 +29,9 @@
             .frow.items-center.height-100
               // router-link(to="our-work", title="Our Work") Our Work
               router-link(to="/case-studies", title="Case Studies") Case Studies
-              router-link(to="team", title="Our Team") Our Team
+              router-link(to="/team", title="Our Team") Our Team
               // router-link(to="faq", title="FAQ") FAQ
-              router-link(to="contact", title="Contact") Contact
+              router-link(to="/contact", title="Contact") Contact
           .github
             .frow.column-center
               p
