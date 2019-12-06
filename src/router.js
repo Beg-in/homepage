@@ -24,9 +24,18 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "team" */ './views/Team.vue'),
     },
     {
-      path: '/our-work',
-      name: 'our-work',
-      component: () => import(/* webpackChunkName: "our-work" */ './views/OurWork.vue'),
+      path: '/case-studies',
+      name: 'case studies',
+      component: () => import(/* webpackChunkName: "case studies" */ './views/CaseStudies.vue'),
+    },
+    {
+      path: '/case-studies/chaser',
+      name: 'chaser',
+      component: () => import(/* webpackChunkName: "chaser" */ './views/CaseStudies/chaser.vue'),
+    }, {
+      path: '/case-studies/govflex',
+      name: 'govflex',
+      component: () => import(/* webpackChunkName: "govflex" */ './views/CaseStudies/govflex.vue'),
     },
     {
       path: '/faq',
