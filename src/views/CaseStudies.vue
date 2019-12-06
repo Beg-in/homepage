@@ -12,7 +12,7 @@ main
     .case-study(v-for="(client, index) in clients" :class="{'odd': !(index % 2 == 0)}")
         .frow-container.height-100
           .frow.column-center
-            .frow.row-start.justify-around.nowrap.width-100.gutters
+            .frow.row-start.justify-around.width-100.gutters
               .col-md-1-2
                 router-link( :to="client.link" :title="client.title")
                   //- .blog-thumb-parent
@@ -75,5 +75,10 @@ export default {
   position: relative
 
 /* Check global.sass for more styles */
+
+@media screen and (max-width: 767px)
+  .hero
+    margin-bottom: 50px
+
 
 </style>

@@ -126,7 +126,7 @@ main#home
     .case-study
       .frow-container.height-100
         .frow.column-center
-          .frow.row-start.justify-around.nowrap.width-100.gutters
+          .frow.row-start.justify-around.width-100.gutters
             .col-md-1-2
               router-link( :to="clients.chaser.link" :title="clients.chaser.title")
                 img.shadow-light(:src="clients.chaser.blogThumb")
