@@ -13,12 +13,19 @@ main
         .col-md-2-3
           .blog-body
             h2 Back Story
-            p Chaser is a startup innovating the event creation, management, ticketing, and attendance industry. To date, the event management industry is fragmented and prone  to cheating and fraud. As a customer, you have to manage your tickets: Did you have them sent to your email, ask for will-call, print them on paper? As an organizer, where do you post the event online, how do you ensure people are not using duplicate tickets, how do you manage re-entry, etc? Chaser has an answer to the fragmentation.
-            p  On Chaser, as a customer, your profile contains a unique Chaser ID which acts as your ticket to all events. When scanned by event security, Chaser’s unique system can tell if your ID should be admitted, if it’s been copied, screenshotted, if the attendee is re-entering the event, their gender, etc. This information leads to incredibly safe, and secure events for everyone. As an organizer, all event management and ticketing is handled in one place.
-            p Begin engaged with Chaser to develop a web application focused on their event-organizing user and an android app focused on event-attending users. The goal of the web-app was an easy-to-use dashboard for event creation, invitations, ticket processing, etc. The goal for the android app was to accompany their existing native iOS app. Completing these two projects would enable Chaser to address both sides of their market.
+            p Chaser is a startup innovating the event creation, management, ticketing, and attendance industry. To date, the event management industry is fragmented and prone  to cheating and fraud. As a customer, did you have them sent to your email, ask for will-call, print them on paper? As an organizer, where do you post the event online, how do you ensure people are not using duplicate tickets, how do you manage re-entry, etc? Chaser has an answer to the fragmentation.
+            p  On Chaser, as a customer, your profile contains a unique Chaser ID which acts as your ticket to all events. When scanned by event security, Chaser’s unique system can tell if your ID should be admitted, if it’s been copied, screenshotted, if the attendee is re-entering the event, and their personal information, etc. This information leads to incredibly safe and secure events for everyone. As an organizer, all event management and ticketing is handled in one place.
+            p Begin engaged with Chaser to develop a web application focused on their event-organizing user and an Android app focused on event-attending users. The goal of the web-app was an easy-to-use dashboard for event creation, invitations, ticket processing. The goal for the Android app was to accompany their existing native iOS app. Completing these two projects would enable Chaser to address both sides of their market.
             h2 Our solution
-            p With early-stage products, our goal at Begin is to determine the most resource-effective yet scalable strategy. Using a cross-platform development approach addresses this goal harmoniously by enabling us more-or-less  write one code-base for both projects. As with all/most? hybrid approaches, the web application comes first. We chose to develop the web application using Vue.js and worked closely with Chaser’s CTO, Marshall, to integrate with their firebase backend.. When it became appropriate to start on android 
-            p The entire project took about 3 months ?and cost $X dollars?. Cross-platform is the key reason achieving that timeline and budget was possible. We believe taking an alternative, native development strategy, would have taken twice as long and been twice as expensive.
+            p With early-stage products, our goal at Begin is to determine the most resource-effective, yet scalable strategy. We chose to develop the web application using Vue.js and worked closely with Chaser’s CTO, Marshall, to integrate with their firebase backend. When it became appropriate to start on android we ultimately determined that a Trusted Web Application (TWA) was the correct approach. The TWA allowed us to borrow a lot of the web code we already wrote, saving time and money. 
+            .quote
+              .frow.row-start
+                .quote-icon
+                  quoteSvg
+                .quote-body
+                  p {{ client.testimonial }} - Ashton Asherian, CEO, Chaser
+
+            p The entire project took about 3 months. Cross-platform is the key reason achieving that timeline and budget was possible. We believe taking an alternative, native development strategy, would have been twice as long and twice as expensive.
             br
             p November 30, 2019
         .col-md-1-3
@@ -49,6 +56,7 @@ import ContactFooter from '@/components/ContactFooter';
 import vueLogo from '@/assets/svgs/vue.svg';
 import pwaSvg from '@/assets/svgs/pwa.svg';
 import awsSvg from '@/assets/svgs/aws.svg';
+import quoteSvg from '@/assets/svgs/quotes.svg';
 
 export default {
   components: {
@@ -56,6 +64,7 @@ export default {
     vueLogo,
     pwaSvg,
     awsSvg,
+    quoteSvg,
   },
   data() {
     return {

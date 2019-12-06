@@ -45,7 +45,7 @@ main#home
                 p
                   | We have spent years developing a network of talented, trustworthy developers so that we are uniquely positioned to address a need for more horesepower or alternative skillsets.
           .frow
-            router-link.begin-button(to="contact", title="Contact", type="button") Start a project
+            router-link.begin-button2.white-background(to="contact", title="Contact", type="button") Start a project
   .team.green-site-section
     .frow-container.height-100
       .frow.row-start
@@ -129,7 +129,7 @@ main#home
               | Kind words
         .testimonial-parent-box.width-100
           .frow.gutters
-            .col-md-1-2.col-sm-1-1
+            .col-md-1-3.col-sm-1-1
               .testimonial-box
                 .frow.row-center
                   .client-logo.chaser-box
@@ -139,7 +139,7 @@ main#home
                           chaserLogo
                 .frow.row-start
                   quoteSvg
-                  p We were about to have to push back our launch when we realized that we had to build two huge platforms in three months before summer was over. We were lost. However, because of Beg.in's efforts and desire to help us out, we made it happen. We're forever thankful to Brandon, Cody, and Johnmark.
+                  p {{ clients.chaser.testimonial }}
                 .five-stars
                   .frow
                     starSvg
@@ -148,17 +148,35 @@ main#home
                     starSvg
                     starSvg
                   
-            .col-md-1-2.col-sm-1-1
+            .col-md-1-3.col-sm-1-1
               .testimonial-box
                 .frow.row-center
                   .client-logo.govflex-box
                     .frow.centered
                       .govflex-logo
                         .frow.centered
-                          img(src="@/assets/images/GovFlex_Logo.png")
+                          img(:src='clients.Govflex.logo')
                 .frow.row-start
                   quoteSvg
-                  p From the very beginning, they had a legitimate understanding of what we wanted to create and the product’s implications. They wanted to know how the product was designed to work before jumping right into the code, details, and technology.
+                  p {{ clients.Govflex.testimonial }}
+                .five-stars
+                  .frow
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+            .col-md-1-3.col-sm-1-1
+              .testimonial-box
+                .frow.row-center
+                  .client-logo.qikpix-box
+                    .frow.centered
+                      .qikpix-logo
+                        .frow.centered
+                          qikpixLogo
+                .frow.row-start
+                  quoteSvg
+                  p {{ clients.qikpix.testimonial }}
                 .five-stars
                   .frow
                     starSvg
@@ -168,13 +186,13 @@ main#home
                     starSvg
 
       .frow
-        a.clutch-button(href="https://clutch.co/profile/begin" target="_blank")
+        a.begin-button2.clutch-button(href="https://clutch.co/profile/begin" target="_blank" type="button")
           | Read our verified reviews on
           img(src="@/assets/images/clutch2.png")
   ContactFooter
 </template>
 <script>
-import { team } from '../data/team';
+import { clients } from '../data/clients';
 import vueLogo from '@/assets/svgs/vue.svg';
 import nodeLogo from '@/assets/svgs/nodejs.svg';
 import awsLogo from '@/assets/svgs/aws.svg';
@@ -188,6 +206,7 @@ import batterySvg from '@/assets/svgs/battery.svg';
 import arrowSvg from '@/assets/svgs/arrow.svg';
 import starSvg from '@/assets/svgs/star.svg';
 import quoteSvg from '@/assets/svgs/quotes.svg';
+import qikpixLogo from '@/assets/svgs/qikpix-logo.svg';
 
 import ContactFooter from '@/components/ContactFooter';
 export default {
@@ -206,10 +225,11 @@ export default {
     arrowSvg,
     starSvg,
     quoteSvg,
+    qikpixLogo,
   },
   data() {
     return {
-      team,
+      clients,
     };
   },
 };
@@ -236,22 +256,6 @@ export default {
 
   h2
     margin-bottom: 30px
-
-.clutch-button
-  width: 350px
-  padding: 10px 30px
-  background-color: #fff
-  color: #000
-  transition: all .15s ease
-  border-radius: 5px
-  margin-top: 50px
-  &:hover
-    box-shadow: $beige-box-shadow
-    transform: translateY(-1px)
-    text-decoration: none
-  img
-    width: 90px
-    margin-top: 8px
 
 .statement
   text-align: center
@@ -381,17 +385,22 @@ export default {
   clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% 100%, 0 100%)
   padding: 90px 0
 
+
+#home .testimonial-box p
+  font-size: 17px
+  line-height: 26px
+  
 .testimonial-box
   padding: 46px 28px 36px 28px
   background-color: $beige
   border-radius: 5px
   box-shadow: 0 5px 20px 0 rgba(32, 32, 32, 0.12)
-  font-size: 20px
-  line-height: 31px
   position: relative
   margin: 10px 20px
   color: #333
   text-align: left
+  min-height: 335px
+
   svg
     height: 27px
     color: $primary-color
@@ -427,6 +436,18 @@ export default {
         fill: #fff
     &.govflex-box
       background-color: #fff
+    &.qikpix-box
+      background-color: #1a1a1a
+      svg
+        width: 160px
+
+.clutch-button
+  width: 350px
+  padding: 10px 30px
+  background-color: #fff
+  img
+    width: 90px
+    margin-top: 8px
 
 @media screen and (max-width: 767px)
   .statement h3
