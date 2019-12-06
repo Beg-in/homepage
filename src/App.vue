@@ -11,9 +11,9 @@
           .frow.justify-end.items-center.height-100
             router-link(to="/case-studies", title="Case Studies") Case Studies
             // router-link(to="slate", title="Slate") Slate
-            router-link(to="team", title="Our Team") Our Team
+            router-link(to="/team", title="Our Team") Our Team
             // router-link(to="faq", title="FAQ") FAQ
-            router-link(to="contact", title="Contact") Contact
+            router-link(to="/contact", title="Contact") Contact
   .header-shadow
   transition
     router-view

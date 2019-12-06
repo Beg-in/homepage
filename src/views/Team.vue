@@ -177,6 +177,9 @@ export default {
   p
     margin: 36px 0
 
+.fav-tech.site-section
+  margin-bottom: 0
+
 .tech-box
   margin-bottom: 55px
   text-align: center

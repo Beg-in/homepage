@@ -7,7 +7,7 @@ module.exports = {
       productPicture: require('@/assets/images/chaser-login.png'),
       blogTitle: 'How we helped Chaser enable customers to better manage their events.',
       description:
-        'Begin engaged with Chaser to develop a web application focused on their event-organizing user and an android app focused on event-attending users. The goal of the web-app was an easy-to-use dashboard for event creation, invitations, ticket processing, etc. The goal for the android app was to accompany their existing native iOS app. Completing these two projects would enable Chaser to address both sides of their market.',
+        'Begin engaged with Chaser to develop a web application focused on their event-organizing user and an Android app focused on event-attending users. The goal of the web-app was an easy-to-use dashboard for event creation, invitations, ticket processing, etc. The goal for the Android app was to accompany their existing native iOS app. Completing these two projects would enable Chaser to address both sides of their market.',
       link: '/case-studies/chaser',
       website: 'https://gochaser.com',
       testimonial: ' We were about to have to push back our launch when we realized that we had to build two huge platforms in three months before summer was over. We were lost. However, because of Beg.in\'s efforts and desire to help us out, we made it happen. We\'re forever thankful to Brandon, Cody, and Johnmark.',
