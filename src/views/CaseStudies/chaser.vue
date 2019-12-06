@@ -89,9 +89,9 @@ export default {
   position: relative
 
 .blog-sidebar
-  background-color: $beige
+  // background-color:
+  // box-shadow: $beige-box-shadow
   padding: 15px
-  box-shadow: $beige-box-shadow
   margin-top: 50px
   .sidebar-block
     margin: 0 0 45px

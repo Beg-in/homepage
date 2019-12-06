@@ -28,7 +28,7 @@ main#home
               .frow.column-center
                 diagnoseSvg
                 h5
-                  | Diagnosis first approach
+                  | Diagnosis First Approach
                 p
                   | When presented with a problem to solve, we work tirelessly to diagnose the root causes before proposing a solution. We don't simply say "yes", resulting in the right solution for you and your business.
           .col-md-1-10
@@ -40,7 +40,7 @@ main#home
               .frow.column-center
                 batterySvg
                 h5
-                  | Freelance Network
+                  | Extensive Network
                 p
                   | We have spent years developing a network of talented, trustworthy developers so that we are uniquely positioned to address a need for more horesepower or alternative skillsets.
           .frow

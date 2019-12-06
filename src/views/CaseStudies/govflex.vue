@@ -24,7 +24,7 @@ main
                 .quote-body
                   p Internally, it’s reliable. Some of the underlying data we use comes from systems we don’t control. They deserve credit for looking into calculations that weren’t working properly and writing specialized code that will alert us if these external systems suddenly stop working. Their code is protecting us from the repercussions of that. We feel very confident in the work they did. - Dwayne Robinson, COO, GovFlex
             br
-            p November 30, 2019
+            p December 5, 2019
         .col-md-1-3
           .blog-sidebar
             .sidebar-block
