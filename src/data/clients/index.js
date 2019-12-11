@@ -18,7 +18,7 @@ module.exports = {
       logo: require('@/assets/images/GovFlex_Logo.png'),
       blogThumb: require('@/assets/images/govflex-casestudy-thumb.png'),
       productPicture: require('@/assets/images/govflex-report.png'),
-      blogTitle: 'How we helped Govflex do cool things.',
+      blogTitle: 'How we helped Govflex users learn about their probability of winning federal opportunities.',
       description:
         'Using a provided logic algorithm, Begin, LLC aided a government-centric e-commerce company in its efforts to elevate an existing analytics tool. They made UI/UX and development upgrades in the process.',
       link: '/case-studies/govflex',
