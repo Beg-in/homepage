@@ -1,8 +1,11 @@
+
 <template lang="pug">
 main
+  .header-shadow-cover
   .contact.green-site-section
     .frow.column-center
-      talkSvg
+      .svg-wrapper
+        talkSvg
       h2.title
         | Contact Us
       .col-md-1-1
@@ -28,9 +31,12 @@ export default {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 4vw))
   padding-bottom: 90px
 
+  // .svg-wrapper
+  //   width: 260px
   svg
     height: auto
     width: 150px
+    padding: 10px
 
   .title
     margin: 0 0 22px 0

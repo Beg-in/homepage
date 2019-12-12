@@ -42,7 +42,7 @@ main
                 vueLogo
                 pwaSvg
                 awsSvg
-            .sidebar-block
+            .sidebar-block(v-if="client.website")
               h3 Website:
               router-link(:to="client.website" :title="client.website" target="_blank") {{ client.website }}
             //- .sidebar-block

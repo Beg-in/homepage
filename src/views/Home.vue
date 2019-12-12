@@ -127,10 +127,12 @@ main#home
       .frow-container.height-100
         .frow.column-center
           .frow.row-start.justify-around.width-100.gutters
-            .col-md-1-2
-              router-link( :to="clients.chaser.link" :title="clients.chaser.title")
-                img.shadow-light(:src="clients.chaser.blogThumb")
-            .col-md-1-2
+            .col-md-1-2.col-sm-1-1
+              .frow
+                .case-study-thumb
+                  router-link( :to="clients.chaser.link" :title="clients.chaser.title")
+                    img.shadow-light(:src="clients.chaser.blogThumb")
+            .col-md-1-2.col-sm-1-1
               .card-description
                 .card-title
                   h3
