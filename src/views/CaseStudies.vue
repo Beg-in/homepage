@@ -14,11 +14,13 @@ main
           .frow.column-center
             .frow.row-start.justify-around.width-100.gutters
               .col-md-1-2
-                router-link( :to="client.link" :title="client.title")
-                  //- .blog-thumb-parent
-                  //-   h2 Beg.in Case Study & walkthrough of:
-                  //-   img.shadow-dark(:src="client.logo")
-                  img.shadow-light(:src="client.blogThumb")
+                .frow
+                  .case-study-thumb
+                    router-link( :to="client.link" :title="client.title")
+                      //- .blog-thumb-parent
+                      //-   h2 Beg.in Case Study & walkthrough of:
+                      //-   img.shadow-dark(:src="client.logo")
+                      img.shadow-light(:src="client.blogThumb")
               .col-md-1-2
                 .card-description
                   .card-title
@@ -74,7 +76,10 @@ export default {
   justify-content: center
   position: relative
 
-/* Check global.sass for more styles */
+.case-study
+  margin: 20px 0
+
+/* Check global.sass for more case study styles */
 
 @media screen and (max-width: 767px)
   .hero
