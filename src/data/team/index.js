@@ -22,7 +22,7 @@ module.exports = {
       img: require('@/assets/images/jm-square-headshot.jpg'),
       title: 'Lead Software Engineer',
       description:
-        'Johnmark is a back-end developer for Beg.in. If he’s not working, you can find him spending time longboarding, sending snaps or involved in activities with student campus ministries.',
+        'Johnmark is the co-owner, lead full-stack developer and head of architecture design at Beg.in. Having worked in several small and large development companies he has gained a wide array of experience. From managing hundreds of simple websites, to managing thousands of franchise websites for fortune 50 companies, Johnmark knows how to handle the needs and scale of any business size. With a degree in Mobile Application Development, he has a unique perspective in solving hybrid and native application needs. He also has background in Information Security which will help you sleep easy knowing security is ingrained in your system design from start to finish.',
     },
     // {
     //   firstName: 'Rich',
