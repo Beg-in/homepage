@@ -61,9 +61,6 @@ import quoteSvg from '@/assets/svgs/quotes.svg';
 export default {
   metaInfo: {
     title: 'Chaser Case Study and Walkthrough',
-    meta: [
-      { 'property': 'og:title', 'content': 'Chaser Case Study and Walkthrough', 'vmid': 'og:title'}
-    ]
   },
   components: {
     ContactFooter,

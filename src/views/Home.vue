@@ -186,6 +186,7 @@ import arrowSvg from '@/assets/svgs/arrow.svg';
 import starSvg from '@/assets/svgs/star.svg';
 import quoteSvg from '@/assets/svgs/quotes.svg';
 import qikpixLogo from '@/assets/svgs/qikpix-logo.svg';
+import ogImage from '@/assets/images/chaser-casestudy-thumb.png';
 
 import ContactFooter from '@/components/ContactFooter';
 export default {
@@ -193,6 +194,12 @@ export default {
     title: 'Begin',
     // override the parent template and just use the above title only
     titleTemplate: null,
+    meta: [
+      { 'property': 'og:title', 'content': 'Begin OG Title', 'vmid': 'og:title'},
+      { 'property': 'og:image', 'content': ogImage, 'vmid': 'og:image'},
+      { 'property': 'og:description', 'content': 'Begin OG Description', 'vmid': 'og:description'},
+      { 'property': 'og:url', 'content': '//beg.in/home', 'vmid': 'og:url'},
+    ]
   },
   components: {
     ContactFooter,
