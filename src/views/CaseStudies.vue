@@ -18,7 +18,7 @@ main
                   .case-study-thumb
                     router-link( :to="client.link" :title="client.title")
                       //- .blog-thumb-parent
-                      //-   h2 Beg.in Case Study & walkthrough of:
+                      //-   h2 Begin Case Study & walkthrough of:
                       //-   img.shadow-dark(:src="client.logo")
                       img.shadow-light(:src="client.blogThumb")
               .col-md-1-2
