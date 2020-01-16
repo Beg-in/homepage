@@ -4,7 +4,7 @@ main
   .hero
     .frow-container
       .frow.column-start
-          h2 Meet the team
+          h2 Meet The Team
           .col-md-2-3
             h5 With the experience and understanding of what is needed to deliver effective and responsive tech solutions for modern businesses, we look forward to helping you create and scale tech that works for your business.
   .people
@@ -90,6 +90,9 @@ import frowLogo from '@/assets/svgs/frow.svg';
 import pwaSvg from '@/assets/svgs/pwa.svg';
 
 export default {
+  metaInfo: {
+    title: 'Meet The Team',
+  },
   components: {
     ContactFooter,
     vueLogo,
