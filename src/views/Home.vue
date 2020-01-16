@@ -189,6 +189,11 @@ import qikpixLogo from '@/assets/svgs/qikpix-logo.svg';
 
 import ContactFooter from '@/components/ContactFooter';
 export default {
+  metaInfo: {
+    title: 'Begin',
+    // override the parent template and just use the above title only
+    titleTemplate: null
+  },
   components: {
     ContactFooter,
     vueLogo,
