@@ -192,7 +192,10 @@ export default {
   metaInfo: {
     title: 'Begin',
     // override the parent template and just use the above title only
-    titleTemplate: null
+    titleTemplate: null,
+    meta: [
+      { 'property': 'og:description', 'content': 'Wowwwwwww', 'vmid': 'og:description'}
+    ]
   },
   components: {
     ContactFooter,
