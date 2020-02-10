@@ -6,7 +6,7 @@ main
         h2
           | FAQs
         p
-          | Find some answers to common questions about Beg.in
+          | Find some answers to common questions about Begin
     .frow.row-start.items-start.gutters
       .col-md-1-4.faq-quick-title-menu
         .faq-quick-title-menu-title

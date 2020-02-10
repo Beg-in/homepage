@@ -46,6 +46,12 @@
 import logoSvg from '@/assets/svgs/logo.svg';
 import githubSvg from '@/assets/svgs/github-logo.svg';
 export default {
+  metaInfo: {
+    // if no subcomponents specify a metaInfo.title, this title will be used
+    title: 'Begin',
+    // all titles will be injected into this template
+    titleTemplate: '%s | Begin'
+  },
   components: {
     logoSvg,
     githubSvg,

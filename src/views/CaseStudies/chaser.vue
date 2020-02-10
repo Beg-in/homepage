@@ -59,6 +59,9 @@ import awsSvg from '@/assets/svgs/aws.svg';
 import quoteSvg from '@/assets/svgs/quotes.svg';
 
 export default {
+  metaInfo: {
+    title: 'Chaser Case Study and Walkthrough',
+  },
   components: {
     ContactFooter,
     vueLogo,

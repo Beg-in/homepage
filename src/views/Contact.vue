@@ -20,6 +20,9 @@ main
 <script>
 import talkSvg from '@/assets/svgs/talk.svg';
 export default {
+  metaInfo: {
+    title: 'Contact Us',
+  },
   components: {
     talkSvg,
   },

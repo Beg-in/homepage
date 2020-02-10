@@ -186,9 +186,25 @@ import arrowSvg from '@/assets/svgs/arrow.svg';
 import starSvg from '@/assets/svgs/star.svg';
 import quoteSvg from '@/assets/svgs/quotes.svg';
 import qikpixLogo from '@/assets/svgs/qikpix-logo.svg';
+// import ogImage from '@/assets/images/chaser-casestudy-thumb.png';
 
 import ContactFooter from '@/components/ContactFooter';
 export default {
+  metaInfo: {
+    title: 'Begin',
+    // override the parent template and just use the above title only
+    titleTemplate: null,
+    meta: [
+      { property: 'og:title', content: 'Begin', vmid: 'og:title' },
+      // { property: 'og:image', content: ogImage, vmid: 'og:image' },
+      {
+        property: 'og:description',
+        content: 'Begin progressive web apps and product development',
+        vmid: 'og:description',
+      },
+      { property: 'og:url', content: '//beg.in/home', vmid: 'og:url' },
+    ],
+  },
   components: {
     ContactFooter,
     vueLogo,
@@ -270,7 +286,7 @@ export default {
 
 .featured-case-study
   padding: 50px 0
- 
+
 .team
   padding: 90px 0
   clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% 100%, 0 100%)
@@ -371,7 +387,7 @@ export default {
 #home .testimonial-box p
   font-size: 17px
   line-height: 26px
-  
+
 .testimonial-box
   padding: 46px 28px 36px 28px
   background-color: $beige
@@ -386,8 +402,8 @@ export default {
   svg
     height: 27px
     color: $primary-color
-    fill: $primary-color 
-  
+    fill: $primary-color
+
   .five-stars
     svg
       height: 21px
