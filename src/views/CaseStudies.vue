@@ -9,8 +9,8 @@
   color: #fff
   text-shadow: 1px 1px 1px #777
   text-align: left
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
-  padding: 50px 0 110px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw))
+  padding: 50px 0 110px
   p
     color: #fff
     font-size: 20px

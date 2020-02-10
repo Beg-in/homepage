@@ -118,7 +118,7 @@
 //   svg
 //     width: auto
 //     height: 100px
-//     max-width: 170px;
+//     max-width: 170px
 //     margin-bottom: 19px
 //   h5
 //     font-weight: 500
