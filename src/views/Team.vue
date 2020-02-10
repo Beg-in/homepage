@@ -97,7 +97,10 @@ main
       .frow.column-start
           h2 Meet The Team
           .col-md-2-3
-            h5 With the experience and understanding of what is needed to deliver effective and responsive tech solutions for modern businesses, we look forward to helping you create and scale tech that works for your business.
+            h5
+              | With the experience and understanding of what is needed to deliver effective and
+              | responsive tech solutions for modern businesses, we look forward to helping you
+              | create and scale tech that works for your business.
   .people
     .frow
       .col-sm-1-2.col-md-1-4(v-for="member in team")
@@ -112,7 +115,11 @@ main
                   | {{member.title}}
                 | {{member.description}}
     .frow
-      router-link.begin-button2.white-background(to="/case-studies", title="Case Studies", type="button") Read our Case Studies
+      router-link.begin-button2.white-background(
+        to="/case-studies"
+        title="Case Studies"
+        type="button")
+        | Read our Case Studies
 
   .fav-tech.site-section
     .frow-container.height-100
@@ -120,7 +127,10 @@ main
         .title
           .frow.row-center
             h2 Our favorite tech 
-            h5 We have experience with many frameworks, languages, and tools, and we would work to select the stack that's most appropriate for your project. Here are a handful we use most often.
+            h5
+              | We have experience with many frameworks, languages, and tools, and we would work to
+              | select the stack that's most appropriate for your project. Here are a handful we use
+              | most often.
         .tech-parent-box.width-100
           .frow.gutters
             .col-md-1-4.col-sm-1-2.col-xs-1-3

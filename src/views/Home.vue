@@ -279,7 +279,8 @@ main#home
   .statement.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
-          h3 Begin is a web application and hybrid development agency for technology companies who need scalable, resource conscious software.
+          h3 Begin is a web application and hybrid development agency for technology companies who
+            | need scalable, resource conscious software.
   .were-good.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
@@ -297,7 +298,9 @@ main#home
                 h5
                   | Diagnosis First Approach
                 p
-                  | When presented with a problem to solve, we work tirelessly to diagnose the root causes before proposing a solution. We don't simply say "yes", resulting in the right solution for you and your business.
+                  | When presented with a problem to solve, we work tirelessly to diagnose the root
+                  | causes before proposing a solution. We don't simply say "yes", resulting in the
+                  | right solution for you and your business.
           .col-md-1-10
             .frow.centered
                span.plus
@@ -309,9 +312,12 @@ main#home
                 h5
                   | Extensive Network
                 p
-                  | We have spent years developing a network of talented, trustworthy developers so that we are uniquely positioned to address a need for more horesepower or alternative skillsets.
+                  | We have spent years developing a network of talented, trustworthy developers so
+                  | that we are uniquely positioned to address a need for more horesepower or
+                  | alternative skillsets.
           .frow
-            router-link.begin-button2.white-background(to="contact", title="Contact", type="button") Start a project
+            router-link.begin-button2.white-background(to="contact", title="Contact", type="button")
+              | Start a project
   .testimonials.green-site-section
     .frow-container.height-100
       .frow.centered-column.height-100
@@ -380,7 +386,10 @@ main#home
                     starSvg
 
       .frow
-        a.begin-button2.clutch-button(href="https://clutch.co/profile/begin" target="_blank" type="button")
+        a.begin-button2.clutch-button(
+          href="https://clutch.co/profile/begin"
+          target="_blank"
+          type="button")
           | Read our verified reviews on
           img(src="@/assets/images/clutch2.png")
   .featured-case-study
@@ -403,15 +412,20 @@ main#home
               .card-description
                 .card-title
                   h3
-                    router-link( :to="clients.chaser.link" :title="clients.chaser.title") {{ clients.chaser.clientName }}
+                    router-link(:to="clients.chaser.link" :title="clients.chaser.title")
+                      | {{ clients.chaser.clientName }}
                 h5 {{ clients.chaser.header }}
                 p {{ clients.chaser.description }}
-                router-link( :to="clients.chaser.link" :title="clients.chaser.title") 
+                router-link(:to="clients.chaser.link" :title="clients.chaser.title") 
                   p 
                     strong
                       | Read More
     .frow
-      router-link.begin-button2.white-background(to="case-studies", title="Case Studies", type="button") Read our Case Studies
+      router-link.begin-button2.white-background(
+        to="case-studies"
+        title="Case Studies"
+        type="button")
+          | Read our Case Studies
   .team.green-site-section
     .frow-container.height-100
       .frow.row-start
@@ -432,7 +446,11 @@ main#home
                 | Brandon
                 arrowSvg
             .statement
-              h3 The Begin team is comprised of talented tech entrepreneurs and experienced freelancers who set out to provide better solutions than what was currently on the market. The Begin team believes in building transparent, long-term relationships with every client and partner.
+              h3
+                | The Begin team is comprised of talented tech entrepreneurs and experienced
+                | freelancers who set out to provide better solutions than what was currently on the
+                | market. The Begin team believes in building transparent, long-term relationships
+                | with every client and partner.
             .frow
               router-link.begin-button2(to="/team", title="Team", type="button") About the team
   ContactFooter

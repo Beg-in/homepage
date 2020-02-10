@@ -10,7 +10,6 @@ Vue.config.productionTip = false;
 
 new Vue({
   router,
-  render: (h) => h(App),
   created() {
     if (sessionStorage.redirect) {
       const redirect = sessionStorage.redirect;
@@ -18,4 +17,5 @@ new Vue({
       this.$router.push(redirect);
     }
   },
+  render: (h) => h(App),
 }).$mount('#app');

@@ -19,7 +19,8 @@
           p
             | Let's chat about your project, product, or venture.
       .frow
-        router-link.begin-button2.white-background(to="/contact", title="Contact", type="button") Say Hello!
+        router-link.begin-button2.white-background(to="/contact", title="Contact", type="button")
+          | Say Hello!
 </template>
 
 <script>

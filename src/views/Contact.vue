@@ -39,7 +39,8 @@ main
         | Contact Us
       .col-md-1-1
         h5
-          | Feel free to get in touch with us using the contact information below! We'd love to hear from you.
+          | Feel free to get in touch with us using the contact information below! We'd love to hear
+          |  from you.
     .contact-info
       .frow.height-100
         .frow.centered-column
