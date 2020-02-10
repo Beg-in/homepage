@@ -1,33 +1,3 @@
-
-<template lang="pug">
-main
-  .header-shadow-cover
-  .contact.green-site-section
-    .frow.column-center
-      .svg-wrapper
-        talkSvg
-      h2.title
-        | Contact Us
-      .col-md-1-1
-        h5
-          | Feel free to get in touch with us using the contact information below! We'd love to hear from you.
-    .contact-info
-      .frow.height-100
-        .frow.centered-column
-          a(href="mailto:info@beg.in") info@beg.in
-          a(href="tel:847-204-4261") 847-204-4261
-</template>
-<script>
-import talkSvg from '@/assets/svgs/talk.svg';
-export default {
-  metaInfo: {
-    title: 'Contact Us',
-  },
-  components: {
-    talkSvg,
-  },
-};
-</script>
 <style lang="sass" scoped>
 @import @/assets/styles/variables.sass
 .contact
@@ -57,3 +27,34 @@ export default {
     font-weight: 700
     color: #fff
 </style>
+
+<template lang="pug">
+main
+  .header-shadow-cover
+  .contact.green-site-section
+    .frow.column-center
+      .svg-wrapper
+        talkSvg
+      h2.title
+        | Contact Us
+      .col-md-1-1
+        h5
+          | Feel free to get in touch with us using the contact information below! We'd love to hear from you.
+    .contact-info
+      .frow.height-100
+        .frow.centered-column
+          a(href="mailto:info@beg.in") info@beg.in
+          a(href="tel:847-204-4261") 847-204-4261
+</template>
+
+<script>
+import talkSvg from '@/assets/svgs/talk.svg';
+export default {
+  metaInfo: {
+    title: 'Contact Us',
+  },
+  components: {
+    talkSvg,
+  },
+};
+</script>

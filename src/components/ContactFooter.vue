@@ -1,3 +1,13 @@
+<style lang="sass" scoped>
+@import @/assets/styles/variables.sass
+.footer-cta
+  background-color: #fff
+  color: #333
+  padding: 60px 0
+  p
+    color: #333
+</style>
+
 <template lang="pug">
 .footer-cta.green-site-section
   .frow-container.height-100
@@ -11,6 +21,7 @@
       .frow
         router-link.begin-button2.white-background(to="/contact", title="Contact", type="button") Say Hello!
 </template>
+
 <script>
 export default {
   data() {
@@ -18,15 +29,3 @@ export default {
   },
 };
 </script>
-<style lang="sass" scoped>
-@import @/assets/styles/variables.sass
-.footer-cta
-  background-color: #fff
-  color: #333
-  padding: 60px 0
-  p
-    color: #333
-
-
-
-</style>

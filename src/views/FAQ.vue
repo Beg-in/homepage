@@ -1,52 +1,3 @@
-<template lang="pug">
-main
-  .frow-container
-    .site-section
-      .frow.column-start
-        h2
-          | FAQs
-        p
-          | Find some answers to common questions about Begin
-    .frow.row-start.items-start.gutters
-      .col-md-1-4.faq-quick-title-menu
-        .faq-quick-title-menu-title
-          h4
-            | Categories
-        .faq-section(v-for="section, title in questions")
-          h4.faq-title.clickable(@click="doScroll(title)") {{title}}
-      .col-md-3-4
-        .faq-section(v-for="section, title in questions")
-          h4.faq-title(:ref="title") {{title}}
-          span(v-for="answer, question in section")
-            label.faq-question
-              h5
-                | {{question}}
-              input(type="checkbox")
-              .faq-answer
-                p
-                  | {{answer}}
-  ContactFooter
-</template>
-<script>
-import ContactFooter from '@/components/ContactFooter';
-
-import questions from '../data/questions';
-export default {
-  components: {
-    ContactFooter,
-  },
-  data() {
-    return {
-      questions,
-    };
-  },
-  methods: {
-    async doScroll(ref) {
-      this.$refs[ref][0].scrollIntoView({ behavior: 'smooth' });
-    },
-  },
-};
-</script>
 <style lang="sass" scoped>
 @import @/assets/styles/variables.sass
 .faq-section
@@ -112,3 +63,53 @@ label.faq-question
     input:checked ~ &
       max-height: 450px
 </style>
+
+<template lang="pug">
+main
+  .frow-container
+    .site-section
+      .frow.column-start
+        h2
+          | FAQs
+        p
+          | Find some answers to common questions about Begin
+    .frow.row-start.items-start.gutters
+      .col-md-1-4.faq-quick-title-menu
+        .faq-quick-title-menu-title
+          h4
+            | Categories
+        .faq-section(v-for="section, title in questions")
+          h4.faq-title.clickable(@click="doScroll(title)") {{title}}
+      .col-md-3-4
+        .faq-section(v-for="section, title in questions")
+          h4.faq-title(:ref="title") {{title}}
+          span(v-for="answer, question in section")
+            label.faq-question
+              h5
+                | {{question}}
+              input(type="checkbox")
+              .faq-answer
+                p
+                  | {{answer}}
+  ContactFooter
+</template>
+<script>
+import ContactFooter from '@/components/ContactFooter';
+
+import questions from '../data/questions';
+export default {
+  components: {
+    ContactFooter,
+  },
+  data() {
+    return {
+      questions,
+    };
+  },
+  methods: {
+    async doScroll(ref) {
+      this.$refs[ref][0].scrollIntoView({ behavior: 'smooth' });
+    },
+  },
+};
+</script>

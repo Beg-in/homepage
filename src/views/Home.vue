@@ -1,234 +1,3 @@
-<template lang="pug">
-main#home
-  .header-shadow-cover
-  .hero
-    .frow-container.height-100
-      .frow.column-center.justify-center.height-100
-        .hero-content
-          h2
-            | No-headache software development.
-          h4
-            | Reliable & transparent technology consulting.
-  .statement.site-section
-    .frow-container.height-100
-      .frow.centered-column.height-100
-          h3 Begin is a web application and hybrid development agency for technology companies who need scalable, resource conscious software.
-  .were-good.site-section
-    .frow-container.height-100
-      .frow.centered-column.height-100
-        .title
-          h5
-            | there are a lot of dev agencies out there but
-          h2
-            | We believe we're different because:
-      .service-box-parent
-        .frow.gutters
-          .col-md-4-10
-            .service-box.card-shadow
-              .frow.column-center
-                diagnoseSvg
-                h5
-                  | Diagnosis First Approach
-                p
-                  | When presented with a problem to solve, we work tirelessly to diagnose the root causes before proposing a solution. We don't simply say "yes", resulting in the right solution for you and your business.
-          .col-md-1-10
-            .frow.centered
-               span.plus
-                | &
-          .col-md-4-10
-            .service-box.card-shadow
-              .frow.column-center
-                batterySvg
-                h5
-                  | Extensive Network
-                p
-                  | We have spent years developing a network of talented, trustworthy developers so that we are uniquely positioned to address a need for more horesepower or alternative skillsets.
-          .frow
-            router-link.begin-button2.white-background(to="contact", title="Contact", type="button") Start a project
-  .testimonials.green-site-section
-    .frow-container.height-100
-      .frow.centered-column.height-100
-        .title
-          .frow.row-center
-            h2
-              | Kind words
-        .testimonial-parent-box.width-100
-          .frow.gutters
-            .col-md-1-3
-              .testimonial-box
-                .frow.row-center
-                  .client-logo.govflex-box
-                    .frow.centered
-                      .govflex-logo
-                        .frow.centered
-                          img(:src='clients.Govflex.logo')
-                .frow.row-start
-                  quoteSvg
-                  p {{ clients.Govflex.testimonial }}
-                  p Dwayne Robinson, COO, GovFlex
-                .five-stars
-                  .frow
-                    starSvg
-                    starSvg
-                    starSvg
-                    starSvg
-                    starSvg
-            .col-md-1-3
-              .testimonial-box
-                .frow.row-center
-                  .client-logo.chaser-box
-                    .frow.centered
-                      .chaser-logo
-                        .frow.centered
-                          chaserLogo
-                .frow.row-start
-                  quoteSvg
-                  p {{ clients.chaser.testimonial }}
-                  p Ashton Asherian, CEO, Chaser
-                .five-stars
-                  .frow
-                    starSvg
-                    starSvg
-                    starSvg
-                    starSvg
-                    starSvg
-            .col-md-1-3
-              .testimonial-box
-                .frow.row-center
-                  .client-logo.qikpix-box
-                    .frow.centered
-                      .qikpix-logo
-                        .frow.centered
-                          qikpixLogo
-                .frow.row-start
-                  quoteSvg
-                  p {{ clients.qikpix.testimonial }}
-                  p Jarek Hamilton, CEO, QikPix
-                .five-stars
-                  .frow
-                    starSvg
-                    starSvg
-                    starSvg
-                    starSvg
-                    starSvg
-
-      .frow
-        a.begin-button2.clutch-button(href="https://clutch.co/profile/begin" target="_blank" type="button")
-          | Read our verified reviews on
-          img(src="@/assets/images/clutch2.png")
-  .featured-case-study
-    .frow-container.height-100
-        .frow.centered-column.height-100
-          .title
-            .frow.row-center
-              h2
-                | Featured Case Study
-    .case-study
-      .frow-container.height-100
-        .frow.column-center
-          .frow.row-start.justify-around.width-100.gutters
-            .col-md-1-2.col-sm-1-1
-              .frow
-                .case-study-thumb
-                  router-link( :to="clients.chaser.link" :title="clients.chaser.title")
-                    img.shadow-light(:src="clients.chaser.blogThumb")
-            .col-md-1-2.col-sm-1-1
-              .card-description
-                .card-title
-                  h3
-                    router-link( :to="clients.chaser.link" :title="clients.chaser.title") {{ clients.chaser.clientName }}
-                h5 {{ clients.chaser.header }}
-                p {{ clients.chaser.description }}
-                router-link( :to="clients.chaser.link" :title="clients.chaser.title") 
-                  p 
-                    strong
-                      | Read More
-    .frow
-      router-link.begin-button2.white-background(to="case-studies", title="Case Studies", type="button") Read our Case Studies
-  .team.green-site-section
-    .frow-container.height-100
-      .frow.row-start
-        .col-md-1-1
-          .frow.centered-column.height-100
-            .title
-              h2
-                | Meet our core team
-            .team-pic
-              img(src="@/assets/images/team-pic-ivy.jpg")
-              .names#Cody.wow.animated.bounceIn(data-wow-delay="2s")
-                | Cody
-                arrowSvg
-              .names#Johnmark.wow.animated.bounceIn(data-wow-delay="2.2s")
-                | Johnmark
-                arrowSvg
-              .names#Brandon.wow.animated.bounceIn(data-wow-delay="2.4s")
-                | Brandon
-                arrowSvg
-            .statement
-              h3 The Begin team is comprised of talented tech entrepreneurs and experienced freelancers who set out to provide better solutions than what was currently on the market. The Begin team believes in building transparent, long-term relationships with every client and partner.
-            .frow
-              router-link.begin-button2(to="/team", title="Team", type="button") About the team
-  ContactFooter
-</template>
-<script>
-import { clients } from '../data/clients';
-import vueLogo from '@/assets/svgs/vue.svg';
-import nodeLogo from '@/assets/svgs/nodejs.svg';
-import awsLogo from '@/assets/svgs/aws.svg';
-import djangoLogo from '@/assets/svgs/django.svg';
-import cordovaLogo from '@/assets/svgs/cordova.svg';
-import frowLogo from '@/assets/svgs/frow.svg';
-import pwaSvg from '@/assets/svgs/pwa.svg';
-import chaserLogo from '@/assets/svgs/chaser-logo.svg';
-import diagnoseSvg from '@/assets/svgs/diagnose.svg';
-import batterySvg from '@/assets/svgs/battery.svg';
-import arrowSvg from '@/assets/svgs/arrow.svg';
-import starSvg from '@/assets/svgs/star.svg';
-import quoteSvg from '@/assets/svgs/quotes.svg';
-import qikpixLogo from '@/assets/svgs/qikpix-logo.svg';
-// import ogImage from '@/assets/images/chaser-casestudy-thumb.png';
-
-import ContactFooter from '@/components/ContactFooter';
-export default {
-  metaInfo: {
-    title: 'Begin',
-    // override the parent template and just use the above title only
-    titleTemplate: null,
-    meta: [
-      { property: 'og:title', content: 'Begin', vmid: 'og:title' },
-      // { property: 'og:image', content: ogImage, vmid: 'og:image' },
-      {
-        property: 'og:description',
-        content: 'Begin progressive web apps and product development',
-        vmid: 'og:description',
-      },
-      { property: 'og:url', content: '//beg.in/home', vmid: 'og:url' },
-    ],
-  },
-  components: {
-    ContactFooter,
-    vueLogo,
-    nodeLogo,
-    awsLogo,
-    djangoLogo,
-    cordovaLogo,
-    frowLogo,
-    pwaSvg,
-    chaserLogo,
-    diagnoseSvg,
-    batterySvg,
-    arrowSvg,
-    starSvg,
-    quoteSvg,
-    qikpixLogo,
-  },
-  data() {
-    return {
-      clients,
-    };
-  },
-};
-</script>
 <style lang="sass" scoped>
 @import @/assets/styles/variables.sass
 
@@ -495,3 +264,235 @@ export default {
   .testimonial-box
     margin: 10px 20px 46px
 </style>
+
+<template lang="pug">
+main#home
+  .header-shadow-cover
+  .hero
+    .frow-container.height-100
+      .frow.column-center.justify-center.height-100
+        .hero-content
+          h2
+            | No-headache software development.
+          h4
+            | Reliable & transparent technology consulting.
+  .statement.site-section
+    .frow-container.height-100
+      .frow.centered-column.height-100
+          h3 Begin is a web application and hybrid development agency for technology companies who need scalable, resource conscious software.
+  .were-good.site-section
+    .frow-container.height-100
+      .frow.centered-column.height-100
+        .title
+          h5
+            | there are a lot of dev agencies out there but
+          h2
+            | We believe we're different because:
+      .service-box-parent
+        .frow.gutters
+          .col-md-4-10
+            .service-box.card-shadow
+              .frow.column-center
+                diagnoseSvg
+                h5
+                  | Diagnosis First Approach
+                p
+                  | When presented with a problem to solve, we work tirelessly to diagnose the root causes before proposing a solution. We don't simply say "yes", resulting in the right solution for you and your business.
+          .col-md-1-10
+            .frow.centered
+               span.plus
+                | &
+          .col-md-4-10
+            .service-box.card-shadow
+              .frow.column-center
+                batterySvg
+                h5
+                  | Extensive Network
+                p
+                  | We have spent years developing a network of talented, trustworthy developers so that we are uniquely positioned to address a need for more horesepower or alternative skillsets.
+          .frow
+            router-link.begin-button2.white-background(to="contact", title="Contact", type="button") Start a project
+  .testimonials.green-site-section
+    .frow-container.height-100
+      .frow.centered-column.height-100
+        .title
+          .frow.row-center
+            h2
+              | Kind words
+        .testimonial-parent-box.width-100
+          .frow.gutters
+            .col-md-1-3
+              .testimonial-box
+                .frow.row-center
+                  .client-logo.govflex-box
+                    .frow.centered
+                      .govflex-logo
+                        .frow.centered
+                          img(:src='clients.Govflex.logo')
+                .frow.row-start
+                  quoteSvg
+                  p {{ clients.Govflex.testimonial }}
+                  p Dwayne Robinson, COO, GovFlex
+                .five-stars
+                  .frow
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+            .col-md-1-3
+              .testimonial-box
+                .frow.row-center
+                  .client-logo.chaser-box
+                    .frow.centered
+                      .chaser-logo
+                        .frow.centered
+                          chaserLogo
+                .frow.row-start
+                  quoteSvg
+                  p {{ clients.chaser.testimonial }}
+                  p Ashton Asherian, CEO, Chaser
+                .five-stars
+                  .frow
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+            .col-md-1-3
+              .testimonial-box
+                .frow.row-center
+                  .client-logo.qikpix-box
+                    .frow.centered
+                      .qikpix-logo
+                        .frow.centered
+                          qikpixLogo
+                .frow.row-start
+                  quoteSvg
+                  p {{ clients.qikpix.testimonial }}
+                  p Jarek Hamilton, CEO, QikPix
+                .five-stars
+                  .frow
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+
+      .frow
+        a.begin-button2.clutch-button(href="https://clutch.co/profile/begin" target="_blank" type="button")
+          | Read our verified reviews on
+          img(src="@/assets/images/clutch2.png")
+  .featured-case-study
+    .frow-container.height-100
+        .frow.centered-column.height-100
+          .title
+            .frow.row-center
+              h2
+                | Featured Case Study
+    .case-study
+      .frow-container.height-100
+        .frow.column-center
+          .frow.row-start.justify-around.width-100.gutters
+            .col-md-1-2.col-sm-1-1
+              .frow
+                .case-study-thumb
+                  router-link( :to="clients.chaser.link" :title="clients.chaser.title")
+                    img.shadow-light(:src="clients.chaser.blogThumb")
+            .col-md-1-2.col-sm-1-1
+              .card-description
+                .card-title
+                  h3
+                    router-link( :to="clients.chaser.link" :title="clients.chaser.title") {{ clients.chaser.clientName }}
+                h5 {{ clients.chaser.header }}
+                p {{ clients.chaser.description }}
+                router-link( :to="clients.chaser.link" :title="clients.chaser.title") 
+                  p 
+                    strong
+                      | Read More
+    .frow
+      router-link.begin-button2.white-background(to="case-studies", title="Case Studies", type="button") Read our Case Studies
+  .team.green-site-section
+    .frow-container.height-100
+      .frow.row-start
+        .col-md-1-1
+          .frow.centered-column.height-100
+            .title
+              h2
+                | Meet our core team
+            .team-pic
+              img(src="@/assets/images/team-pic-ivy.jpg")
+              .names#Cody.wow.animated.bounceIn(data-wow-delay="2s")
+                | Cody
+                arrowSvg
+              .names#Johnmark.wow.animated.bounceIn(data-wow-delay="2.2s")
+                | Johnmark
+                arrowSvg
+              .names#Brandon.wow.animated.bounceIn(data-wow-delay="2.4s")
+                | Brandon
+                arrowSvg
+            .statement
+              h3 The Begin team is comprised of talented tech entrepreneurs and experienced freelancers who set out to provide better solutions than what was currently on the market. The Begin team believes in building transparent, long-term relationships with every client and partner.
+            .frow
+              router-link.begin-button2(to="/team", title="Team", type="button") About the team
+  ContactFooter
+</template>
+<script>
+import { clients } from '../data/clients';
+import vueLogo from '@/assets/svgs/vue.svg';
+import nodeLogo from '@/assets/svgs/nodejs.svg';
+import awsLogo from '@/assets/svgs/aws.svg';
+import djangoLogo from '@/assets/svgs/django.svg';
+import cordovaLogo from '@/assets/svgs/cordova.svg';
+import frowLogo from '@/assets/svgs/frow.svg';
+import pwaSvg from '@/assets/svgs/pwa.svg';
+import chaserLogo from '@/assets/svgs/chaser-logo.svg';
+import diagnoseSvg from '@/assets/svgs/diagnose.svg';
+import batterySvg from '@/assets/svgs/battery.svg';
+import arrowSvg from '@/assets/svgs/arrow.svg';
+import starSvg from '@/assets/svgs/star.svg';
+import quoteSvg from '@/assets/svgs/quotes.svg';
+import qikpixLogo from '@/assets/svgs/qikpix-logo.svg';
+// import ogImage from '@/assets/images/chaser-casestudy-thumb.png';
+
+import ContactFooter from '@/components/ContactFooter';
+export default {
+  metaInfo: {
+    title: 'Begin',
+    // override the parent template and just use the above title only
+    titleTemplate: null,
+    meta: [
+      { property: 'og:title', content: 'Begin', vmid: 'og:title' },
+      // { property: 'og:image', content: ogImage, vmid: 'og:image' },
+      {
+        property: 'og:description',
+        content: 'Begin progressive web apps and product development',
+        vmid: 'og:description',
+      },
+      { property: 'og:url', content: '//beg.in/home', vmid: 'og:url' },
+    ],
+  },
+  components: {
+    ContactFooter,
+    vueLogo,
+    nodeLogo,
+    awsLogo,
+    djangoLogo,
+    cordovaLogo,
+    frowLogo,
+    pwaSvg,
+    chaserLogo,
+    diagnoseSvg,
+    batterySvg,
+    arrowSvg,
+    starSvg,
+    quoteSvg,
+    qikpixLogo,
+  },
+  data() {
+    return {
+      clients,
+    };
+  },
+};
+</script>

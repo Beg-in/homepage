@@ -1,63 +1,3 @@
-<template lang="pug">
-#main.height-100
-  .header
-    .frow.height-100
-      .col-xs-1-4.height-100
-        .frow.justify-start.items-center.height-100
-          router-link.logo(to="/")
-            logoSvg
-      .col-xs-3-4.height-100
-        .nav.height-100
-          .frow.justify-end.items-center.height-100
-            router-link(to="/case-studies", title="Case Studies") Case Studies
-            // router-link(to="slate", title="Slate") Slate
-            router-link(to="/team", title="Our Team") Our Team
-            // router-link(to="faq", title="FAQ") FAQ
-            router-link(to="/contact", title="Contact") Contact
-  .header-shadow
-  transition
-    router-view
-  .footer.site-section
-    .frow.column-center
-      .col-md-1-3
-        .frow.column-center
-          .logo
-            router-link(to="/")
-              .width-auto
-                logoSvg
-          .nav
-            .frow.items-center.height-100
-              // router-link(to="our-work", title="Our Work") Our Work
-              router-link(to="/case-studies", title="Case Studies") Case Studies
-              router-link(to="/team", title="Our Team") Our Team
-              // router-link(to="faq", title="FAQ") FAQ
-              router-link(to="/contact", title="Contact") Contact
-          .github
-            .frow.column-center
-              p
-                | Don't forget to check out our work on:
-              a(href="https://github.com/beg-in" target="_blank")
-                githubSvg
-          .copyright
-            p
-              | &copy; {{new Date().getFullYear()}}, Begin, LLC
-</template>
-<script>
-import logoSvg from '@/assets/svgs/logo.svg';
-import githubSvg from '@/assets/svgs/github-logo.svg';
-export default {
-  metaInfo: {
-    // if no subcomponents specify a metaInfo.title, this title will be used
-    title: 'Begin',
-    // all titles will be injected into this template
-    titleTemplate: '%s | Begin'
-  },
-  components: {
-    logoSvg,
-    githubSvg,
-  },
-};
-</script>
 <style lang="sass">
 @import @/assets/styles/global.sass
 .logo
@@ -135,3 +75,65 @@ main
   .copyright
     margin-top: 32px
 </style>
+
+<template lang="pug">
+#main.height-100
+  .header
+    .frow.height-100
+      .col-xs-1-4.height-100
+        .frow.justify-start.items-center.height-100
+          router-link.logo(to="/")
+            logoSvg
+      .col-xs-3-4.height-100
+        .nav.height-100
+          .frow.justify-end.items-center.height-100
+            router-link(to="/case-studies", title="Case Studies") Case Studies
+            // router-link(to="slate", title="Slate") Slate
+            router-link(to="/team", title="Our Team") Our Team
+            // router-link(to="faq", title="FAQ") FAQ
+            router-link(to="/contact", title="Contact") Contact
+  .header-shadow
+  transition
+    router-view
+  .footer.site-section
+    .frow.column-center
+      .col-md-1-3
+        .frow.column-center
+          .logo
+            router-link(to="/")
+              .width-auto
+                logoSvg
+          .nav
+            .frow.items-center.height-100
+              // router-link(to="our-work", title="Our Work") Our Work
+              router-link(to="/case-studies", title="Case Studies") Case Studies
+              router-link(to="/team", title="Our Team") Our Team
+              // router-link(to="faq", title="FAQ") FAQ
+              router-link(to="/contact", title="Contact") Contact
+          .github
+            .frow.column-center
+              p
+                | Don't forget to check out our work on:
+              a(href="https://github.com/beg-in" target="_blank")
+                githubSvg
+          .copyright
+            p
+              | &copy; {{new Date().getFullYear()}}, Begin, LLC
+</template>
+
+<script>
+import logoSvg from '@/assets/svgs/logo.svg';
+import githubSvg from '@/assets/svgs/github-logo.svg';
+export default {
+  metaInfo: {
+    // if no subcomponents specify a metaInfo.title, this title will be used
+    title: 'Begin',
+    // all titles will be injected into this template
+    titleTemplate: '%s | Begin',
+  },
+  components: {
+    logoSvg,
+    githubSvg,
+  },
+};
+</script>
