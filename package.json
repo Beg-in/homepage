@@ -11,13 +11,13 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "core-js": "^3.6.4",
-    "frow": "^3.1.2",
-    "pug": "^2.0.3",
+    "frow": "^3.3.2",
+    "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
     "register-service-worker": "^1.6.2",
-    "vue": "^2.6.10",
+    "vue": "^2.6.11",
     "vue-meta": "^2.3.2",
-    "vue-router": "^3.0.3",
+    "vue-router": "^3.1.5",
     "vue-svg-loader": "^0.16.0"
   },
   "devDependencies": {
