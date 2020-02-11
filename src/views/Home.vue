@@ -277,7 +277,8 @@ main#home
   .statement.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
-          h3 Begin is a web application and hybrid development agency for technology companies who
+          h3
+            | Begin is a web application and hybrid development agency for technology companies who
             | need scalable, resource conscious software.
   .were-good.site-section
     .frow-container.height-100
