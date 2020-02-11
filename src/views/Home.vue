@@ -26,7 +26,7 @@
   h3
     background-color: $beige
     border-radius: 5px
-    box-shadow: 0 5px 20px 0 rgba(32, 32, 32, 0.12)
+    box-shadow: $shadow-light
     padding: 32px
 
 .were-good

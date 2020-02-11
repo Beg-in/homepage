@@ -1,7 +1,9 @@
 <style lang="sass">
-//prepend HERE
+$shadow-light: 0px 21px 3px 0px red
 @use "node_modules/frow/frow"
 @use "src/assets/sass/global"
+
+
 
 .logo
   height: auto
@@ -88,7 +90,7 @@ main
           router-link.logo(to="/")
             logoSvg
       .col-xs-3-4.height-100
-        .nav.height-100
+        .nav.height-100.shadow-light
           .frow.justify-end.items-center.height-100
             router-link(to="/case-studies", title="Case Studies") Case Studies
             // router-link(to="slate", title="Slate") Slate
