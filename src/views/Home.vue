@@ -26,7 +26,7 @@
   h3
     background-color: $beige
     border-radius: 5px
-    box-shadow: $shadow-light
+    // box-shadow: $shadow-light
     padding: 32px
 
 .were-good
@@ -277,7 +277,7 @@ main#home
   .statement.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
-          h3
+          h3.shadow-light
             | Begin is a web application and hybrid development agency for technology companies who
             | need scalable, resource conscious software.
   .were-good.site-section

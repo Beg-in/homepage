@@ -1,9 +1,6 @@
 <style lang="sass">
-$shadow-light: 0px 21px 3px 0px red
-@use "node_modules/frow/frow"
-@use "src/assets/sass/global"
-
-
+.shadow-light2
+  box-shadow: $shadow-light
 
 .logo
   height: auto
