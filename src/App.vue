@@ -3,13 +3,14 @@
 @import @/assets/sass/_colors.sass
 @import @/assets/sass/_variables.sass
 @import ~frow
+@import @/assets/sass/global.sass
 
 .logo
-    height: auto
+  height: auto
 
-    svg
-      fill: #fff
-      height: 30px
+  svg
+    fill: #fff
+    height: 30px
 
 .header
   background-color: $primary-color
