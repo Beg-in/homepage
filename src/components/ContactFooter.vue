@@ -9,7 +9,7 @@
 
 <template lang="pug">
 div
-  .footer-cta.green-site-section
+  .footer-cta
     .frow-container.height-100
       .frow.centered-column.height-100
         .frow.row-center
