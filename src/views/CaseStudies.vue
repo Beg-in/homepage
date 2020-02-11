@@ -53,7 +53,7 @@ main
               .col-md-1-2
                 .frow
                   .case-study-thumb
-                    router-link( :to="client.link" :title="client.title")
+                    router-link(:to="client.link" :title="client.title")
                       //- .blog-thumb-parent
                       //-   h2 Begin Case Study & walkthrough of:
                       //-   img.shadow-dark(:src="client.logo")
@@ -62,10 +62,10 @@ main
                 .card-description
                   .card-title
                     h3
-                      router-link( :to="client.link" :title="client.title") {{ client.clientName }}
+                      router-link(:to="client.link" :title="client.title") {{ client.clientName }}
                   h5 {{ client.header }}
                   p {{ client.description }}
-                  router-link( :to="client.link" :title="client.title") 
+                  router-link(:to="client.link" :title="client.title") 
                     p 
                       strong
                         | Read More

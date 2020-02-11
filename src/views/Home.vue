@@ -404,7 +404,7 @@ main#home
             .col-md-1-2.col-sm-1-1
               .frow
                 .case-study-thumb
-                  router-link( :to="clients.chaser.link" :title="clients.chaser.title")
+                  router-link(:to="clients.chaser.link" :title="clients.chaser.title")
                     img.shadow-light(:src="clients.chaser.blogThumb")
             .col-md-1-2.col-sm-1-1
               .card-description
