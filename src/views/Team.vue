@@ -1,6 +1,4 @@
 <style lang="sass" scoped>
-@import @/assets/styles/variables.sass
-
 .hero
   background-color: $primary-color
   // background: $case-study-bg

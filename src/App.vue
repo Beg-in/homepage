@@ -1,5 +1,9 @@
 <style lang="sass">
-@import @/assets/styles/global.sass
+@import ~frow/_variables
+@import @/assets/sass/_colors.sass
+@import @/assets/sass/_variables.sass
+@import ~frow
+
 .logo
     height: auto
 

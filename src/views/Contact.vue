@@ -1,5 +1,4 @@
 <style lang="sass" scoped>
-@import @/assets/styles/variables.sass
 .contact
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 4vw))
   padding-bottom: 90px

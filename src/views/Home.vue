@@ -1,6 +1,4 @@
 <style lang="sass" scoped>
-@import @/assets/styles/variables.sass
-
 .hero
   height: 700px
   background-color: $primary-color

@@ -1,5 +1,4 @@
 <style lang="sass" scoped>
-@import @/assets/styles/variables.sass
 .faq-section
   margin-bottom: 72px
 
