@@ -1,66 +1,66 @@
 <style lang="sass" scoped>
-.faq-section
-  margin-bottom: 72px
+// .faq-section
+//   margin-bottom: 72px
 
-label.faq-question
-  color: $off-black
+// label.faq-question
+//   color: $off-black
 
-.faq-question
-  padding: 7px 13px
+// .faq-question
+//   padding: 7px 13px
 
-  &:hover
-    background-color: rgba(18, 216, 183, 0.11)
-    border-radius: 2px
+//   &:hover
+//     background-color: rgba(18, 216, 183, 0.11)
+//     border-radius: 2px
 
-  input
-    display: none
+//   input
+//     display: none
 
-.faq-quick-title-menu-title
-  h4
-    padding-bottom: 8px
-    border-bottom: solid 2px rgba(38, 38, 38, 0.09)
-    margin-bottom: 32px
+// .faq-quick-title-menu-title
+//   h4
+//     padding-bottom: 8px
+//     border-bottom: solid 2px rgba(38, 38, 38, 0.09)
+//     margin-bottom: 32px
 
-.faq-quick-title-menu
-  margin-bottom: 45px
+// .faq-quick-title-menu
+//   margin-bottom: 45px
 
-  .faq-title
-    border-bottom: none
-    font-size: 22px
+//   .faq-title
+//     border-bottom: none
+//     font-size: 22px
 
-  .faq-section
-    margin-bottom: 0
+//   .faq-section
+//     margin-bottom: 0
 
-.faq-title
-  border-bottom: solid 2px rgba(38, 38, 38, 0.09)
-  margin-bottom: 32px
-  padding-bottom: 8px
+// .faq-title
+//   border-bottom: solid 2px rgba(38, 38, 38, 0.09)
+//   margin-bottom: 32px
+//   padding-bottom: 8px
 
-  h4
-    border-bottom: none
+//   h4
+//     border-bottom: none
 
-  .faq-section
-    margin-bottom: 0px
+//   .faq-section
+//     margin-bottom: 0px
 
-.faq-answer
-  overflow: hidden
-  max-height: 0
-  transition: max-height $animate-speed
+// .faq-answer
+//   overflow: hidden
+//   max-height: 0
+//   transition: max-height $animate-speed
 
-  input:checked ~ &
-    max-height: 200px
-    display: block
+//   input:checked ~ &
+//     max-height: 200px
+//     display: block
 
 
-@media screen and (min-width: 1048px)
-  .faq-quick-title-menu
-    position: sticky
-    top: $header-height
+// @media screen and (min-width: 1048px)
+//   .faq-quick-title-menu
+//     position: sticky
+//     top: $header-height
 
-@media screen and (max-width: 767px)
-  .faq-answer
-    input:checked ~ &
-      max-height: 450px
+// @media screen and (max-width: 767px)
+//   .faq-answer
+//     input:checked ~ &
+//       max-height: 450px
 </style>
 
 <template lang="pug">

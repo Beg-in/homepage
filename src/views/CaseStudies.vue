@@ -1,36 +1,36 @@
 <style lang="sass" scoped>
-.hero
-  background-color: $primary-color
-  // background: $case-study-bg
-  background-attachment: fixed
-  // background-size: cover
-  // /* background by SVGBackgrounds.com */
-  color: #fff
-  text-shadow: 1px 1px 1px #777
-  text-align: left
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw))
-  padding: 50px 0 110px
-  p
-    color: #fff
-    font-size: 20px
-  h5
-    font-weight: 400
+// .hero
+//   background-color: $primary-color
+//   // background: $case-study-bg
+//   background-attachment: fixed
+//   // background-size: cover
+//   // /* background by SVGBackgrounds.com */
+//   color: #fff
+//   text-shadow: 1px 1px 1px #777
+//   text-align: left
+//   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw))
+//   padding: 50px 0 110px
+//   p
+//     color: #fff
+//     font-size: 20px
+//   h5
+//     font-weight: 400
 
-.green-shade
-  height: 10px
-  background-color: $primary-color
-  align-items: center
-  justify-content: center
-  position: relative
+// .green-shade
+//   height: 10px
+//   background-color: $primary-color
+//   align-items: center
+//   justify-content: center
+//   position: relative
 
-.case-study
-  margin: 20px 0
+// .case-study
+//   margin: 20px 0
 
-/* Check global.sass for more case study styles */
+// /* Check global.sass for more case study styles */
 
-@media screen and (max-width: 767px)
-  .hero
-    margin-bottom: 50px
+// @media screen and (max-width: 767px)
+//   .hero
+//     margin-bottom: 50px
 </style>
 
 <template lang="pug">

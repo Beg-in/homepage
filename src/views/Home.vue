@@ -1,8 +1,8 @@
 <style lang="sass" scoped>
 .hero
   height: 700px
-  background-color: $primary-color
-  background: $hero-bg
+  // background-color: $primary-color
+  // background: $hero-bg
   background-attachment: fixed
   background-size: cover
   /* background by SVGBackgrounds.com */
@@ -24,7 +24,7 @@
   font-size: 34px
   line-height: 60px
   h3
-    background-color: $beige
+    // background-color: $beige
     border-radius: 5px
     // box-shadow: $shadow-light
     padding: 32px
@@ -36,7 +36,7 @@
   .plus
     font-size: 82px
     font-weight: 500
-    color: $primary-color
+    // color: $primary-color
     margin: 34px 0 44px
     display: none
 
@@ -57,8 +57,8 @@
 .team
   padding: 90px 0
   clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% 100%, 0 100%)
-  background: $cogs-bg
-  background-color: $green
+  // background: $cogs-bg
+  // background-color: $green
   background-attachment: fixed
 
   .statement h3
@@ -126,7 +126,7 @@
 .service-box
   padding: 32px 32px
   box-shadow: 0 5px 20px 0 rgba(32,32,32,.12)
-  background-color: $beige
+  // background-color: $beige
   border-radius: 5px
   margin-bottom: 45px
 
@@ -144,8 +144,8 @@
     margin-bottom: 11px
 
 .testimonials
-  background: $texture-bg
-  background-color: $green
+  // background: $texture-bg
+  // background-color: $green
   background-attachment: fixed
   clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% calc(100% - 5vw), 0 100%)
   padding: 120px 0
@@ -157,7 +157,7 @@
 
 .testimonial-box
   padding: 46px 28px 36px 28px
-  background-color: $beige
+  // background-color: $beige
   border-radius: 5px
   box-shadow: 0 5px 20px 0 rgba(32, 32, 32, 0.12)
   position: relative
@@ -168,15 +168,15 @@
 
   svg
     height: 27px
-    color: $primary-color
-    fill: $primary-color
+    // color: $primary-color
+    // fill: $primary-color
 
   .five-stars
     svg
       height: 21px
       padding: 0 3px
       path
-        fill: $primary-color
+        // fill: $primary-color
   .client-logo
     width: 165px
     height: 65px

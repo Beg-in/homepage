@@ -1,14 +1,17 @@
-@forward 'node_modules/frow/frow' with ($shadow-light: 0px 21px 3px 0px red)
+@use "node_modules/frow/frow" as * with ($off-black: red)
+@forward "node_modules/frow/frow"
 
+@debug "variables: #{$off-black}"
+  
 $green: #12D8B7
 $orange: #FCB853
 $orange-dark: #DB8B28
 $light-background: #f4f4f4
-$off-black: red
+// $off-black: red
 
 $primary-color: $green
 $beige: #fff3da
 
 $beige-box-shadow: 0 5px 20px 0 rgba(32, 32, 32, 0.12)
 $header-height: 60px
-$shadow-light: 0px 21px 3px 0px blue
+// $shadow-light: 0px 21px 3px 0px blue

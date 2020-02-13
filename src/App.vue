@@ -1,4 +1,13 @@
 <style lang="sass">
+@use "src/assets/sass/variables" as *
+@use "src/assets/sass/animations" as *
+// @use "src/assets/sass/backgrounds" as *
+@use "src/assets/sass/global" as *
+// @use "node_modules/frow/variables" as *
+// @use "node_modules/frow/frow" as *
+
+@debug "app: #{$off-black}"
+
 .shadow-light2
   box-shadow: $shadow-light
 
