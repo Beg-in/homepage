@@ -3,7 +3,7 @@ module.exports = {
   css: {
     loaderOptions: {
       sass: {
-        // prependData: '@use "src/assets/sass/global-setup" as *',
+        prependData: '@use "node_modules/frow/variables" as * with ($off-black: red)',
       },
     },
   },

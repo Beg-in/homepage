@@ -1,11 +1,10 @@
 <style lang="sass">
-// @use "node_modules/frow/frow" as * with ($off-black: red)
-// @forward "node_modules/frow/frow"
+@forward "node_modules/frow/frow"
 @use "src/assets/sass/variables" as *
 // @use "src/assets/sass/global-setup" as *
 // @use "src/assets/sass/animations" as *
 // @use "src/assets/sass/backgrounds" as *
-@use "src/assets/sass/global" as *
+// @use "src/assets/sass/global" as *
 // @use "node_modules/frow/variables" as *
 // @use "node_modules/frow/frow" as *
 
@@ -22,8 +21,8 @@
     height: 30px
 
 .header
-  background-color: $primary-color
-  height: $header-height
+  // background-color: $primary-color
+  // height: $header-height
   padding: 0 20px
   position: fixed
   width: 100%
@@ -59,7 +58,7 @@
 
 
 .header-shadow
-  height: $header-height
+  // height: $header-height
   position: fixed
   width: 100%
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 2px 10px rgba(0, 0, 0, 0.28)
@@ -67,7 +66,7 @@
 
 main
   display: block
-  padding-top: $header-height
+  // padding-top: $header-height
 
 .footer
 
