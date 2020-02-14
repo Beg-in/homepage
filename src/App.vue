@@ -1,6 +1,9 @@
 <style lang="sass">
+// @use "node_modules/frow/frow" as * with ($off-black: red)
+// @forward "node_modules/frow/frow"
 @use "src/assets/sass/variables" as *
-@use "src/assets/sass/animations" as *
+// @use "src/assets/sass/global-setup" as *
+// @use "src/assets/sass/animations" as *
 // @use "src/assets/sass/backgrounds" as *
 @use "src/assets/sass/global" as *
 // @use "node_modules/frow/variables" as *

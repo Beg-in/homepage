@@ -1,4 +1,7 @@
 <style lang="sass" scoped>
+// @use "src/assets/sass/global-setup" as *
+// @debug "home: #{$off-black}"
+
 .hero
   height: 700px
   // background-color: $primary-color
