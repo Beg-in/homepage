@@ -1,10 +1,10 @@
 <style lang="sass" scoped>
-// @use "src/assets/sass/global-setup" as *
+@use "src/assets/sass/variables" as *
 @debug "home: #{$off-black}"
 
 .hero
   height: 700px
-  // background-color: $primary-color
+  background-color: $primary-color
   // background: $hero-bg
   background-attachment: fixed
   background-size: cover

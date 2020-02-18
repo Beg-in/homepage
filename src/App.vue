@@ -1,12 +1,6 @@
 <style lang="sass">
-@forward "node_modules/frow/frow"
-@use "src/assets/sass/variables" as *
-// @use "src/assets/sass/global-setup" as *
-// @use "src/assets/sass/animations" as *
-// @use "src/assets/sass/backgrounds" as *
-// @use "src/assets/sass/global" as *
-// @use "node_modules/frow/variables" as *
-// @use "node_modules/frow/frow" as *
+@use "node_modules/frow/frow" with ($shadow-light: 0px 21px 3px 0px red)
+@use "src/assets/sass/global" as *
 
 @debug "app: #{$off-black}"
 

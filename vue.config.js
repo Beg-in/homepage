@@ -3,7 +3,7 @@ module.exports = {
   css: {
     loaderOptions: {
       sass: {
-        prependData: '@use "node_modules/frow/variables" as * with ($off-black: red)',
+        prependData: '@use "node_modules/frow/variables" as * with ($shadow-light: 0px 21px 3px 0px red)',
       },
     },
   },
