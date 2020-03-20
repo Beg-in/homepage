@@ -177,6 +177,8 @@
       padding: 0 3px
       path
         fill: $primary-color
+    p
+      margin: 0
   .client-logo
     width: 165px
     height: 65px
@@ -350,7 +352,7 @@ main#home
                     starSvg
                     starSvg
                   .frow.mt-10
-                    | 5 Stars
+                    p 5 Stars
             .col-md-1-3
               .testimonial-box
                 .frow.row-center
@@ -371,7 +373,7 @@ main#home
                     starSvg
                     starSvg
                   .frow.mt-10
-                    | 5 Stars
+                    p 5 Stars
             .col-md-1-3
               .testimonial-box
                 .frow.row-center
@@ -392,7 +394,7 @@ main#home
                     starSvg
                     starSvg
                   .frow.mt-10
-                    | 5 Stars
+                    p 5 Stars
             .col-md-1-3
               .testimonial-box
                 .frow.row-center
@@ -413,7 +415,7 @@ main#home
                     starSvg
                     starSvg
                   .frow.mt-10
-                    | 5 Stars
+                    p 5 Stars
             .col-md-1-3
               .testimonial-box
                 .frow.row-center
@@ -434,7 +436,7 @@ main#home
                     starSvg
                     starSvg
                   .frow.mt-10
-                    | 5 Stars
+                    p 5 Stars
       .frow
         a.begin-button2.clutch-button(
           href="https://clutch.co/profile/begin"
