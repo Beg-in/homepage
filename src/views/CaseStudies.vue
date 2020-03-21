@@ -41,7 +41,8 @@ main
       .frow.column-start
           h2 Featured Work
           .col-md-2-3
-            h5 The Begin team has developed a unique customer-centered process. This process leads
+            h5 
+              | The Begin team has developed a unique customer-centered process. This process leads
               | our clients to outperform their expectations and put our solutions to work faster
               | than what they ever thought was possible.
             h5 We'd love your for you check out some of our recent projects below!

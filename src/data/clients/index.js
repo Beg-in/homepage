@@ -47,7 +47,23 @@ module.exports = {
       testimonial: 'I wouldn\'t have been able to reach the goals I had set for myself without ' +
       'the dedicated work from Begin, LLC',
       videoEmbed: '',
-      clutchReview: 'https://clutch.co/profile/begin#review-1148177',
+      clutchReview: '',
+    },
+    fourkites: {
+      clientName: 'FourKites',
+      logo: require('@/assets/images/fourkites-logo.png'),
+      website: 'https://fourkites.com',
+      testimonial: 'From a value and cost point of view, Begin was able to save us a lot of time and money through their level of skill and professionalism. A lot of developers tend to go back and forth with things, and their team was able to get it right the first time, which I really appreciated.',
+      videoEmbed: '',
+      clutchReview: '',
+    },
+    taskfunnel: {
+      clientName: 'TaskFunnel',
+      logo: require('@/assets/svgs/taskfunnel-logo.svg'),
+      website: 'https://taskfunnel.com',
+      testimonial: 'The final product Begin delivered overwhelmingly exceeded our expectations. Not only did they finish the project before our goal finish date, but they delivered a well-polished product with no bugs and minimal changes needed. They were very efficient and a pleasure to work with.',
+      videoEmbed: '',
+      clutchReview: '',
     },
 
   },

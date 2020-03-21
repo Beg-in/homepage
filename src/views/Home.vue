@@ -156,12 +156,12 @@
   line-height: 26px
 
 .testimonial-box
-  padding: 46px 28px 36px 28px
+  padding: 46px 28px 26px 28px
   background-color: $beige
   border-radius: 5px
   box-shadow: 0 5px 20px 0 rgba(32, 32, 32, 0.12)
   position: relative
-  margin: 10px 20px
+  margin: 10px 20px 40px
   color: #333
   text-align: left
   min-height: 335px
@@ -177,6 +177,8 @@
       padding: 0 3px
       path
         fill: $primary-color
+    p
+      margin: 0
   .client-logo
     width: 165px
     height: 65px
@@ -199,8 +201,12 @@
     .chaser-logo
       svg
         fill: #fff
-    &.govflex-box
+    &.white-box
       background-color: #fff
+      &.taskfunnel-logo
+      background: #fff
+      svg
+        width: 100%
     &.qikpix-box
       background-color: #1a1a1a
       svg
@@ -279,7 +285,7 @@ main#home
       .frow.centered-column.height-100
           h3
             | Begin is a web application and hybrid development agency for technology companies who
-            | need scalable, resource conscious software.
+            | need scalable, resource-conscious software.
   .were-good.site-section
     .frow-container.height-100
       .frow.centered-column.height-100
@@ -325,11 +331,11 @@ main#home
             h2
               | Kind words
         .testimonial-parent-box.width-100
-          .frow.gutters
+          .frow
             .col-md-1-3
               .testimonial-box
                 .frow.row-center
-                  .client-logo.govflex-box
+                  .client-logo.white-box
                     .frow.centered
                       .govflex-logo
                         .frow.centered
@@ -345,6 +351,8 @@ main#home
                     starSvg
                     starSvg
                     starSvg
+                  .frow.mt-10
+                    p 5 Stars
             .col-md-1-3
               .testimonial-box
                 .frow.row-center
@@ -364,6 +372,29 @@ main#home
                     starSvg
                     starSvg
                     starSvg
+                  .frow.mt-10
+                    p 5 Stars
+            .col-md-1-3
+              .testimonial-box
+                .frow.row-center
+                  .client-logo.white-box
+                    .frow.centered
+                      .taskfunnel-logo
+                        .frow.centered
+                          tasfunnelLogo
+                .frow.row-start
+                  quoteSvg
+                  p {{ clients.taskfunnel.testimonial }}
+                  p Tyler T., CEO, Subscription Box Company
+                .five-stars
+                  .frow
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+                  .frow.mt-10
+                    p 5 Stars
             .col-md-1-3
               .testimonial-box
                 .frow.row-center
@@ -383,7 +414,29 @@ main#home
                     starSvg
                     starSvg
                     starSvg
-
+                  .frow.mt-10
+                    p 5 Stars
+            .col-md-1-3
+              .testimonial-box
+                .frow.row-center
+                  .client-logo.white-box
+                    .frow.centered
+                      .govflex-logo
+                        .frow.centered
+                          img(:src='clients.fourkites.logo')
+                .frow.row-start
+                  quoteSvg
+                  p {{ clients.fourkites.testimonial }}
+                  p Andrew Bolis, Digital Marketing Team Lead, Four Kites
+                .five-stars
+                  .frow
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+                    starSvg
+                  .frow.mt-10
+                    p 5 Stars
       .frow
         a.begin-button2.clutch-button(
           href="https://clutch.co/profile/begin"
@@ -470,6 +523,7 @@ import arrowSvg from '@/assets/svgs/arrow.svg';
 import starSvg from '@/assets/svgs/star.svg';
 import quoteSvg from '@/assets/svgs/quotes.svg';
 import qikpixLogo from '@/assets/svgs/qikpix-logo.svg';
+import tasfunnelLogo from '@/assets/svgs/taskfunnel-logo.svg';
 // import ogImage from '@/assets/images/chaser-casestudy-thumb.png';
 
 import ContactFooter from '@/components/ContactFooter';
@@ -505,6 +559,7 @@ export default {
     starSvg,
     quoteSvg,
     qikpixLogo,
+    tasfunnelLogo,
   },
   data() {
     return {
